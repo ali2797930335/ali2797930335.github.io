@@ -71,6 +71,96 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-浮点数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/12/07/%E6%B5%AE%E7%82%B9%E6%95%B0/" class="article-date">
+  <time class="dt-published" datetime="2021-12-07T11:05:30.000Z" itemprop="datePublished">2021-12-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/12/07/%E6%B5%AE%E7%82%B9%E6%95%B0/">浮点数</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>进行浮点数编程时，如果没有注意，常常会出现输出类似 1.#IND, 1.#INF 或者 nan, inf 之类奇怪的输出。这通常隐含了浮点数操作的异常。</p>
+<p>特殊浮点数的含义</p>
+<p>1.#INF / inf：这个值表示“无穷大 (infinity 的缩写)”，即超出了计算机可以表示的浮点数的最大范围（或者说超过了 double 类型的最大值）。例如，当用 0 除一个整数时便会得到一个1.#INF / inf值；相应的，如果用 0 除一个负整数也会得到 -1.#INF / -inf 值。</p>
+<p>-1.#IND / nan：这个的情况更复杂，一般来说，它们来自于任何未定义结果（非法）的浮点数运算。”IND”是 indeterminate 的缩写，而”nan”是 not a number 的缩写。产生这个值的常见例子有：对负数开平方，对负数取对数，0.0/0.0，0.0*∞, ∞/∞ 等。</p>
+<p>简而言之，如果遇到 1.#INF / inf，就检查是否发生了运算结果溢出除零，而遇到 1.#IND / nan，就检查是否发生了非法的运算。</p>
+<p>特殊浮点数的判断</p>
+<p>很多 C 库都提供了一组函数用来判断一个浮点数是否是无穷大或 NaN。int _isnan(double x) 函数用来判断一个浮点数是否是 NaN，而 int _finite(double x) 用以判断一个浮点数是否是无穷大。</p>
+<p>你可能已经注意到了，上面两个函数都是以下划线开头的，因此在可移植性上可能是存在问题的，那么如何实现一个通用的判断版本呢？首先，对于 Nan，可以用下面的代码实现：</p>
+<p>bool IsNumber(double x)<br>{<br>  // 这里的比较操作看上去总是会得到 true<br>  // 但有趣的是对于 IEEE 754 浮点数 NaN 来说总会得到 false!<br>  return (x == x);<br>}<br>而下面的代码可以判断一个浮点数是否是有限的（finite, 即既不是 NaN 又不是 infinite）：</p>
+<p>bool IsFiniteNumber(double x)<br>{<br>  return (x &lt;= DBL_MAX &amp;&amp; x &gt;= -DBL_MAX);<br>}<br>其中，DBL_MAX 是 &lt;float.h&gt; 中预定义的常量。</p>
+<p>把上面两个函数结合起来，还可以实现一个浮点数是否是 Inf 的判断。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/07/%E6%B5%AE%E7%82%B9%E6%95%B0/" data-id="ckyv88zyo0002dctdd26xgm7u" data-title="浮点数" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-数组分析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/12/05/%E6%95%B0%E7%BB%84%E5%88%86%E6%9E%90/" class="article-date">
+  <time class="dt-published" datetime="2021-12-05T09:17:18.000Z" itemprop="datePublished">2021-12-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/12/05/%E6%95%B0%E7%BB%84%E5%88%86%E6%9E%90/">数组分析</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">输入10各地区的面积（都是整数），对他们由小到大排序并输出排序后的结果</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int a[10];  //定义一个包含10个数据的数组 </span><br><span class="line">	int i,j,t;</span><br><span class="line">	printf (&quot;请输入10个面积；\n&quot;);</span><br><span class="line">	for(i=0;i&lt;=9;i++)   //给a[0]到a[9]逐个赋值</span><br><span class="line">	 scanf (&quot;%d&quot;,&amp;a[i]);</span><br><span class="line">	for (i=0;i&lt;=8;i++)     //用选择法逐个比较两个数</span><br><span class="line">	   for (j=i+1;j&lt;=9;j++)</span><br><span class="line">	      if (a[i]&gt;a[j])  //从a[0]和a[i]开始</span><br><span class="line">	    &#123;</span><br><span class="line">	    	t=a[i];</span><br><span class="line">	    	a[i]=a[j];</span><br><span class="line">	    	a[j]=t;</span><br><span class="line">		&#125;</span><br><span class="line">	printf(&quot;排序后的面积依次是：\n&quot;);</span><br><span class="line">	for(i=0;i&lt;=9;i++)</span><br><span class="line">	   printf (&quot;%d\n&quot;,a[i]);   //%5d指数和数之间间隔5个空格，%.5f指保留5位小数</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>排序方法  1.选择法：用两个数逐次比较，把数小的放在前面              2。冒泡法（沉底发）：用两个数逐次比较，把数大的放在后面</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/05/%E6%95%B0%E7%BB%84%E5%88%86%E6%9E%90/" data-id="ckyv88zym0000dctdgyxkcc1x" data-title="数组分析" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-常见关键字" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/13/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/" class="article-date">
@@ -102,11 +192,60 @@
 <p>三、存储类型关键字</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">auto ：声明自动变量 一般不使用</span><br><span class="line">extern：声明变量是在其他文件正声明（也可以看做是引用变量）</span><br><span class="line">register：声明积存器变量</span><br><span class="line">static ：声明静态变量</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
 
       
     </div>
     <footer class="article-footer">
       <a data-url="http://example.com/2021/11/13/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/" data-id="ckvx6hmcz00031stdg32l4qqs" data-title="常见关键字" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-常见语句" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/" class="article-date">
+  <time class="dt-published" datetime="2021-11-13T01:57:26.000Z" itemprop="datePublished">2021-11-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/">常见关键字</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>一.数据类型关键字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">char ：声明字符型变量或函数</span><br><span class="line">double ：声明双精度变量或函数</span><br><span class="line">float：声明浮点型变量或函数</span><br><span class="line">int： 声明整型变量或函数</span><br><span class="line">long ：声明长整型变量或函数</span><br><span class="line">short ：声明短整型变量或函数</span><br><span class="line">unsigned：声明无符号类型变量或函数</span><br><span class="line">void ：声明函数无返回值或无参数，声明无类型指针（基本上就这三个作用）</span><br><span class="line">enum ：声明枚举类型</span><br><span class="line">signed：声明有符号类型变量或函数</span><br><span class="line">struct：声明结构体变量或函数</span><br><span class="line">union：声明共用体（联合）数据类型</span><br><span class="line">注意：对于doublehe和float</span><br><span class="line">         区别是double精度高，有效数字16位，float精度7位。 但double消耗内存是float的两倍，double的运算速度比float慢得多，C语言中数学函数名称double 和 float不同，不要写错，能用单精度时不要用双精度（以省内存，加快运算速度）。  </span><br></pre></td></tr></table></figure>
+
+<p>二.控制语句和关键字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">控制语句</span><br><span class="line">goto语句:      无条件转向</span><br><span class="line">if语句:        判断语句</span><br><span class="line">while语句：    循环</span><br><span class="line">do-while语句:  先执行循环体,然后判断循环条件是否成立. 之后继续循环</span><br><span class="line">for语句:        循环,可替代while语句，只是用法不太一样</span><br><span class="line">break语句：     跳出本层的循环(只跳出包含此语句的循环)</span><br><span class="line">continue语句:   继续，一般放到循环语句里,不在执行它下面的语句,直接跳到判断语句</span><br><span class="line">                eg:for语句,就直接跳到第二个分号处,while语句,就直接跳到while()的括号里</span><br><span class="line">switch语句:     多相选择</span><br><span class="line">return语句:     返回</span><br><span class="line">1.循环语句</span><br><span class="line">        for：一种循环语句(可意会不可言传）</span><br><span class="line">        do ：循环语句的循环体</span><br><span class="line">        while ：循环语句的循环条件</span><br><span class="line">        break：跳出当前循环</span><br><span class="line">        continue：结束当前循环，开始下一轮循环</span><br><span class="line">2.条件语句</span><br><span class="line">        if: 条件语句</span><br><span class="line">        else ：条件语句否定分支（与 if 连用）</span><br><span class="line">        goto：无条件跳转语句</span><br><span class="line">3.开关语句</span><br><span class="line">        switch :用于开关语句</span><br><span class="line">        case：开关语句分支</span><br><span class="line">        default：开关语句中的“其他”分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>三、存储类型关键字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">auto ：声明自动变量 一般不使用</span><br><span class="line">extern：声明变量是在其他文件正声明（也可以看做是引用变量）</span><br><span class="line">register：声明积存器变量</span><br><span class="line">static ：声明静态变量</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">getchar ()和getch()的区别；</span><br><span class="line">1.getchar();从键盘读取一个字符并输出，该函数的返回值是输入第一个字符的ASCII码；若用户输入的是一连串字符，函数直到用户输入回车时结束，输入的字符连同回车一起存入键盘缓冲区。若程序中有后继的getchar();函数，则直接从缓冲区逐个读取已输入的字符并输出，直到缓冲区为空时才重新读取用户的键盘输入。</span><br><span class="line">2.getch();接受一个任意键的输入，不用按回车就返回。该函数的返回值是所输入字符的ASCII码，且该函数的输入不会自动显示在屏幕上，需要putchar();函数输出显示。getch();函数常用于中途暂停程序方便调试和查看</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/" data-id="ckyv88zyn0001dctdchqh4fqn" data-title="常见关键字" class="article-share-link">Share</a>
       
       
       
@@ -371,7 +510,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li></ul>
     </div>
   </div>
 
@@ -384,23 +523,23 @@
       <ul>
         
           <li>
+            <a href="/2021/12/07/%E6%B5%AE%E7%82%B9%E6%95%B0/">浮点数</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/05/%E6%95%B0%E7%BB%84%E5%88%86%E6%9E%90/">数组分析</a>
+          </li>
+        
+          <li>
             <a href="/2021/11/13/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/">常见关键字</a>
           </li>
         
           <li>
+            <a href="/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/">常见关键字</a>
+          </li>
+        
+          <li>
             <a href="/2021/11/11/C%E8%AF%AD%E8%A8%80-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E6%80%BB%E7%BB%93/">C语言&lt;运算符与表达式&gt;总结</a>
-          </li>
-        
-          <li>
-            <a href="/2021/11/07/%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/">常见错误</a>
-          </li>
-        
-          <li>
-            <a href="/2021/11/04/%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/">博客如何上传图片</a>
-          </li>
-        
-          <li>
-            <a href="/2021/10/30/%E6%B5%8B%E8%AF%95/">测试</a>
           </li>
         
       </ul>
@@ -416,7 +555,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2021 John Doe<br>
+      &copy; 2022 John Doe<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
