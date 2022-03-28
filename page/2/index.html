@@ -71,6 +71,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-C语言-运算符与表达式-总结" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/11/C%E8%AF%AD%E8%A8%80-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E6%80%BB%E7%BB%93/" class="article-date">
+  <time class="dt-published" datetime="2021-11-11T13:28:07.000Z" itemprop="datePublished">2021-11-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/11/C%E8%AF%AD%E8%A8%80-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E6%80%BB%E7%BB%93/">C语言&lt;运算符与表达式&gt;总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.什么是运算符？—–指对数据进行指定操作、运算并产生新值的特殊符号。    </p>
+<p>C语言的运算符分为以下几类：</p>
+<ul>
+<li>$$<br>1.算术运算符:用于各类数值运算。包括加(+)、减(-)、乘(<em>)、除(/)、求余、自增(++)、自减(–)共七种。<br>2.关系运算符:用于比较运算。包括大于(&gt;)、小于(&lt;)、等于(= =)、大于等于(&gt;=)、小于等于(&lt;=)和不等于(!=)六种。<br>3.逻辑运算符:用于逻辑运算。包括与(&amp;&amp;)、或(||)、非(!)三种。<br>4.位操作运算符:参与运算的量，按二进制位进行运算。包括位与(&amp;)、位或(|)、位非(~)、位异或(^)、左移(&lt;&lt;)、右移(&gt;&gt;)六种。<br>5.赋值运算符:用于赋值运算，分为简单赋值(=)、复合算术赋值(+=,-=,</em>=,/=,%=)和复合位运算赋值(&amp;=,|=,^=,&gt;&gt;=,&lt;&lt;=)三类共十一种。<br>6.条件运算符:这是一个三目运算符，用于条件求值(?:)。<br>7.逗号运算符:用于把若干表达式组合成一个表达式(，)。<br>8.指针运算符:用于取内容(*)和取地址(&amp;)二种运算。<br>9.求字节数运算符:用于计算数据类型所占的字节数(sizeof)。<br>10特殊运算符:有括号()，下标[]，成员(→，.)等几种。<br>$$</li>
+</ul>
+<p> 注意：单目运算符的运算对象必须出现在左边，eg：-a，如果加减乘除运算中有一个是实型（也叫浮点数），则结果为双精度实。          对于除，如果需要取小数，则需要分子分母其中一个或全部为小数                                                                 对于%取余，要求参与运算的操作数均为整型，运算结果与%左侧的运算对象符相同，eg：-7%5==-3</p>
+<p>2.什么是表达式？—–指运算符和括号将运算对象（也叫操作数，可以是常量或者变量），按照一定的规则连接起来的式子。</p>
+<p>基本构成：</p>
+<p>数据类型：C的数据类型包括：整型、字符型、实型或浮点型（单精度和双精度）、枚举类型、数组类型、结构体类型、共用体类型、指针类型和空类型。</p>
+<p>常量与变量：常量其值不可改变，符号常量名通常用大写。</p>
+<p>变量是以某标识符为名字，其值可以改变的量。标识符是以字母或下划线开头的一串由字母、数字或下划线构成的序列，请注意第一个字符必须为字母或下划线，否则为不合法的变量名。变量在编译时为其分配相应存储单元。</p>
+<p>字符串：C语言的字符串其实就是以’\0’字符结尾的char型数组，使用字符型并不需要引用库，但是使用字符串就需要C标准库里面的一些用于对字符串进行操作的函数。它们不同于字符数组。使用这些函数需要引用头文件&lt;string.h&gt;。</p>
+<p>文件输入/输出：在C语言中，输入和输出是经由标准库中的一组函数来实现的。在ANSI C中，这些函数被定义在头文件&lt;stdio.h&gt;；中。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/11/C%E8%AF%AD%E8%A8%80-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E6%80%BB%E7%BB%93/" data-id="cl1a5v0c600026gtd2ikl2zsc" data-title="C语言&lt;运算符与表达式&gt;总结" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-常见错误" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/07/%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" class="article-date">
@@ -108,7 +159,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/07/%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" data-id="cl19b537z00098gtd9ihwh42m" data-title="常见错误" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/07/%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" data-id="cl1a5v0cf000a6gtd7off6ig7" data-title="常见错误" class="article-share-link">Share</a>
       
       
       
@@ -152,7 +203,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/04/%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" data-id="cl19b537w00068gtdc4ogdezg" data-title="博客如何上传图片" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/04/%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87/" data-id="cl1a5v0cd00066gtdcpnr0fkz" data-title="博客如何上传图片" class="article-share-link">Share</a>
       
       
       
@@ -192,7 +243,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/30/%E6%B5%8B%E8%AF%95/" data-id="cl19b5383000d8gtdekudbusx" data-title="测试" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/10/30/%E6%B5%8B%E8%AF%95/" data-id="cl1a5v0ci000d6gtdcfmy8te6" data-title="测试" class="article-share-link">Share</a>
       
       
       
@@ -243,7 +294,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/30/hello-world/" data-id="cl19b537v00058gtd64syde3f" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/10/30/hello-world/" data-id="cl1a5v0ce00086gtd08eqdwyb" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -291,6 +342,10 @@
       <ul>
         
           <li>
+            <a href="/2022/03/28/Typor%E7%9A%84%E4%BD%BF%E7%94%A8/">Typor的使用</a>
+          </li>
+        
+          <li>
             <a href="/2022/03/26/Html5-css3%E8%AE%B0%E5%BD%95/">Html5+css3记录</a>
           </li>
         
@@ -304,10 +359,6 @@
         
           <li>
             <a href="/2022/02/05/SQL%E7%9A%84%E5%8D%B8%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85/">SQL的卸载与安装</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/05/SQL/">SQL</a>
           </li>
         
       </ul>
