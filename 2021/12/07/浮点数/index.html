@@ -98,19 +98,29 @@
         <p>进行浮点数编程时，如果没有注意，常常会出现输出类似 1.#IND, 1.#INF 或者 nan, inf 之类奇怪的输出。这通常隐含了浮点数操作的异常。</p>
 <p>特殊浮点数的含义</p>
 <p>1.#INF / inf：这个值表示“无穷大 (infinity 的缩写)”，即超出了计算机可以表示的浮点数的最大范围（或者说超过了 double 类型的最大值）。例如，当用 0 除一个整数时便会得到一个1.#INF / inf值；相应的，如果用 0 除一个负整数也会得到 -1.#INF / -inf 值。</p>
-<p>-1.#IND / nan：这个的情况更复杂，一般来说，它们来自于任何未定义结果（非法）的浮点数运算。”IND”是 indeterminate 的缩写，而”nan”是 not a number 的缩写。产生这个值的常见例子有：对负数开平方，对负数取对数，0.0/0.0，0.0*∞, ∞/∞ 等。</p>
+<p>-1.#IND / nan：这个的情况更复杂，一般来说，它们来自于任何未定义结果（非法）的浮点数运算。&quot;IND&quot;是 indeterminate 的缩写，而&quot;nan&quot;是 not a number 的缩写。产生这个值的常见例子有：对负数开平方，对负数取对数，0.0/0.0，0.0*∞, ∞/∞ 等。</p>
 <p>简而言之，如果遇到 1.#INF / inf，就检查是否发生了运算结果溢出除零，而遇到 1.#IND / nan，就检查是否发生了非法的运算。</p>
 <p>特殊浮点数的判断</p>
 <p>很多 C 库都提供了一组函数用来判断一个浮点数是否是无穷大或 NaN。int _isnan(double x) 函数用来判断一个浮点数是否是 NaN，而 int _finite(double x) 用以判断一个浮点数是否是无穷大。</p>
 <p>你可能已经注意到了，上面两个函数都是以下划线开头的，因此在可移植性上可能是存在问题的，那么如何实现一个通用的判断版本呢？首先，对于 Nan，可以用下面的代码实现：</p>
-<p>bool IsNumber(double x)<br>{<br>  // 这里的比较操作看上去总是会得到 true<br>  // 但有趣的是对于 IEEE 754 浮点数 NaN 来说总会得到 false!<br>  return (x == x);<br>}<br>而下面的代码可以判断一个浮点数是否是有限的（finite, 即既不是 NaN 又不是 infinite）：</p>
-<p>bool IsFiniteNumber(double x)<br>{<br>  return (x &lt;= DBL_MAX &amp;&amp; x &gt;= -DBL_MAX);<br>}<br>其中，DBL_MAX 是 &lt;float.h&gt; 中预定义的常量。</p>
+<p>bool IsNumber(double x)<br>
+{<br>
+// 这里的比较操作看上去总是会得到 true<br>
+// 但有趣的是对于 IEEE 754 浮点数 NaN 来说总会得到 false!<br>
+return (x == x);<br>
+}<br>
+而下面的代码可以判断一个浮点数是否是有限的（finite, 即既不是 NaN 又不是 infinite）：</p>
+<p>bool IsFiniteNumber(double x)<br>
+{<br>
+return (x &lt;= DBL_MAX &amp;&amp; x &gt;= -DBL_MAX);<br>
+}<br>
+其中，DBL_MAX 是 &lt;float.h&gt; 中预定义的常量。</p>
 <p>把上面两个函数结合起来，还可以实现一个浮点数是否是 Inf 的判断。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/07/%E6%B5%AE%E7%82%B9%E6%95%B0/" data-id="cl1a5wq3r000eugtd085a6hhe" data-title="浮点数" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/12/07/%E6%B5%AE%E7%82%B9%E6%95%B0/" data-id="cl1dk77ju000e44tdcsv7dfhk" data-title="浮点数" class="article-share-link">Share</a>
       
       
       
