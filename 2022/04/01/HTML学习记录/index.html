@@ -15,7 +15,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2022/04/01/HTML%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/这里去复制一张图片的名字">
 <meta property="article:published_time" content="2022-04-01T13:20:12.000Z">
-<meta property="article:modified_time" content="2022-04-01T13:23:07.910Z">
+<meta property="article:modified_time" content="2022-04-10T16:00:19.377Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2022/04/01/HTML%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/这里去复制一张图片的名字">
@@ -97,7 +97,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>HTML5相关内容</p>
+        <h1>HTML5相关内容</h1>
 <h3 id="什么是网页：">什么是网页：</h3>
 <p>网站是什么：就是平时我们所点击的看的就是网站，它是使用HTML等来制作的</p>
 <p>网页是什么：是网站中的一页，通常是HTML格式文件，它要通过浏览器来阅读；网页是构成网站的基本元素，一个网页里面会有图片，文字，视频，声音等等；通常我们看见的网页以.htm或者.html后缀结尾的文件，叫其为html文件。</p>
@@ -190,17 +190,22 @@
 属性：targer:用于指定连接页面的打开方式，其中_self（当前页面 打开）为默认值， _blank（在新的窗口中打开：英语翻译：空白的，空的）为在新窗口中打开的方式，就是在浏览器顶部重新打开一个窗口</p>
 <p>跳转目标是指你要跳到哪个地方去的网站。</p>
 <p>2.链接的分类：<br>
-外部连接：eg：<a href="http://www.qq.com" target="_blank"> 腾讯</a>，<br>
-内部连接：网站内部页面之间的相互连接，直接连接内部页面名称，也就是位置<br>
-空连接：<a hrsf="#">首页</a>,当还没想好要去哪时，可以写一个#号<br>
-下载连接：如果href里面地址是一个文件或者压缩包，会下载这个文件<br>
-网页元素连接：在网页中的各种元素，如文本、图像、表格、音频、视频等都可以作为超链接使用。只要把图片等的地址当文字使用就可以啦。</p>
-<p>看到28</p>
+&lt;1&gt;外部连接：eg：<a href="http://www.qq.com" target="_blank"></a>，【&lt;&gt;在这里面写内容&lt;&gt;】<br>
+&lt;2&gt;内部连接：网站内部页面之间的相互连接，直接连接内部页面名称，也就是位置<br>
+&lt;3&gt;空连接：<a hrsf="#"></a>,当还没想好要去哪时，可以写一个#号，【&lt;&gt;在这里面写内容&lt;&gt;】<br>
+&lt;4&gt;下载连接：如果href里面地址是一个文件或者压缩包，会下载这个文件<br>
+&lt;5&gt;网页元素连接：在网页中的各种元素，如文本、图像、表格、音频、视频等都可以作为超链接使用。只要把图片等的地址当文字使用就可以啦。<br>
+&lt;6&gt;锚点连接：意思就是在一个网页最顶部有一个整个网页的目录，只要点击自己想去的地方便可直接跳到某个指定的位置。<br>
+使用方法：首先是基本的连接语法格式<a></a>-----将需要跳转的内容放到【&lt;&gt;这里来&lt;&gt;】——然后在<a href="#(这里随便取名字，记得#号一定不能少)"></a>———然后到需要跳转的地方加比如标签里面<h3></h3>----在标签<h3 id="刚刚取得名字，不用加#号这里"></p>
+<h2 id="HTML中的注释和特殊字符">HTML中的注释和特殊字符</h2>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.注释：就是在写HTML的时候，帮助我们理解，但是又不需要显示在网页中</span><br><span class="line">    以&quot;<span class="comment">&lt;!--&quot;开头，以&quot;--&gt;</span>&quot;结束</span><br><span class="line">     eg:<span class="comment">&lt;!--这些文字不会在页面中显示出来 --&gt;</span></span><br><span class="line">但是有个快捷键，鼠标放到要注释的位置，然后按Ctrl+/即可（注释是注释一行）</span><br><span class="line">2.特殊字符：</span><br><span class="line">空格：<span class="symbol">&amp;nbsp;</span>敲几个这个就有几个空格，比如：我<span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span>们，在网页显示出来就有4个空格</span><br><span class="line">小于号：<span class="symbol">&amp;lt;</span>x</span><br><span class="line">大于号：<span class="symbol">&amp;gt;</span>  r如果想在网页中显示<span class="tag">&lt;&gt;</span>这两个字符，要这样写：<span class="symbol">&amp;lt;</span>p<span class="symbol">&amp;gt;</span>——网页中就会显示<span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">一些不经常使用的：&amp;和号———<span class="symbol">&amp;amp;</span>¥人民币———<span class="symbol">&amp;yun;</span>©版权——<span class="symbol">&amp;copy;</span>®注册商标——<span class="symbol">&amp;reg;</span>°摄氏度——<span class="symbol">&amp;deg;</span>±正负号——<span class="symbol">&amp;plusmn;</span>×乘号——<span class="symbol">&amp;times;</span>÷除号<span class="symbol">&amp;divide;</span>²平方，上标2——&amp;sup2;³三次方，上标3&amp;sup3;这个以此类推</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>这里来个总结</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.目录文件夹：就是在HTML编译器里面快速建立文件夹</span><br><span class="line">2.图片：当你写这个网页时，需要插入图片时，要观察你的这个文件在上面文件那个里面，然后图片（images）文件夹要 和网页在一个文件夹里面</span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;路径问题&quot;</span>&gt;</span></span><br><span class="line">路径问题：如果图片是（images）里面的文件，则属于下一级<span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;images/这里是图片的路劲&quot;</span>&gt;</span></span><br><span class="line">3.标题标签<span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">4.换行：<span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line">5.换段：<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">6.链接标签：外部连接，比如把：我要在百度一下好好学习HTML，把百度一下弄一个连接：<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://ww.baidu.com&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>(这样的话，会直接占用当前窗口)</span><br><span class="line">如果想要在新的窗口中打开：在里面添加：target=&quot;_blank&quot;就可以。</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://ww.baidu.com&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/01/HTML%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" data-id="cl1ggi1rx0002kwtd13nk3m26" data-title="HTML学习记录" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/04/01/HTML%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" data-id="cl1th3eo40002votd0ry90sze" data-title="HTML学习记录" class="article-share-link">Share</a>
       
       
       
@@ -259,15 +264,15 @@
           </li>
         
           <li>
-            <a href="/2022/03/26/Html5-css3%E8%AE%B0%E5%BD%95/">(no title)</a>
-          </li>
-        
-          <li>
             <a href="/2022/02/06/C%E8%AF%AD%E8%A8%80/">C语言</a>
           </li>
         
           <li>
             <a href="/2022/02/05/SQLI-LABS%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/">SQLI-LABS训练记录</a>
+          </li>
+        
+          <li>
+            <a href="/2022/02/05/SQL%E7%9A%84%E5%8D%B8%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85/">SQL的卸载与安装</a>
           </li>
         
       </ul>
