@@ -71,6 +71,69 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-数据结构代码0基础分析-线性结构" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%BB%A3%E7%A0%810%E5%9F%BA%E7%A1%80%E5%88%86%E6%9E%90-%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/" class="article-date">
+  <time class="dt-published" datetime="2022-05-02T01:12:25.000Z" itemprop="datePublished">2022-05-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/05/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%BB%A3%E7%A0%810%E5%9F%BA%E7%A1%80%E5%88%86%E6%9E%90-%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/">数据结构代码0基础分析---线性结构</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="顺序表的类型定义"><a href="#顺序表的类型定义" class="headerlink" title="顺序表的类型定义"></a><strong>顺序表的类型定义</strong></h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span>  MAXSIZE 100     <span class="comment">//最大长度</span></span></span><br><span class="line"><span class="keyword">typedef</span>  <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">  ElemType  *elem;     <span class="comment">//指向数据元素的基地址</span></span><br><span class="line">  <span class="keyword">int</span>  length;          <span class="comment">//线性表的当前长度                                                      </span></span><br><span class="line"> &#125;SqList；</span><br></pre></td></tr></table></figure>
+
+<p>分析：</p>
+<p>1.<strong>typedef****：一种数据类型定义一个新名字，这里的数据类型包括内部数据类型（int，char等）和自定义的数据类型（struct等）。</strong></p>
+<p><strong>typedef 本身是一种存储类的关键字，与 auto、extern、static、register 等关键字不能出现在同一个表达式中。</strong></p>
+<p><strong>2.</strong> <strong>ElemType****是数据结构书上为了说明问题而用的一个词。它是element type（“元素的类型”）的简化体。　因为数据结构是讨论抽象的数据结构和算法的，一种结构中元素的类型不一定是整型、字符型、浮点型或者用户自定义类型，为了不重复说明，使用过程中用“elemtype”代表所有可能的数据类型，简单明了的概括了整体。在算法中，除特别说明外，规定ElemType的默认是int型。</strong></p>
+<p>\3. <strong>SqList</strong> L是一个指针，指向SqList这样一个结构这个语句是一个赋值语句，malloc(sizeof(SqList))是分配一块大小为sizeof(SqList)的内存，并返回首地址，(SqList</p>
+<p>*)表示把这个指针转型为SqlList结构的指针—–未解决</p>
+<h3 id="图书表的顺序存储结构类型定义"><a href="#图书表的顺序存储结构类型定义" class="headerlink" title="图书表的顺序存储结构类型定义"></a>图书表的顺序存储结构类型定义</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MAXSIZE 10000	<span class="comment">//图书表可能达到的最大长度 </span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>			//图书信息定义</span></span><br><span class="line"><span class="class">&#123;</span> </span><br><span class="line">   <span class="keyword">char</span> no[<span class="number">20</span>];			<span class="comment">//图书ISBN</span></span><br><span class="line">   <span class="keyword">char</span> name[<span class="number">50</span>];		<span class="comment">//图书名字</span></span><br><span class="line">   <span class="keyword">float</span> price; 			<span class="comment">//图书价格</span></span><br><span class="line">&#125;Book; </span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span></span></span><br><span class="line"><span class="class">&#123;</span> </span><br><span class="line">   Book *elem;	<span class="comment">//存储空间的基地址 </span></span><br><span class="line">   <span class="keyword">int</span> length;		<span class="comment">//图书表中当前图书个数 </span></span><br><span class="line">&#125;SqList;		<span class="comment">//图书表的顺序存储结构类型为SqList</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>分析：</strong></p>
+<p>*<em>malloc(m)：开辟m字</em>***节长度的地址空间，并返回这段空间的首地址//**内存分配; 分配内存; 动态分配; 存储器分配; 分配的; <strong>malloc(me 罗ke)</strong></p>
+<p><strong>sizeof(x)：计算变量x的长度</strong></p>
+<p>*<em>free(p)：释放指针p所指变量的存储空间，即彻底删除一个变量//*<em>自由的(不是囚犯或奴隶); 随心所欲的; 不受限制的; <strong>delete</strong> <strong>指针</strong></em>*P</em>*</p>
+<p><img src="/image-20220502091527215.png" alt="image-20220502091527215"></p>
+<h2 id="值传递"><a href="#值传递" class="headerlink" title="值传递"></a>值传递</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">float</span> a,b;</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">swap(a,b);</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;A&lt;&lt;<span class="built_in">endl</span>&lt;&lt;b&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">float</span> m,<span class="keyword">float</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;<span class="keyword">float</span> temp;</span><br><span class="line">temp=m;</span><br><span class="line">m=n;</span><br><span class="line">n=temp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="地址传递"><a href="#地址传递" class="headerlink" title="地址传递"></a>地址传递</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;<span class="keyword">float</span> a,b,*p1,*p2;</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">p1=&amp;a;p2=&amp;b;</span><br><span class="line">swap(p1,p2);</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;a&lt;&lt;<span class="built_in">endl</span>&lt;&lt;b&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line">voidswap(<span class="keyword">float</span> *m,<span class="keyword">float</span> *n)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">float</span> t;</span><br><span class="line">t=*m;</span><br><span class="line">*m=*n;</span><br><span class="line">*n=t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果c语言中的 “<em>＆m</em>， <em>＆</em>n” 是，用在格式输入函数scanf中，他的意思就是取这两个变量的地址，用于指示程序把读取到的数据存放到指定的地址。</p>
+<h2 id="初始化线性表L-（参数用引用）"><a href="#初始化线性表L-（参数用引用）" class="headerlink" title="初始化线性表L （参数用引用）"></a>初始化线性表L （参数用引用）</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Status <span class="title">InitList_Sq</span><span class="params">(SqList &amp;L)</span></span>&#123;    <span class="comment">//构造一个空的顺序表L</span></span><br><span class="line">    L.elem=<span class="keyword">new</span> ElemType[MAXSIZE];   <span class="comment">//为顺序表分配空间,l.elem表示引用对象l的数据成员elem</span></span><br><span class="line">    <span class="keyword">if</span>(!L.elem) </span><br><span class="line">        <span class="built_in">exit</span>(OVERFLOW);       <span class="comment">//存储分配失败</span></span><br><span class="line">    L.length=<span class="number">0</span>;					  <span class="comment">//空表长度为0</span></span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>分析：C语言中没有status这个关键字。但一般写程序时,会定义这样的一个类型，用来表示成功或失败状态。<br>如：0表示成功，-1表示失败，这样status就可以定义成int类型,如：typedef int status ;</p>
+<p>Status InitList_Sq(SqList &amp;L)      这是函数定义或是声明<br>Status是函数返回值类型        InitList_Sq是函数名<br>括号 中是的是形参，SqList &amp;L 表示L是引用一个SqList类型的实参<br>应该是 InitList_Sq（list ) ; //其中list是实参</p>
+<p>return和exit有区别：<br>1，exit用于在程序运行的过程中随时结束程序，exit的参数是返回给OS的。main函数结束时也会隐式地调用exit函数。exit函数运行时首先会执行由atexit()函数登记的函数，然后会做一些自身的清理工作，同时刷新所有输出流、关闭所有打开的流并且关闭通过标准I/O函数tmpfile()创建的临时文件。exit是结束一个进程，它将删除进程使用的内存空间，同时把错误信息返回父进程,而return是返回函数值并退出函数<br>2，return是语言级别的，它表示了调用堆栈的返回；而exit是系统调用级别的，它表示了一个进程的结束。<br>3，exit函数是退出应用程序，并将应用程序的一个状态返回给OS，这个状态标识了应用程序的一些运行信息。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%BB%A3%E7%A0%810%E5%9F%BA%E7%A1%80%E5%88%86%E6%9E%90-%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/" data-id="cl2o20ah20009ewtdakk45zf7" data-title="数据结构代码0基础分析---线性结构" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/02/06/hello-world/" class="article-date">
@@ -110,7 +173,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/06/hello-world/" data-id="cl2o1082a0003lctd4quu2w4l" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/06/hello-world/" data-id="cl2o20agy0004ewtd4onchhxr" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -170,7 +233,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/05/SQLI-LABS%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/" data-id="cl2o108230001lctd3z14gqhg" data-title="SQLI-LABS训练记录" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/05/SQLI-LABS%E8%AE%AD%E7%BB%83%E8%AE%B0%E5%BD%95/" data-id="cl2o20agw0002ewtd6yiw1192" data-title="SQLI-LABS训练记录" class="article-share-link">Share</a>
       
       
       
@@ -215,7 +278,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/05/SQL%E7%9A%84%E5%8D%B8%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85/" data-id="cl2o1082c0004lctd8l8q8css" data-title="SQL的卸载与安装" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/05/SQL%E7%9A%84%E5%8D%B8%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85/" data-id="cl2o20agx0003ewtd2lv4dq50" data-title="SQL的卸载与安装" class="article-share-link">Share</a>
       
       
       
@@ -277,7 +340,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/05/SQL/" data-id="cl2o108260002lctdcz05hv5f" data-title="SQL" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/05/SQL/" data-id="cl2o20agr0000ewtdemxt5cfc" data-title="SQL" class="article-share-link">Share</a>
       
       
       
@@ -326,7 +389,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/07/%E6%B5%AE%E7%82%B9%E6%95%B0/" data-id="cl2o1082h000blctd5v4316f0" data-title="浮点数" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/12/07/%E6%B5%AE%E7%82%B9%E6%95%B0/" data-id="cl2o20ahc000cewtd9y0ffrn7" data-title="浮点数" class="article-share-link">Share</a>
       
       
       
@@ -367,54 +430,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/05/%E6%95%B0%E7%BB%84%E5%88%86%E6%9E%90/" data-id="cl2o1082f0009lctdesjm0jlu" data-title="数组分析" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-常见语句" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/" class="article-date">
-  <time class="dt-published" datetime="2021-11-13T01:57:26.000Z" itemprop="datePublished">2021-11-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/">常见关键字</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>一.数据类型关键字</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">char ：声明字符型变量或函数</span><br><span class="line">double ：声明双精度变量或函数</span><br><span class="line">float：声明浮点型变量或函数</span><br><span class="line">int： 声明整型变量或函数</span><br><span class="line">long ：声明长整型变量或函数</span><br><span class="line">short ：声明短整型变量或函数</span><br><span class="line">unsigned：声明无符号类型变量或函数</span><br><span class="line">void ：声明函数无返回值或无参数，声明无类型指针（基本上就这三个作用）</span><br><span class="line">enum ：声明枚举类型</span><br><span class="line">signed：声明有符号类型变量或函数</span><br><span class="line">struct：声明结构体变量或函数</span><br><span class="line">union：声明共用体（联合）数据类型</span><br><span class="line">注意：对于doublehe和float</span><br><span class="line">         区别是double精度高，有效数字16位，float精度7位。 但double消耗内存是float的两倍，double的运算速度比float慢得多，C语言中数学函数名称double 和 float不同，不要写错，能用单精度时不要用双精度（以省内存，加快运算速度）。  </span><br></pre></td></tr></table></figure>
-
-<p>二.控制语句和关键字</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">控制语句</span><br><span class="line">goto语句:      无条件转向</span><br><span class="line">if语句:        判断语句</span><br><span class="line">while语句：    循环</span><br><span class="line">do-while语句:  先执行循环体,然后判断循环条件是否成立. 之后继续循环</span><br><span class="line">for语句:        循环,可替代while语句，只是用法不太一样</span><br><span class="line">break语句：     跳出本层的循环(只跳出包含此语句的循环)</span><br><span class="line">continue语句:   继续，一般放到循环语句里,不在执行它下面的语句,直接跳到判断语句</span><br><span class="line">                eg:for语句,就直接跳到第二个分号处,while语句,就直接跳到while()的括号里</span><br><span class="line">switch语句:     多相选择</span><br><span class="line">return语句:     返回</span><br><span class="line">1.循环语句</span><br><span class="line">        for：一种循环语句(可意会不可言传）</span><br><span class="line">        do ：循环语句的循环体</span><br><span class="line">        while ：循环语句的循环条件</span><br><span class="line">        break：跳出当前循环</span><br><span class="line">        continue：结束当前循环，开始下一轮循环</span><br><span class="line">2.条件语句</span><br><span class="line">        if: 条件语句</span><br><span class="line">        else ：条件语句否定分支（与 if 连用）</span><br><span class="line">        goto：无条件跳转语句</span><br><span class="line">3.开关语句</span><br><span class="line">        switch :用于开关语句</span><br><span class="line">        case：开关语句分支</span><br><span class="line">        default：开关语句中的“其他”分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>三、存储类型关键字</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">auto ：声明自动变量 一般不使用</span><br><span class="line">extern：声明变量是在其他文件正声明（也可以看做是引用变量）</span><br><span class="line">register：声明积存器变量</span><br><span class="line">static ：声明静态变量</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">getchar ()和getch()的区别；</span><br><span class="line">1.getchar();从键盘读取一个字符并输出，该函数的返回值是输入第一个字符的ASCII码；若用户输入的是一连串字符，函数直到用户输入回车时结束，输入的字符连同回车一起存入键盘缓冲区。若程序中有后继的getchar();函数，则直接从缓冲区逐个读取已输入的字符并输出，直到缓冲区为空时才重新读取用户的键盘输入。</span><br><span class="line">2.getch();接受一个任意键的输入，不用按回车就返回。该函数的返回值是所输入字符的ASCII码，且该函数的输入不会自动显示在屏幕上，需要putchar();函数输出显示。getch();函数常用于中途暂停程序方便调试和查看</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/" data-id="cl2o1082d0006lctdct5g7n4r" data-title="常见关键字" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/12/05/%E6%95%B0%E7%BB%84%E5%88%86%E6%9E%90/" data-id="cl2o20ah3000aewtd3kqf2h5e" data-title="数组分析" class="article-share-link">Share</a>
       
       
       
@@ -463,7 +479,54 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/13/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/" data-id="cl2o1082e0008lctdh2ce4qs6" data-title="常见关键字" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/13/%E5%B8%B8%E8%A7%81%E5%85%B3%E9%94%AE%E5%AD%97/" data-id="cl2o20ah00006ewtd5uurcm59" data-title="常见关键字" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-常见语句" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/" class="article-date">
+  <time class="dt-published" datetime="2021-11-13T01:57:26.000Z" itemprop="datePublished">2021-11-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/">常见关键字</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>一.数据类型关键字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">char ：声明字符型变量或函数</span><br><span class="line">double ：声明双精度变量或函数</span><br><span class="line">float：声明浮点型变量或函数</span><br><span class="line">int： 声明整型变量或函数</span><br><span class="line">long ：声明长整型变量或函数</span><br><span class="line">short ：声明短整型变量或函数</span><br><span class="line">unsigned：声明无符号类型变量或函数</span><br><span class="line">void ：声明函数无返回值或无参数，声明无类型指针（基本上就这三个作用）</span><br><span class="line">enum ：声明枚举类型</span><br><span class="line">signed：声明有符号类型变量或函数</span><br><span class="line">struct：声明结构体变量或函数</span><br><span class="line">union：声明共用体（联合）数据类型</span><br><span class="line">注意：对于doublehe和float</span><br><span class="line">         区别是double精度高，有效数字16位，float精度7位。 但double消耗内存是float的两倍，double的运算速度比float慢得多，C语言中数学函数名称double 和 float不同，不要写错，能用单精度时不要用双精度（以省内存，加快运算速度）。  </span><br></pre></td></tr></table></figure>
+
+<p>二.控制语句和关键字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">控制语句</span><br><span class="line">goto语句:      无条件转向</span><br><span class="line">if语句:        判断语句</span><br><span class="line">while语句：    循环</span><br><span class="line">do-while语句:  先执行循环体,然后判断循环条件是否成立. 之后继续循环</span><br><span class="line">for语句:        循环,可替代while语句，只是用法不太一样</span><br><span class="line">break语句：     跳出本层的循环(只跳出包含此语句的循环)</span><br><span class="line">continue语句:   继续，一般放到循环语句里,不在执行它下面的语句,直接跳到判断语句</span><br><span class="line">                eg:for语句,就直接跳到第二个分号处,while语句,就直接跳到while()的括号里</span><br><span class="line">switch语句:     多相选择</span><br><span class="line">return语句:     返回</span><br><span class="line">1.循环语句</span><br><span class="line">        for：一种循环语句(可意会不可言传）</span><br><span class="line">        do ：循环语句的循环体</span><br><span class="line">        while ：循环语句的循环条件</span><br><span class="line">        break：跳出当前循环</span><br><span class="line">        continue：结束当前循环，开始下一轮循环</span><br><span class="line">2.条件语句</span><br><span class="line">        if: 条件语句</span><br><span class="line">        else ：条件语句否定分支（与 if 连用）</span><br><span class="line">        goto：无条件跳转语句</span><br><span class="line">3.开关语句</span><br><span class="line">        switch :用于开关语句</span><br><span class="line">        case：开关语句分支</span><br><span class="line">        default：开关语句中的“其他”分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>三、存储类型关键字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">auto ：声明自动变量 一般不使用</span><br><span class="line">extern：声明变量是在其他文件正声明（也可以看做是引用变量）</span><br><span class="line">register：声明积存器变量</span><br><span class="line">static ：声明静态变量</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">getchar ()和getch()的区别；</span><br><span class="line">1.getchar();从键盘读取一个字符并输出，该函数的返回值是输入第一个字符的ASCII码；若用户输入的是一连串字符，函数直到用户输入回车时结束，输入的字符连同回车一起存入键盘缓冲区。若程序中有后继的getchar();函数，则直接从缓冲区逐个读取已输入的字符并输出，直到缓冲区为空时才重新读取用户的键盘输入。</span><br><span class="line">2.getch();接受一个任意键的输入，不用按回车就返回。该函数的返回值是所输入字符的ASCII码，且该函数的输入不会自动显示在屏幕上，需要putchar();函数输出显示。getch();函数常用于中途暂停程序方便调试和查看</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/" data-id="cl2o20ah10007ewtd3jfz7mt1" data-title="常见关键字" class="article-share-link">Share</a>
       
       
       
@@ -514,56 +577,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/11/C%E8%AF%AD%E8%A8%80-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E6%80%BB%E7%BB%93/" data-id="cl2o1081z0000lctd8c8w1rue" data-title="C语言&lt;运算符与表达式&gt;总结" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-常见错误" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/11/07/%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" class="article-date">
-  <time class="dt-published" datetime="2021-11-07T02:20:19.000Z" itemprop="datePublished">2021-11-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/11/07/%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/">常见错误</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>1.养成一个习惯，永远在if和else后面加上{}，即使只有一条语句</p>
-<p>2.if语句后面没有分号，如果加上分号，系统会认为你的if语句已经结束</p>
-<p>3.错误使用==和=，一定要注意呀，还有if只要求（）里面的值是0还是非0</p>
-<p>4.如果程序给我提示了warming警告，一定要去改，就算程序可以运行，这也是一种习惯</p>
-<p>5.问题最大的就是经常忘记分号，这个就很难受啊，注意注意注意</p>
-<p>再加点其他内容吧（对计算机更通俗易懂的理解）</p>
-<p>1.对于编程，是用编程语言去命令计算机为我们服务       2.计算机所做的所有事情都是计算</p>
-<p>3.计算的步骤就叫算法                             4.CPU不可以直接运行编写的程序</p>
-<p>5.对于计算机而言，找方法比凑难，（重复是计算机最擅长做的事情），他能列出所有的方法，然后一个一个去尝试，这叫枚举法。因此就为了提高计算机的计算速度，便产生了我们现在学的各种算法</p>
-<p>加个图片，不然好单调，嘿嘿</p>
-<p><img src="/images/21088f859b994fda926a1a4439dd8079_tplv-k3u1fbpfcp-watermark-16362528281311.gif" alt="21088f859b994fda926a1a4439dd8079_tplv-k3u1fbpfcp-watermark"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/07/%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/" data-id="cl2o1082e0007lctd3c4x4qhz" data-title="常见错误" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/11/C%E8%AF%AD%E8%A8%80-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E6%80%BB%E7%BB%93/" data-id="cl2o20agu0001ewtd5iol63tw" data-title="C语言&lt;运算符与表达式&gt;总结" class="article-share-link">Share</a>
       
       
       
@@ -598,7 +612,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li></ul>
     </div>
   </div>
 
@@ -609,6 +623,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/05/02/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%BB%A3%E7%A0%810%E5%9F%BA%E7%A1%80%E5%88%86%E6%9E%90-%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/">数据结构代码0基础分析---线性结构</a>
+          </li>
         
           <li>
             <a href="/2022/02/06/hello-world/">Hello World</a>
@@ -624,10 +642,6 @@
         
           <li>
             <a href="/2022/02/05/SQL/">SQL</a>
-          </li>
-        
-          <li>
-            <a href="/2021/12/07/%E6%B5%AE%E7%82%B9%E6%95%B0/">浮点数</a>
           </li>
         
       </ul>
