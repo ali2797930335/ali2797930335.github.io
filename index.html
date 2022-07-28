@@ -29,169 +29,7 @@ var CONFIG = {
 };
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="萌主*小狸" type="application/atom+xml">
-</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">萌主*小狸</div><div class="header-banner-info__subtitle">欢迎回家~Go for it!</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/07/25/%E7%BD%91%E5%AE%89%E5%AD%A6%E4%B9%A0/">网安学习</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-07-25</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-07-25</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>[TOC]</p>
-<h1>web基础常识</h1>
-<p><img src="../images/370e2e0c74cd4317b4f8b2b3ad5100d9.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p>
-<p><img src="../images/c28dc42d32594b2cb856cf2324cfc062.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p>
-<p><img src="../images/eb21b8eccd55464eafa245532b6eac40.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p>
-<h1>靶场搭建</h1>
-
-        <h2 id="phpstduy环境搭建"   >
-          <a href="#phpstduy环境搭建" class="heading-link"><i class="fas fa-link"></i></a>phpstduy环境搭建</h2>
-      
-<p>先下载phpstduy,直接到官网下载（注意：phpstduy安装路径中，不可以有中文）</p>
-<p>在WWW根目录下新建一个文件夹（不能含中文）用来放靶场</p>
-<p><img src="../images/7b2c918b212c4a04b8cdf40c3a16c0c2.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p>
-<p>打开127.0.0.1查看，先开始看不到目录，只能看见（hello Word），需要我们自己去配置环境。配置方法如下：</p>
-<ol>
-<li>
-<p>打开phpstduy----其他选项-----pupstduy设置-----允许目录列表勾选上<br>
-<img src="../images/b4d4867bb16a4056a13943514618f09d.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>在WWW根目录下会 有一定有4个文件夹，分别是<br>
-（phpMyAdmin、index.php、l.php、phpinfo.php）<br>
-需要如下，将（index.php、l.php）随便换一个名字即可，可以如下：<br>
-<img src="../images/bc079aa7d0384868932dc2679fa04002.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑<br>
-换好后，重新看127.0.0.1即可看见如下目录：<br>
-<img src="../images/77c169fc662f4029af41c476c99fe834.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-</ol>
-<p><img src="../images/ef1c5359df3a41089a475fa812838014.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p>
-
-        <h2 id="漏洞靶场之DVWA"   >
-          <a href="#漏洞靶场之DVWA" class="heading-link"><i class="fas fa-link"></i></a>漏洞靶场之DVWA</h2>
-      
-<p>DVWA是owasp官方编写的PHP网站，包含了各种网站常见的漏洞，可以学习攻击及修复方式</p>
-<p>PHP环境  Windows Apache MySQL PHP</p>
-<p>DVWA搭建：</p>
-<ol>
-<li>
-<p>先将文件DVWA-master放到靶场里面</p>
-</li>
-<li>
-<p>127.0.0.1打开靶场，点击DVWA-master后会出现如下情况<br>
-<img src="../images/749518b312634e3ea05f41e3341dfe21.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>去靶场下找到config文件夹打开，可以看见如下文件夹，将其复制一份，然后将php后面的内容删除即可。<br>
-<img src="../images/99ec98351fc146b38289bbf8a774907a.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑<br>
-<img src="../images/32fe8f58230c424f93613963e6c1ee9e.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>用记事本将PHP文件打开<br>
-<img src="../images/ed5d7899b73741709507567f3b78e549.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>将文件中如下标红的位置改成如下样式即可,然后保存记事本。<br>
-<img src="../images/fc842310b7e946d7ae9f6bc949bb1273.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>重新访问127.0.0.1后，出现如下情况</p>
-<p><img src="../images/144cd16067a24ea88d97e098bba571c1.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-<p>发现下面圈起来的地方有红色字体，需要去配置文件，方法如下:找到并打开Php-ini<br>
-<img src="../images/091ea7f6568f44e3ba55355fe8825871.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-<p>找到：allow_wrl_includel，将其后面的 0ff改成 0n<br>
-<img src="../images/7ace7221060141c48efed84a5d3b034e.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>重启Phpstudy,重新打开127.0.0.1,发现刚刚的红色变成绿色即成功，然后将页面拉到底，，点击：如下标红的位置，创建数据库。<br>
-<img src="../images/77c8eaa99a2e4bc7a9351567808e3463.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-<p>等待几秒钟后，如下：<br>
-然后：输入用户名admin，密码：password<br>
-<img src="../images/b5bf7e93cb8e4abdbe9b4fc84a4d508a.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>搭建成功：<br>
-<img src="../images/97f04fadc5584ffa8cd267b592f007cd.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>最后一步：将DVWA Security下的submit旁边改成low（从低到高开始练习），然后点击submit即可。<br>
-<img src="../images/6c55bcbad6f44f43b27c270e23f5bc01.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>DVWA的搭建到此结束。</p>
-</li>
-</ol>
-
-        <h2 id="sqli-labs-master（文件上传）靶场搭建："   >
-          <a href="#sqli-labs-master（文件上传）靶场搭建：" class="heading-link"><i class="fas fa-link"></i></a>sqli-labs-master（文件上传）靶场搭建：</h2>
-      
-<p>将文件夹直接拖到靶场下即可。然后打卡127.0.0.1打开可：</p>
-<p><img src="../images/c0efd2e8378b4519802143da165a1715.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p>
-
-        <h2 id="SQL注入漏洞靶场搭建："   >
-          <a href="#SQL注入漏洞靶场搭建：" class="heading-link"><i class="fas fa-link"></i></a>SQL注入漏洞靶场搭建：</h2>
-      
-<ol>
-<li>
-<p>将sqli-labs-master把场文件拖到靶场文件夹下</p>
-</li>
-<li>
-<p>打开127.0.0.1出现如下画面，点击第一个如下：<br>
-<img src="../images/019483d18d834d1799219bef3caba625.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>出现报错，代表还没有搭建成功，需要去配置文件<br>
-<img src="../images/c71e918fc3f446cf979bc730aedc8d7a.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>按照如下路径找到.inc文件，记事本打开<br>
-<img src="../images/20f8ff40f8b0479b91f1018be4a53482.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>如下可以看出，$dbpass后的单引号里面没有内容，将单引号里面写入root，保存即可<br>
-<img src="../images/a3d525665cdf43d79838aec690639dd9.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>再次点击后出现如下画面及成功：<br>
-<img src="../images/151a033268954d279925fb4178a628cd.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-<p><img src="../images/fa4b05d2194a436280251d5e5ba9ba13.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-<li>
-<p>搭建成功，加油。</p>
-</li>
-</ol>
-
-        <h2 id="Docker-搭建"   >
-          <a href="#Docker-搭建" class="heading-link"><i class="fas fa-link"></i></a>Docker 搭建</h2>
-      
-<p><img src="../images/a9c6c594ae934f0895cb9086a8e82732.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p>
-<ol>
-<li>
-<p>虚拟机里面安装kali系统后，需要查看版本信息：<br>
-uname -a （查看系统信息）<br>
-uname -v  （查看内核版本）</p>
-</li>
-<li>
-<p>更换apt的源：</p>
-<p>​	查看：cat /etc/apt/sources.list</p>
-<p>​	修改：输入 sudo vim /etc/apt/sources.list   然后输入密码  然后按回车，再按i进入编辑模式，</p>
-<p>​	开始编辑：</p>
-<p>选择源，推荐阿里云源，有些已经不能用了</p>
-<p>deb <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://mirrors.aliyun.com/kali" >http://mirrors.aliyun.com/kali</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> kali-rolling main non-free contrib</p>
-<p>deb-src <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://mirrors.aliyun.com/kali" >http://mirrors.aliyun.com/kali</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> kali-rolling main non-free contrib</p>
-<p>​	编辑好后，按ESC键退出，然按照提示后输入：（：wq）保存退出。强制退出（：wq!）</p>
-</li>
-<li>
-<p>切换到root用户<br>
-sudo passwd root //进行root密码修改<br>
-su root// 切换root用户</p>
-</li>
-<li>
-<p><img src="../images/0cdd954eccdd461da56bcd1b26e47b31.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">​编辑</p>
-</li>
-</ol>
-
-        <h2 id="Burpsuite"   >
-          <a href="#Burpsuite" class="heading-link"><i class="fas fa-link"></i></a>Burpsuite</h2>
-      
-<p><img src="../images/667631e4983d4c60af83b6a4395dbe77.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p>
-<p>BurpSuite做中间着，作用很大，可以修改、拦截请求等。</p>
-<p><img src="../images/95a076afc876494e967bce30350f0d26.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p>
-<p>代理工具：火狐：FoxyProxy，直接在火狐里面搜索下载扩展即可。</p>
-<p>Burp需要Java环境</p>
-</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/04/01/HTML%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">HTML学习记录</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-04-01</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-04-14</span></span></div></header><div class="post-body"><div class="post-excerpt"><h1>HTML5相关内容</h1>
+</head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">萌主*小狸</div><div class="header-banner-info__subtitle">欢迎回家~Go for it!</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/04/01/HTML%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">HTML学习记录</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-04-01</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-04-14</span></span></div></header><div class="post-body"><div class="post-excerpt"><h1>HTML5相关内容</h1>
 
         <h3 id="什么是网页："   >
           <a href="#什么是网页：" class="heading-link"><i class="fas fa-link"></i></a>什么是网页：</h3>
@@ -546,4 +384,10 @@ return (x &lt;= DBL_MAX &amp;&amp; x &gt;= -DBL_MAX);<br>
 <p>三、存储类型关键字</p>
 <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">auto ：声明自动变量 一般不使用</span><br><span class="line">extern：声明变量是在其他文件正声明（也可以看做是引用变量）</span><br><span class="line">register：声明积存器变量</span><br><span class="line">static ：声明静态变量</span><br></pre></td></tr></table></div></figure>
 <figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></div></figure>
-</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-right"></i></a></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/assets/hh1.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">簡單迷人~~</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">16</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2022</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Ali</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.7.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.7.0"></script><script src="/js/stun-boot.js?v=2.7.0"></script><script src="/js/scroll.js?v=2.7.0"></script><script src="/js/header.js?v=2.7.0"></script><script src="/js/sidebar.js?v=2.7.0"></script></body></html>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/11/13/%E5%B8%B8%E8%A7%81%E8%AF%AD%E5%8F%A5/">常见关键字</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-11-13</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-12-22</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>一.数据类型关键字</p>
+<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">char ：声明字符型变量或函数</span><br><span class="line">double ：声明双精度变量或函数</span><br><span class="line">float：声明浮点型变量或函数</span><br><span class="line">int： 声明整型变量或函数</span><br><span class="line">long ：声明长整型变量或函数</span><br><span class="line">short ：声明短整型变量或函数</span><br><span class="line">unsigned：声明无符号类型变量或函数</span><br><span class="line">void ：声明函数无返回值或无参数，声明无类型指针（基本上就这三个作用）</span><br><span class="line">enum ：声明枚举类型</span><br><span class="line">signed：声明有符号类型变量或函数</span><br><span class="line">struct：声明结构体变量或函数</span><br><span class="line">union：声明共用体（联合）数据类型</span><br><span class="line">注意：对于doublehe和float</span><br><span class="line">         区别是double精度高，有效数字16位，float精度7位。 但double消耗内存是float的两倍，double的运算速度比float慢得多，C语言中数学函数名称double 和 float不同，不要写错，能用单精度时不要用双精度（以省内存，加快运算速度）。  </span><br></pre></td></tr></table></div></figure>
+<p>二.控制语句和关键字</p>
+<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">控制语句</span><br><span class="line">goto语句:      无条件转向</span><br><span class="line">if语句:        判断语句</span><br><span class="line">while语句：    循环</span><br><span class="line">do-while语句:  先执行循环体,然后判断循环条件是否成立. 之后继续循环</span><br><span class="line">for语句:        循环,可替代while语句，只是用法不太一样</span><br><span class="line">break语句：     跳出本层的循环(只跳出包含此语句的循环)</span><br><span class="line">continue语句:   继续，一般放到循环语句里,不在执行它下面的语句,直接跳到判断语句</span><br><span class="line">                eg:for语句,就直接跳到第二个分号处,while语句,就直接跳到while()的括号里</span><br><span class="line">switch语句:     多相选择</span><br><span class="line">return语句:     返回</span><br><span class="line">1.循环语句</span><br><span class="line">        for：一种循环语句(可意会不可言传）</span><br><span class="line">        do ：循环语句的循环体</span><br><span class="line">        while ：循环语句的循环条件</span><br><span class="line">        break：跳出当前循环</span><br><span class="line">        continue：结束当前循环，开始下一轮循环</span><br><span class="line">2.条件语句</span><br><span class="line">        if: 条件语句</span><br><span class="line">        else ：条件语句否定分支（与 if 连用）</span><br><span class="line">        goto：无条件跳转语句</span><br><span class="line">3.开关语句</span><br><span class="line">        switch :用于开关语句</span><br><span class="line">        case：开关语句分支</span><br><span class="line">        default：开关语句中的“其他”分支</span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+<p>三、存储类型关键字</p>
+<figure class="highlight plaintext"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">auto ：声明自动变量 一般不使用</span><br><span class="line">extern：声明变量是在其他文件正声明（也可以看做是引用变量）</span><br><span class="line">register：声明积存器变量</span><br><span class="line">static ：声明静态变量</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">getchar ()和getch()的区别；</span><br><span class="line">1.getchar();从键盘读取一个字符并输出，该函数的返回值是输入第一个字符的ASCII码；若用户输入的是一连串字符，函数直到用户输入回车时结束，输入的字符连同回车一起存入键盘缓冲区。若程序中有后继的getchar();函数，则直接从缓冲区逐个读取已输入的字符并输出，直到缓冲区为空时才重新读取用户的键盘输入。</span><br><span class="line">2.getch();接受一个任意键的输入，不用按回车就返回。该函数的返回值是所输入字符的ASCII码，且该函数的输入不会自动显示在屏幕上，需要putchar();函数输出显示。getch();函数常用于中途暂停程序方便调试和查看</span><br></pre></td></tr></table></div></figure>
+</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-right"></i></a></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/assets/hh1.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">簡單迷人~~</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">15</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">0</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2022</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Ali</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.7.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.7.0"></script><script src="/js/stun-boot.js?v=2.7.0"></script><script src="/js/scroll.js?v=2.7.0"></script><script src="/js/header.js?v=2.7.0"></script><script src="/js/sidebar.js?v=2.7.0"></script></body></html>
